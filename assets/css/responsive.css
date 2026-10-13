@@ -1,0 +1,332 @@
+/* RedBlood: responsive community-service interface. */
+:root {
+  --red-900: #741d32;
+  --red-800: #941d39;
+  --red-700: #b12646;
+  --red-600: #c32d4c;
+  --red-100: #fce8ed;
+  --red-50: #fff4f6;
+  --ink-950: #25272e;
+  --ink-800: #434650;
+  --ink-600: #686a72;
+  --line: #e9e4e2;
+  --soft: #faf8f6;
+  --shadow-sm: 0 8px 28px rgb(58 33 40 / 5%);
+  --shadow-lg: 0 22px 55px rgb(86 34 47 / 10%);
+  --container: 1200px;
+}
+html { scroll-padding-top: 100px; }
+body { background: #fff; font-family: system-ui, -apple-system, "Segoe UI", "RedBlood Malayalam", sans-serif; line-height: 1.7; }
+[hidden] { display: none !important; }
+img { height: auto; }
+button, input, select, textarea { font-family: inherit; }
+button, a, input, select, label { touch-action: manipulation; }
+h1, h2, h3 { overflow-wrap: break-word; font-family: inherit; }
+h1 { font-size: clamp(2.65rem, 5.2vw, 4.6rem); letter-spacing: -.055em; line-height: 1.08; }
+h2 { font-size: clamp(1.85rem, 3.2vw, 2.8rem); letter-spacing: -.035em; line-height: 1.22; }
+h3 { line-height: 1.4; }
+p { text-wrap: pretty; }
+.container { width: min(calc(100% - 64px), var(--container)); }
+.section { padding: clamp(60px, 7vw, 100px) 0; }
+.eyebrow { font-size: .73rem; letter-spacing: .11em; margin-bottom: 12px; }
+.button { min-height: 50px; padding: 13px 23px; border-radius: 12px; line-height: 1.5; font-size: .93rem; }
+.button-primary { background: var(--red-700); box-shadow: 0 7px 16px rgb(177 38 70 / 14%); }
+.button-primary:hover { background: var(--red-800); }
+.button-secondary { border-color: #e1d5d9; }
+.button:disabled { cursor: wait; opacity: .65; transform: none; }
+.button-small { min-height: 44px; padding: 9px 14px; }
+a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px solid #d96780; outline-offset: 3px; }
+/* One tidy header, with language selection always available. */
+.site-header { background: rgb(255 255 255 / 97%); border-color: var(--line); }
+.nav-wrap { min-height: 80px; gap: 16px; flex-wrap: nowrap; position: relative; }
+.brand { font-size: 1.4rem; letter-spacing: -.04em; flex: 0 0 auto; }
+.brand-mark { width: 38px; height: 42px; background: transparent; box-shadow: none; border-radius: 0; }
+.brand-mark img { width: 31px; height: 38px; }
+.site-nav { order: 2; margin-left: auto; gap: 1px; flex-wrap: nowrap; }
+.site-nav a { padding: 12px 10px; font-size: .84rem; white-space: nowrap; min-height: 44px; display: flex; align-items: center; }
+.site-nav .nav-cta { margin-left: 5px; padding-inline: 14px; background: var(--red-700); }
+.site-nav a[aria-current] { color: var(--red-700); background: var(--red-50); }
+.site-nav .nav-cta[aria-current] { color: white; background: var(--red-700); }
+.language-control { order: 3; margin: 0; }
+.language-control select { min-height: 44px; min-width: 104px; max-width: 140px; font-size: .85rem; color: var(--ink-800); background: var(--soft); border-color: var(--line); }
+.nav-toggle { order: 4; flex: 0 0 44px; }
+.service-notice { text-align: center; background: #fcf7eb; color: #6d5b32; border-color: #efe7d3; padding: 10px 32px; font-size: .76rem; line-height: 1.65; }
+/* Hero: a clear introduction, with a light decorative blood-drop illustration. */
+.hero { padding: 72px 0 84px; overflow: hidden; background: linear-gradient(125deg, #fff 30%, #fcf2f1); }
+.hero::before { display: none; }
+.hero-grid { grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr); gap: 60px; }
+.hero-text { font-size: 1.05rem; max-width: 530px; line-height: 1.85; margin-bottom: 27px; }
+.hero-note { font-size: .8rem; margin-top: 22px; max-width: 490px; line-height: 1.8; }
+.hero-visual { min-height: 400px; width: 100%; max-width: 480px; margin-left: auto; }
+.hero-image-card { inset: 25px 65px 60px; border: 0; border-radius: 28px; background: transparent; box-shadow: none; overflow: visible; }
+.hero-image-card img { width: 190px; height: 238px; object-fit: contain; filter: drop-shadow(0 18px 20px rgb(150 31 59 / 14%)); }
+.hero-orbit { position: absolute; border: 1px solid rgb(177 38 70 / 12%); border-radius: 50%; }
+.hero-orbit-one { width: 340px; height: 340px; left: 50%; top: 0; transform: translateX(-50%); }
+.hero-orbit-two { width: 276px; height: 276px; left: 50%; top: 32px; transform: translateX(-50%); background: rgb(255 255 255 / 45%); }
+.floating-card { min-width: 170px; padding: 12px 16px; border-radius: 15px; box-shadow: 0 7px 30px rgb(95 44 55 / 7%); background: #fff; }
+.floating-card-top { top: 66px; left: 0; }
+.floating-card-bottom { bottom: 87px; right: 0; }
+.floating-card strong { font-size: .82rem; }
+.floating-card small { font-size: .7rem; }
+.mini-icon { width: 34px; height: 34px; flex-basis: 34px; border-radius: 10px; }
+.hero-visual-caption { position: absolute; bottom: 0; text-align: center; width: 100%; }
+.hero-visual-caption strong, .hero-visual-caption span { display: block; }
+.hero-visual-caption strong { font-size: .92rem; color: var(--red-900); }
+.hero-visual-caption span { font-size: .78rem; color: var(--ink-600); }
+/* About sits before search, with concise and readable guidance cards. */
+#about { border-top: 1px solid var(--line); background: #fff; }
+.about-intro { display: block; }
+.eligibility-copy { max-width: 760px; margin: 0 auto 30px; text-align: center; }
+.about-lead { font-size: 1.05rem; color: var(--ink-800); margin-bottom: 15px; }
+.eligibility-copy > p:last-child { font-size: .9rem; color: var(--ink-600); }
+.donor-guidance { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; padding: 0; margin: 0; list-style: none; }
+.donor-guidance li { padding: 24px; margin: 0; border: 1px solid var(--line); background: var(--soft); border-radius: 16px; line-height: 1.85; font-size: .9rem; }
+.donor-guidance strong { display: block; margin-bottom: 6px; color: var(--red-800); font-size: 1rem; }
+.about-guidance-note { margin-top: 20px; display: flex; align-items: center; gap: 30px; justify-content: space-between; }
+.about-guidance-note .medical-note { margin: 0; padding: 0; border: 0; background: none; color: var(--ink-600); font-size: .8rem; flex: 1; }
+.about-guidance-note .text-link { flex: 0 1 230px; font-size: .83rem; }
+.about-process { margin-top: 42px; padding: 28px 32px; border-radius: 20px; background: #f7edee; color: var(--ink-950); }
+.about-process .section-heading { text-align: left; margin-bottom: 20px; }
+.about-process .section-heading h2 { font-size: 1.5rem; color: var(--red-900); }
+.about-process .eyebrow { color: var(--red-700); }
+.about-process .steps-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 22px; margin-top: 0; }
+.about-process .steps-grid article { min-height: 0; padding: 0; border: 0; background: none; border-radius: 0; }
+.about-process .steps-grid article > span { color: var(--red-700); font-size: .78rem; display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; margin-bottom: 12px; border: 1px solid #dbb4c0; border-radius: 50%; }
+.about-process .steps-grid h3 { color: var(--ink-950); font-size: .95rem; }
+.about-process .steps-grid p { color: var(--ink-600); font-size: .79rem; margin-bottom: 0; }
+/* Search is deliberately limited to Blood Group and Hospital. */
+.find-section { background: var(--soft); border-block: 1px solid var(--line); }
+.section-heading { max-width: 760px; margin-bottom: 30px; }
+.section-heading.centered { margin-inline: auto; }
+.section-heading > p:not(.eyebrow) { color: var(--ink-600); font-size: .95rem; }
+.search-panel { max-width: 900px; grid-template-columns: minmax(0, .7fr) minmax(0, 1.3fr); padding: 26px; gap: 20px; box-shadow: var(--shadow-sm); border-radius: 20px; }
+.search-panel .form-field { min-width: 0; }
+.search-panel .form-field small { display: block; margin-top: 7px; font-size: .75rem; line-height: 1.7; color: var(--ink-600); }
+.search-actions { display: flex; align-items: center; gap: 10px; grid-column: 1 / -1; }
+.search-actions .search-button { flex: 1; align-self: stretch; min-height: 50px; }
+.search-actions .voice-button { flex: 0 0 50px; height: 50px; align-self: stretch; }
+.quick-search-label { font-size: .78rem; color: var(--ink-600); text-align: center; margin: 23px 0 10px; }
+.blood-group-links { margin: 0 auto; gap: 10px; }
+.blood-group-links button { width: 49px; height: 46px; border-radius: 12px; background: #fff; border-color: #ebd7dd; }
+.search-results { margin-top: 27px; scroll-margin-top: 110px; }
+.compact-empty { padding: 24px; background: none; border-style: dashed; box-shadow: none; }
+.compact-empty > span { display: none; }
+.compact-empty h3 { font-size: 1rem; }
+.compact-empty p { font-size: .83rem; margin-bottom: 0; }
+.map-panel { border-radius: 20px; padding: 26px; margin-bottom: 0; }
+.map-panel > p { font-size: .86rem; }
+.map-panel h3 { font-size: 1.12rem; }
+.map-privacy { margin-top: 14px; font-size: .78rem; color: var(--ink-600); }
+.map-privacy summary { cursor: pointer; padding: 8px 0; min-height: 36px; }
+.map-privacy .local-storage-note { text-align: left; }
+#map-status { font-size: .8rem; }
+#donor-map { height: 360px; max-width: 100%; }
+.region-counts span { overflow-wrap: anywhere; }
+.donor-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.donor-card { border-radius: 16px; box-shadow: var(--shadow-sm); }
+.donor-card .phone-link { min-height: 48px; display: flex; align-items: center; }
+/* The same form geometry on registration, profile editing and management. */
+.register-grid { grid-template-columns: minmax(0, .75fr) minmax(0, 1.25fr); gap: 50px; }
+.register-copy { top: 115px; }
+.register-copy .feature-list { font-size: .87rem; margin: 24px 0; }
+.registration-card, .management-card { border-radius: 20px; box-shadow: var(--shadow-sm); }
+.registration-card { padding: 30px; min-width: 0; }
+.form-header { margin-bottom: 20px; padding-bottom: 20px; }
+.form-header h3 { font-size: 1.22rem; }
+.form-field label, .form-field legend { font-size: .88rem; font-weight: 600; line-height: 1.6; margin-bottom: 7px; }
+.form-field input, .form-field select, #self-donor { min-height: 50px; font-size: 16px; width: 100%; min-width: 0; max-width: 100%; border-radius: 10px; }
+.form-field input:disabled { background: var(--soft); color: var(--ink-600); }
+.form-field select { text-overflow: ellipsis; padding-right: 28px; }
+.form-grid { gap: 18px; }
+.radio-row { gap: 7px; display: flex; flex-wrap: wrap; flex-direction: row; }
+.radio-row label { min-height: 44px; padding: 8px 11px; border: 1px solid var(--line); border-radius: 9px; margin: 0; font-size: .85rem; flex: 1 1 auto; cursor: pointer; }
+.radio-row label:has(input:checked) { background: var(--red-50); border-color: #d47c90; color: var(--red-900); }
+.radio-row input { width: 18px; height: 18px; min-height: 18px; flex: 0 0 18px; padding: 0; }
+.availability-fields { padding: 20px 0 0; border: 0; border-top: 1px solid var(--line); border-radius: 0; margin: 22px 0 0; }
+.availability-fields .full:has([data-gps]) { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.availability-fields [data-gps-status] { flex: 1 1 100%; margin: 0; }
+.availability-fields small, .field-hint { font-size: .79rem; }
+.truth-notice { border: 0; border-radius: 12px; background: #fff4f6; padding: 14px 18px; color: var(--red-900); font-size: .84rem; margin-bottom: 24px; }
+.registration-consents { padding-top: 20px; border-top: 1px solid var(--line); gap: 15px; }
+.consent-row { min-height: 44px; line-height: 1.75; font-size: .8rem; }
+.consent-row input { width: 21px; height: 21px; flex-basis: 21px; margin-top: 4px; }
+.full-button { margin-top: 0; }
+#my-availability .registration-card { max-width: 780px; }
+#my-availability .section-heading { margin-inline: auto; text-align: center; }
+#self-status:empty { display: none; }
+#self-form > button { width: 100%; }
+#delete-my-profile { background: #fff; border: 1px solid #ebcdd5; }
+.local-storage-note { line-height: 1.8; }
+/* Dashboards and contact information adapt to small screens, too. */
+.dashboard-hero { padding: 45px 0; background: #fff; }
+.dashboard-hero h2 { font-size: 2.4rem; }
+.dashboard-section { padding-top: 30px; }
+.stats-grid { gap: 12px; }
+.stats-grid article { padding: 18px; }
+.stats-grid span { text-transform: none; letter-spacing: 0; font-size: .83rem; }
+.stats-grid strong { font-size: 2rem; }
+.management-head h2 { font-size: 1.75rem; }
+.admin-filters { grid-template-columns: minmax(0, 1.4fr) repeat(2, minmax(0, .7fr)); }
+.row-actions button, .switch-button { min-height: 44px; font-size: .78rem; }
+.row-actions button { padding: 9px 12px; }
+.admin-table td { overflow-wrap: anywhere; }
+.edit-dialog { max-height: calc(100dvh - 36px); overscroll-behavior: contain; }
+.dialog-head h2 { font-size: 1.7rem; }
+.dialog-close { width: 44px; height: 44px; flex: 0 0 44px; }
+.contact-layout { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.contact-card { padding: 28px; min-width: 0; }
+.contact-card a, .contact-card strong { overflow-wrap: anywhere; }
+.contact-card h2 { font-size: 1.3rem; }
+.cta-card { border-radius: 22px; background: var(--red-900); }
+.cta-card h2 { font-size: 2rem; }
+.site-footer { padding-top: 50px; background: #fcf9f8; color: var(--ink-800); border-top: 1px solid var(--line); }
+.footer-grid { grid-template-columns: minmax(0, 1.25fr) minmax(0, .7fr) minmax(0, 1fr); gap: 50px; }
+.footer-brand { color: var(--red-900); }
+.site-footer p, .site-footer a:not(.brand) { color: var(--ink-600); font-size: .83rem; }
+.site-footer h2 { color: var(--ink-950); font-size: .9rem; }
+.footer-grid > div > a:not(.brand) { min-height: 40px; display: flex; align-items: center; }
+.footer-bottom { border-color: var(--line); padding-block: 20px; }
+.toast { bottom: max(18px, env(safe-area-inset-bottom)); max-width: calc(100% - 32px); }
+html[lang="ml"] body { line-height: 1.85; }
+html[lang="ml"] h1 { letter-spacing: -.015em; line-height: 1.42; font-size: clamp(2.2rem, 3.8vw, 3.7rem); }
+html[lang="ml"] h2 { letter-spacing: 0; line-height: 1.5; }
+html[lang="ml"] .eyebrow { letter-spacing: 0; }
+html[lang="ml"] .site-nav { font-size: .85rem; }
+@media (max-width: 1340px) {
+  .site-nav { display: none; position: absolute; order: unset; z-index: 101; top: calc(100% + 8px); left: 0; right: 0; width: auto; margin: 0; padding: 12px; background: #fff; border: 1px solid var(--line); border-radius: 14px; box-shadow: var(--shadow-lg); max-height: calc(100dvh - 105px); overflow-y: auto; }
+  .site-nav.is-open { display: grid; grid-template-columns: 1fr; }
+  .site-nav a { white-space: normal; font-size: .94rem; padding: 12px 14px; min-height: 48px; }
+  .site-nav .nav-cta { margin: 3px 0 0; }
+  .language-control { margin-left: auto; order: 2; }
+  .nav-toggle { display: block; order: 3; }
+  .hero-grid { gap: 30px; }
+  .register-grid { gap: 32px; }
+  .donor-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 900px) {
+  .hero-grid, .register-grid { grid-template-columns: minmax(0, 1fr); }
+  .hero-copy { text-align: left; }
+  .hero-text, .hero-note { margin-left: 0; }
+  .hero-actions { justify-content: flex-start; }
+  .hero-visual { max-width: 450px; margin: 15px auto 0; min-height: 360px; }
+  .hero-orbit-one { width: 290px; height: 290px; }
+  .hero-orbit-two { width: 236px; height: 236px; top: 27px; }
+  .hero-image-card { top: 15px; }
+  .hero-image-card img { width: 155px; height: 194px; }
+  .register-copy { position: static; }
+  .registration-intro .feature-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .registration-intro .privacy-card { max-width: 580px; }
+  .about-process .steps-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .stats-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .admin-filters { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .admin-filters .form-field:first-child { grid-column: 1 / -1; }
+  .contact-layout { grid-template-columns: minmax(0, 1fr); }
+  .footer-grid { gap: 30px; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); }
+  .footer-grid > div:first-child { grid-column: 1 / -1; }
+}
+@media (max-width: 600px) {
+  html { scroll-padding-top: 88px; }
+  .container { width: calc(100% - 36px); }
+  .nav-wrap { min-height: 70px; gap: 10px; }
+  .brand { font-size: 1.22rem; gap: 5px; }
+  .brand-mark { width: 29px; }
+  .brand-mark img { width: 25px; height: 32px; }
+  .language-control select { min-width: 94px; max-width: 115px; padding: 8px; font-size: .82rem; }
+  .service-notice { font-size: .71rem; text-align: left; padding: 10px 18px; }
+  .section { padding: 50px 0; }
+  h1 { font-size: clamp(2.3rem, 10vw, 3.2rem); line-height: 1.12; }
+  h2 { font-size: 1.85rem; }
+  .hero { padding: 40px 0 45px; }
+  .hero-text { font-size: .95rem; }
+  .hero-actions { display: grid; grid-template-columns: minmax(0, 1fr); gap: 10px; }
+  .hero-actions .button { width: 100%; }
+  .hero-visual { min-height: 295px; margin-top: 10px; }
+  .hero-orbit-one { width: 250px; height: 250px; }
+  .hero-orbit-two { width: 204px; height: 204px; top: 23px; }
+  .hero-image-card { inset: 20px 40px 55px; }
+  .hero-image-card img { width: 127px; height: 159px; }
+  .floating-card { min-width: 0; padding: 10px 11px; gap: 8px; }
+  .floating-card-top { top: 32px; left: 0; }
+  .floating-card-bottom { bottom: 62px; right: 0; }
+  .floating-card strong { font-size: .73rem; }
+  .floating-card small { font-size: .64rem; }
+  .mini-icon { width: 27px; height: 27px; flex-basis: 27px; }
+  .hero-visual-caption strong { font-size: .82rem; }
+  .hero-visual-caption span { font-size: .73rem; }
+  .eligibility-copy { text-align: left; }
+  .about-lead { font-size: .96rem; }
+  .donor-guidance { grid-template-columns: minmax(0, 1fr); gap: 12px; }
+  .donor-guidance li { padding: 18px; font-size: .86rem; }
+  .about-guidance-note { align-items: flex-start; flex-direction: column; gap: 14px; }
+  .about-guidance-note .text-link { flex: auto; }
+  .about-process { padding: 22px 18px; margin-top: 30px; }
+  .about-process .section-heading h2 { font-size: 1.35rem; }
+  .about-process .steps-grid { gap: 22px 16px; }
+  .search-panel { grid-template-columns: minmax(0, 1fr); padding: 20px; gap: 16px; }
+  .search-panel .form-field, .search-actions { grid-column: 1; }
+  .blood-group-links { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; max-width: 330px; }
+  .blood-group-links button { width: 100%; height: 46px; }
+  .map-panel { padding: 20px; }
+  #donor-map { height: 285px; }
+  .donor-grid { grid-template-columns: minmax(0, 1fr); }
+  .registration-card { padding: 20px; }
+  .form-grid { grid-template-columns: minmax(0, 1fr); }
+  .radio-row { flex-direction: row; align-items: stretch; }
+  .radio-row label { padding: 8px 10px; }
+  .registration-intro .feature-list { grid-template-columns: minmax(0, 1fr); gap: 10px; }
+  .registration-card .form-header { gap: 10px; }
+  .form-icon { width: 38px; height: 38px; flex-basis: 38px; border-radius: 10px; }
+  .availability-fields .full:has([data-gps]) .button { flex: 1 1 120px; padding: 10px; }
+  .consent-row { font-size: .79rem; }
+  .management-card { padding: 18px; }
+  .management-head { gap: 18px; }
+  .management-actions { width: 100%; display: grid; grid-template-columns: minmax(0, 1fr); }
+  .management-actions .button { width: 100%; }
+  .stats-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .stats-grid article { padding: 14px; }
+  .stats-grid span { font-size: .74rem; }
+  .stats-grid small { font-size: .7rem; }
+  .admin-filters { grid-template-columns: minmax(0, 1fr); }
+  .admin-filters .form-field:first-child { grid-column: 1; }
+  .admin-table td { grid-template-columns: minmax(70px, .35fr) minmax(0, 1fr); gap: 10px; }
+  .admin-table td::before { font-size: .72rem; text-transform: none; }
+  .row-actions { gap: 7px; }
+  .row-actions button { flex: 1 1 auto; font-size: .75rem; padding: 9px; }
+  .switch-button { max-width: 100%; min-width: 0; padding: 9px; font-size: .72rem; overflow-wrap: anywhere; }
+  .table-wrap { overflow: visible; }
+  .dialog-card { padding: 20px; }
+  .edit-dialog { width: calc(100% - 20px); max-height: calc(100dvh - 20px); border-radius: 16px; }
+  .dialog-actions { flex-direction: column-reverse; }
+  .dialog-actions .button { width: 100%; }
+  .cta-card { padding: 25px; gap: 20px; }
+  .cta-card h2 { font-size: 1.65rem; }
+  .cta-card .button { width: 100%; }
+  .footer-grid { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .footer-grid > div:first-child { grid-column: 1; }
+  .footer-bottom { align-items: flex-start; gap: 8px; }
+  .footer-bottom p { margin: 0; }
+  .page-hero { padding: 40px 0; }
+  .dashboard-hero { padding: 32px 0; }
+  .dashboard-hero h2 { font-size: 1.9rem; }
+  html[lang="ml"] h1 { font-size: clamp(2rem, 8.5vw, 2.7rem); }
+  html[lang="ml"] h2 { font-size: 1.7rem; }
+  html[lang="ml"] .floating-card { max-width: 175px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .button { transition: none; }
+}
+@font-face {font-family:"RedBlood Malayalam";font-style:normal;font-weight:400;font-display:swap;src:url("../fonts/noto-sans-malayalam-malayalam-400-normal.woff2") format("woff2");unicode-range:U+0D00-0D7F,U+200C-200D;}
+@font-face {font-family:"RedBlood Malayalam";font-style:normal;font-weight:600;font-display:swap;src:url("../fonts/noto-sans-malayalam-malayalam-600-normal.woff2") format("woff2");unicode-range:U+0D00-0D7F,U+200C-200D;}
+@font-face {font-family:"RedBlood Malayalam";font-style:normal;font-weight:700 900;font-display:swap;src:url("../fonts/noto-sans-malayalam-malayalam-700-normal.woff2") format("woff2");unicode-range:U+0D00-0D7F,U+200C-200D;}
+html[lang="ml"] body, html[lang="ml"] button, html[lang="ml"] input, html[lang="ml"] select,
+html[lang="ml"] h1, html[lang="ml"] h2, html[lang="ml"] h3,
+html[lang="ml"] a { font-family: "RedBlood Malayalam", system-ui, -apple-system, "Segoe UI", sans-serif; }
+.donor-record-summary{min-width:0}.donor-record-summary strong,.donor-record-summary small{overflow-wrap:anywhere}
+/* Longer, complete Malayalam labels need room in the desktop header. */
+.site-header .container { width: min(calc(100% - 48px), 1400px); }
+@media (max-width: 600px) { .site-header .container { width: calc(100% - 36px); } }
+/* Complete Malayalam location labels wrap on full-width touch controls. */
+@media (max-width: 600px) {
+  html[lang="ml"] .availability-fields .full:has([data-gps]) .button { flex-basis: 100%; }
+}

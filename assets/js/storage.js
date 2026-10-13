@@ -34,6 +34,20 @@
       location: cleanText(input.location, 120),
       sharePhone: Boolean(input.sharePhone),
       available: input.available !== false,
+      homePanchayat: cleanText(input.homePanchayat,120),
+      homeWard: cleanText(input.homeWard,60),
+      nearbyHospital: cleanText(input.nearbyHospital,160),
+      permanentAlappuzha: ['yes','no'].includes(input.permanentAlappuzha) ? input.permanentAlappuzha : '',
+      donorType: ['first','regular','occasional'].includes(input.donorType) ? input.donorType : '',
+      region: cleanText(input.region, 120),
+      ward: cleanText(input.ward, 60),
+      currentArea: cleanText(input.currentArea, 120),
+      availabilityUntil: input.availabilityUntil || '',
+      donationHistory: input.donationHistory || 'unknown',
+      lastDonationDate: input.lastDonationDate || '',
+      cooldownDays: Number(input.cooldownDays) || (input.sex === 'M' ? 90 : 120),
+      mapConsent: input.mapConsent === true,
+      mapPoint: input.mapConsent === true && input.mapPoint ? windowObject.RedBloodAvailability.point(input.mapPoint.lat, input.mapPoint.lng) : null,
       status: allowedStatuses.includes(input.status) ? input.status : "pending",
       createdAt: preserveId && input.createdAt ? input.createdAt : now,
       updatedAt: now
@@ -43,17 +57,24 @@
       donor.updatedAt = input.updatedAt;
     }
 
+    const rules = windowObject.RedBloodAvailability;
+    if(donor.donorType && donor.donationHistory !== (donor.donorType==='first'?'never':'dated')) throw Error('Donor type and donation history must agree. / ദാതാവിന്റെ തരവും ദാനചരിത്രവും പൊരുത്തപ്പെടണം.');
+    if (!['unknown', 'never', 'dated'].includes(donor.donationHistory)) throw Error('Choose a valid donation history.');
+    if (donor.donationHistory === 'dated' && (!rules.validDate(donor.lastDonationDate) || donor.lastDonationDate > rules.today())) throw Error('Enter a valid past donation date. / ഭാവിയിലല്ലാത്ത ശരിയായ രക്തദാന തീയതി നൽകുക.');
+    if (donor.donationHistory !== 'dated') donor.lastDonationDate = '';
+    if (!Number.isInteger(donor.cooldownDays) || donor.cooldownDays < (donor.sex === 'M' ? 90 : 120) || donor.cooldownDays > 730) throw Error('Waiting period must be at least 90 days for men or 120 days otherwise, and no more than 730 days.');
+    if (donor.availabilityUntil && !Number.isFinite(Date.parse(donor.availabilityUntil))) throw Error('Invalid availability expiry.');
     validateDonor(donor);
     return donor;
   }
 
   function validateDonor(donor) {
     if (donor.name.length < 2) {
-      throw new Error("The donor name must contain at least two characters.");
+      throw new Error("Enter a valid name. / ശരിയായ പേര് നൽകുക.");
     }
 
     if (!Number.isInteger(donor.age) || donor.age < 18 || donor.age > 65) {
-      throw new Error("The donor age must be between 18 and 65.");
+      throw new Error("Age must be 18–65. / പ്രായം 18–65 ആയിരിക്കണം.");
     }
 
     if (!allowedSexValues.includes(donor.sex)) {
@@ -65,16 +86,14 @@
     }
 
     if (donor.phone.length < 10 || donor.phone.length > 15) {
-      throw new Error("The mobile number must contain 10 to 15 digits.");
+      throw new Error("Phone must contain 10–15 digits. / ഫോണിൽ 10–15 അക്കങ്ങൾ വേണം.");
     }
 
     if (donor.location.length < 2) {
       throw new Error("The location must contain at least two characters.");
     }
 
-    if (!donor.sharePhone) {
-      throw new Error("Contact-sharing consent is required.");
-    }
+
   }
 
   function readDonors() {
@@ -98,7 +117,7 @@
     const donor = normaliseDonor(input);
 
     if (donors.some((item) => item.phone === donor.phone)) {
-      throw new Error("This mobile number is already registered.");
+      throw new Error("This mobile number is already registered. / ഈ മൊബൈൽ നമ്പർ രജിസ്റ്റർ ചെയ്തിട്ടുണ്ട്.");
     }
 
     donors.push(donor);
@@ -159,6 +178,7 @@
     }
 
     const donors = value.map((donor) => normaliseDonor(donor, true));
+    if (new Set(donors.map(d => d.id)).size !== donors.length) throw Error('The backup contains duplicate record IDs.');
     const uniquePhones = new Set(donors.map((donor) => donor.phone));
 
     if (uniquePhones.size !== donors.length) {
@@ -221,7 +241,10 @@
 
     const newDonors = demoDonors
       .filter((donor) => !existingPhones.has(donor.phone))
-      .map((donor) => normaliseDonor(donor));
+      .map((donor) => normaliseDonor({...donor, homePanchayat:'Demo panchayat',homeWard:'1',permanentAlappuzha:'yes',donorType:'first',region: donor.location, currentArea: donor.location,
+        ward: 'Demo ward', donationHistory: 'never',
+        availabilityUntil: new Date(Date.now() + 86400000).toISOString(),
+        mapConsent: true, mapPoint: donor.location === 'Alappuzha' ? {lat:9.50,lng:76.34} : donor.location === 'Kochi' ? {lat:9.96,lng:76.28} : null}));
 
     writeDonors([...existingDonors, ...newDonors]);
     return newDonors.length;

@@ -2020,3 +2020,38 @@ fieldset.form-field {
     animation-iteration-count: 1 !important;
   }
 }
+
+/* Region and availability pilot */
+.service-notice{background:#fff3cd;color:#614600;padding:14px 5%;font-size:.9rem;text-align:center;border-bottom:1px solid #eddda4}
+.availability-fields{border:1px solid #e7dadd;border-radius:14px;padding:20px;margin:24px 0;min-width:0}
+.availability-fields legend{font-weight:700;padding:0 8px;color:#9c1930}
+.availability-fields .form-grid{gap:16px}
+.field-hint,.availability-fields small{font-size:.82rem;color:#615761;line-height:1.6}
+.map-panel{padding:24px;border:1px solid #e8dce0;border-radius:18px;background:#fff;margin:24px 0}
+.map-panel p{margin:10px 0;color:#665b62}
+#donor-map{height:380px;border-radius:12px;margin-top:16px;z-index:0}
+.region-counts{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.region-counts span{background:#fff0f2;border-radius:8px;padding:8px 12px;font-size:.85rem}
+.search-panel{flex-wrap:wrap}
+.search-panel .form-field{min-width:150px;flex:1}
+#my-availability .registration-card{max-width:900px;margin:auto}
+#self-donor{width:100%;padding:12px;border:1px solid #d7cdd1;border-radius:8px;margin:10px 0}
+#self-status{margin:12px 0;font-weight:600;color:#9c1930}
+.available-badge{white-space:normal}
+.edit-dialog{max-height:90vh;overflow:auto}
+@media(max-width:600px){.availability-fields{padding:12px}.map-panel{padding:16px}#donor-map{height:300px}.search-panel .form-field{width:100%;min-width:0;flex-basis:100%}}
+.search-panel{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+.search-panel .form-field,.search-panel .form-field:first-child,.search-panel .grow{grid-column:auto;min-width:0}
+.search-panel .search-button{grid-column:auto}
+@media(max-width:600px){.search-panel{grid-template-columns:minmax(0,1fr)}.search-panel .form-field,.search-panel .search-button{grid-column:1}}
+.truth-notice{background:#fff1f2;border-left:4px solid #b5122b;padding:18px;border-radius:10px;margin-bottom:24px;line-height:1.8}
+.truth-notice p{margin-top:8px}.donor-guidance{padding-left:22px;line-height:1.9}.donor-guidance li{margin:14px 0}
+#self-form>.consent-row{margin:18px 0}#delete-my-profile{margin-top:20px}
+.site-nav{flex-wrap:wrap;font-size:.85rem}.site-header .nav-wrap{align-items:center}
+.availability-fields label,.form-field label{line-height:1.8}
+.language-control{flex-shrink:0;margin-left:12px}.language-control select{border:1px solid #d8cdd1;border-radius:8px;background:#fff;color:#74152a;padding:9px 12px;font:inherit;min-width:118px}
+html[lang="ml"] body{line-height:1.85}html[lang="ml"] .site-nav{font-size:.85rem}html[lang="ml"] h1{line-height:1.5}
+@media(max-width:700px){.language-control{margin-left:0}.language-control select{min-width:100px;padding:8px}.nav-wrap{flex-wrap:wrap}.site-nav{order:5;width:100%}}
+.about-process{margin-top:48px;padding:36px;border-radius:20px}.about-process .steps-grid{margin-top:24px}
+.registration-consents{display:grid;gap:14px;margin:20px 0}.registration-consents .consent-row{margin:0!important}
+.hospital-context{border-left:3px solid #b5122b;padding:12px 16px;background:#fff4f5;border-radius:8px;margin:16px 0}

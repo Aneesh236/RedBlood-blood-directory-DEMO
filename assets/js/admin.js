@@ -11,6 +11,7 @@ const editDialog = document.querySelector("[data-edit-dialog]");
 const editForm = document.querySelector("[data-edit-form]");
 const editError = document.querySelector("[data-edit-error]");
 const toast = document.querySelector("[data-toast]");
+if(!donorTable) return;
 
 function escapeHtml(value) {
   return String(value)
@@ -36,7 +37,7 @@ function updateStatistics(donors) {
   const values = {
     total: donors.length,
     approved: donors.filter((donor) => donor.status === "approved").length,
-    available: donors.filter((donor) => donor.status === "approved" && donor.available).length,
+    available: donors.filter((donor) => store && window.RedBloodAvailability.matches(donor)).length,
     pending: donors.filter((donor) => donor.status === "pending").length
   };
 
@@ -52,7 +53,7 @@ function getFilteredDonors(donors) {
   const term = searchInput.value.trim().toLowerCase();
 
   return donors
-    .filter((donor) => !term || [donor.name, donor.phone, donor.location]
+    .filter((donor) => !term || [donor.name, donor.phone, donor.location, donor.currentArea || "", donor.region || "", donor.ward || ""]
       .some((value) => value.toLowerCase().includes(term)))
     .filter((donor) => !bloodFilter.value || donor.bloodGroup === bloodFilter.value)
     .filter((donor) => !statusFilter.value || donor.status === statusFilter.value)
@@ -70,28 +71,28 @@ function renderDashboard() {
   donorTable.innerHTML = filteredDonors.map((donor) => `
     <tr>
       <td data-label="Donor">
-        <strong>${escapeHtml(donor.name)}</strong>
-        <small>${escapeHtml(donor.location)} · Age ${escapeHtml(donor.age)}</small>
+        <div class="donor-record-summary"><strong data-user-content>${escapeHtml(donor.name)}</strong>
+        <small><span data-user-content>${escapeHtml(donor.location)}</span> · <span>Age</span> ${escapeHtml(donor.age)}</small><small><span data-user-content>${escapeHtml(donor.homePanchayat || "—")}</span> · <span>Ward</span> <span data-user-content>${escapeHtml(donor.homeWard || "—")}</span></small></div>
       </td>
       <td data-label="Blood"><span class="table-blood">${escapeHtml(donor.bloodGroup)}</span></td>
       <td data-label="Contact">
-        <a href="tel:${escapeHtml(donor.phone)}">${escapeHtml(donor.phone)}</a>
-        <small>${escapeHtml({ M: "Male", F: "Female", O: "Other" }[donor.sex] || "Other")}</small>
+        <div class="donor-record-summary"><a href="tel:${escapeHtml(donor.phone)}">${escapeHtml(donor.phone)}</a>
+        <small>${escapeHtml({ M: "Male", F: "Female", O: "Other" }[donor.sex] || "Other")}</small></div>
       </td>
       <td data-label="Status">
         <span class="status-pill status-${escapeHtml(donor.status)}">${escapeHtml(statusLabel(donor.status))}</span>
       </td>
       <td data-label="Availability">
         <button class="switch-button ${donor.available ? "is-on" : ""}" type="button" data-action="availability" data-id="${escapeHtml(donor.id)}" aria-pressed="${donor.available}">
-          ${donor.available ? "Available" : "Unavailable"}
+          ${escapeHtml(window.RedBloodAvailability.state(donor).label)}
         </button>
       </td>
       <td data-label="Actions">
         <div class="row-actions">
-          ${donor.status !== "approved" ? `<button type="button" data-action="approve" data-id="${escapeHtml(donor.id)}">Approve</button>` : ""}
-          ${donor.status !== "rejected" ? `<button type="button" data-action="reject" data-id="${escapeHtml(donor.id)}">Reject</button>` : ""}
-          <button type="button" data-action="edit" data-id="${escapeHtml(donor.id)}">Edit</button>
-          <button class="danger-link" type="button" data-action="delete" data-id="${escapeHtml(donor.id)}">Delete</button>
+          ${donor.status !== "approved" ? `<button type="button" data-action="approve" data-id="${escapeHtml(donor.id)}">Approve / അംഗീകരിക്കുക</button>` : ""}
+          ${donor.status !== "rejected" ? `<button type="button" data-action="reject" data-id="${escapeHtml(donor.id)}">Reject / നിരസിക്കുക</button>` : ""}
+          <button type="button" data-action="edit" data-id="${escapeHtml(donor.id)}">Edit / തിരുത്തുക</button>
+          <button class="danger-link" type="button" data-action="delete" data-id="${escapeHtml(donor.id)}">Delete / നീക്കുക</button>
         </div>
       </td>
     </tr>
@@ -113,7 +114,8 @@ function openEditDialog(id) {
   editForm.elements.sex.value = donor.sex;
   editForm.elements.bloodGroup.value = donor.bloodGroup;
   editForm.elements.phone.value = donor.phone;
-  editForm.elements.location.value = donor.location;
+
+  window.RedBloodFeatures.fillFields(editForm, donor);
   editDialog.showModal();
 }
 
@@ -164,7 +166,8 @@ editForm.addEventListener("submit", (event) => {
       sex: formData.get("sex"),
       bloodGroup: formData.get("bloodGroup"),
       phone: formData.get("phone"),
-      location: formData.get("location")
+
+      ...window.RedBloodFeatures.readFields(editForm)
     });
     editDialog.close();
     showToast("Donor details updated.");
@@ -181,7 +184,7 @@ document.querySelectorAll("[data-dialog-cancel]").forEach((button) => {
   element.addEventListener("input", renderDashboard);
 });
 
-document.querySelector("[data-load-demo]").addEventListener("click", () => {
+document.querySelector("[data-load-demo]")?.addEventListener("click", () => {
   const added = store.loadDemoDonors();
   showToast(added ? `${added} demonstration donors added.` : "Demo donors are already loaded.");
 });
@@ -234,5 +237,6 @@ document.querySelector("[data-clear]").addEventListener("click", () => {
 });
 
 window.addEventListener("redgold:donors-changed", renderDashboard);
+window.setInterval(renderDashboard, 60000);
 renderDashboard();
 }());

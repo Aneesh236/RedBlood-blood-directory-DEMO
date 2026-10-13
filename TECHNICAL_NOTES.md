@@ -118,3 +118,11 @@ normalization preserves consistent Malayalam text. Longer wording wraps naturall
 on labels and consent rows; native dropdowns use concise contextual answers.
 Malayalam copy and dropdown widths were checked in Chromium at 320–1440 px.
 Clinical quantities, donor-entered information and donation logic were preserved.
+
+Nearby hospital field: new registrations prefill “TD Medical College, Vandanam”.
+The value is editable and stored as `nearbyHospital`, with a 160-character limit.
+Profile and administrator editing, JSON backups and restore retain this field.
+Existing records are not assigned a hospital silently; a missing legacy value
+may be shown with the editable default when its form is opened. This field does
+not alter blood-group matching or the hospital context field in search.
+The two decorative hero cards have been removed.

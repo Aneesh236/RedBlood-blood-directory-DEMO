@@ -77,3 +77,5 @@ HTTP does not enable it. Data still belongs to each browser until a shared backe
 is added.
 
 Malayalam wording has been reviewed for complete meaning, with clearer donor-history answers and phone-number/location consent. Labels and explanations wrap on mobile; dropdown choices remain readable on narrow screens.
+
+Registration now includes an editable “Nearby hospital with blood bank” field, prefilled with **TD Medical College, Vandanam**. The same field is available when editing a donor profile.

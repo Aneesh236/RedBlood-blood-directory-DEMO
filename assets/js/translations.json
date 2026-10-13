@@ -1,0 +1,1774 @@
+{
+  "Home / മുഖപ്പേജ്": {
+    "en": "Home",
+    "ml": "മുഖപ്പേജ്"
+  },
+  "Find donors / ദാതാക്കളെ കണ്ടെത്തുക": {
+    "en": "Find donors",
+    "ml": "രക്തദാതാക്കളെ കണ്ടെത്തുക"
+  },
+  "Register / രജിസ്റ്റർ ചെയ്യുക": {
+    "en": "Register",
+    "ml": "രജിസ്റ്റർ ചെയ്യുക"
+  },
+  "About / വിവരങ്ങൾ": {
+    "en": "About",
+    "ml": "ഞങ്ങളെക്കുറിച്ച്"
+  },
+  "Administration / അഡ്മിനിസ്ട്രേഷൻ": {
+    "en": "Administration",
+    "ml": "അഡ്മിൻ നിയന്ത്രണം"
+  },
+  "Contact / ബന്ധപ്പെടുക": {
+    "en": "Contact",
+    "ml": "ബന്ധപ്പെടുക"
+  },
+  "Home town / താമസസ്ഥലം": {
+    "en": "Home town",
+    "ml": "താമസസ്ഥലം"
+  },
+  "Correct information can save a life. Never submit false details.": {
+    "en": "Correct information can save a life. Never submit false details.",
+    "ml": "ശരിയായ വിവരങ്ങൾ ഒരു ജീവൻ രക്ഷിക്കാൻ സഹായിക്കും. തെറ്റായ വിവരങ്ങൾ ഒരിക്കലും നൽകരുത്."
+  },
+  "Healthy adults can volunteer. Registration does not confirm medical eligibility; the blood bank screens every donor.": {
+    "en": "Healthy adults can volunteer. Registration does not confirm medical eligibility; the blood bank screens every donor.",
+    "ml": "ആരോഗ്യമുള്ള മുതിർന്നവർക്ക് രക്തദാതാക്കളായി സന്നദ്ധരാകാം. രജിസ്റ്റർ ചെയ്തതുകൊണ്ട് മാത്രം രക്തദാനത്തിന് യോഗ്യത ഉറപ്പാകില്ല. രക്തബാങ്ക് ഓരോ ദാതാവിനെയും പരിശോധിക്കും."
+  },
+  "My dashboard / എന്റെ വിവരങ്ങൾ": {
+    "en": "My dashboard",
+    "ml": "എന്റെ വിവരങ്ങൾ"
+  },
+  "Donor guidance / രക്തദാന വിവരങ്ങൾ": {
+    "en": "Donor guidance",
+    "ml": "രക്തദാന മാർഗനിർദേശങ്ങൾ"
+  },
+  "Become a donor / ദാതാവാകുക": {
+    "en": "Become a donor",
+    "ml": "രക്തദാതാവാകുക"
+  },
+  "Blood group / രക്തഗ്രൂപ്പ്": {
+    "en": "Blood group",
+    "ml": "രക്തഗ്രൂപ്പ്"
+  },
+  "Choose / തിരഞ്ഞെടുക്കുക": {
+    "en": "Choose",
+    "ml": "തിരഞ്ഞെടുക്കുക"
+  },
+  "Region / panchayat / പഞ്ചായത്ത്": {
+    "en": "Region / panchayat",
+    "ml": "പഞ്ചായത്ത്"
+  },
+  "Ward / വാർഡ്": {
+    "en": "Ward",
+    "ml": "വാർഡ്"
+  },
+  "Search donors / ദാതാക്കളെ തിരയുക": {
+    "en": "Search donors",
+    "ml": "രക്തദാതാക്കളെ തിരയുക"
+  },
+  "Donors by area / പ്രദേശത്തെ ദാതാക്കൾ": {
+    "en": "Donors by area",
+    "ml": "പ്രദേശത്തെ രക്തദാതാക്കൾ"
+  },
+  "Load map / മാപ്പ് തുറക്കുക": {
+    "en": "Load map",
+    "ml": "മാപ്പ് തുറക്കുക"
+  },
+  "Donor registration / ദാതൃ രജിസ്ട്രേഷൻ": {
+    "en": "Donor registration",
+    "ml": "രക്തദാതൃ രജിസ്ട്രേഷൻ"
+  },
+  "Fields marked * are required. / * അടയാളമുള്ളവ നിർബന്ധമാണ്.": {
+    "en": "Fields marked * are required.",
+    "ml": "* അടയാളമുള്ളവ നിർബന്ധമാണ്."
+  },
+  "Full name / മുഴുവൻ പേര് *": {
+    "en": "Full name *",
+    "ml": "മുഴുവൻ പേര് *"
+  },
+  "Age / പ്രായം *": {
+    "en": "Age *",
+    "ml": "പ്രായം *"
+  },
+  "Gender / ലിംഗം *": {
+    "en": "Gender *",
+    "ml": "ലിംഗം *"
+  },
+  "Male / പുരുഷൻ": {
+    "en": "Male",
+    "ml": "പുരുഷൻ"
+  },
+  "Female / സ്ത്രീ": {
+    "en": "Female",
+    "ml": "സ്ത്രീ"
+  },
+  "Other / മറ്റുള്ളവ": {
+    "en": "Other",
+    "ml": "മറ്റുള്ളവ"
+  },
+  "Blood group / രക്തഗ്രൂപ്പ് *": {
+    "en": "Blood group *",
+    "ml": "രക്തഗ്രൂപ്പ് *"
+  },
+  "Mobile number / മൊബൈൽ നമ്പർ *": {
+    "en": "Mobile number *",
+    "ml": "മൊബൈൽ നമ്പർ *"
+  },
+  "Home town / താമസസ്ഥലം *": {
+    "en": "Home town *",
+    "ml": "താമസസ്ഥലം *"
+  },
+  "Allow my name, blood group, area and phone in donor search (optional). / തിരച്ചിലിൽ എന്റെ പേര്, രക്തഗ്രൂപ്പ്, സ്ഥലം, ഫോൺ എന്നിവ കാണിക്കാൻ സമ്മതിക്കുന്നു (നിർബന്ധമില്ല).": {
+    "en": "Allow my name, blood group, area and phone in donor search (optional).",
+    "ml": "ദാതാക്കളെ തിരയുന്നവർക്ക് എന്റെ പേര്, രക്തഗ്രൂപ്പ്, പ്രദേശം, ഫോൺ നമ്പർ എന്നിവ കാണിക്കാൻ ഞാൻ സമ്മതിക്കുന്നു. ഈ സമ്മതം നൽകുന്നത് നിർബന്ധമല്ല."
+  },
+  "I confirm my details are accurate. / ഞാൻ നൽകിയ വിവരങ്ങൾ ശരിയാണെന്ന് സ്ഥിരീകരിക്കുന്നു.": {
+    "en": "I confirm my details are accurate.",
+    "ml": "ഞാൻ നൽകിയ എല്ലാ വിവരങ്ങളും ശരിയാണെന്ന് സ്ഥിരീകരിക്കുന്നു."
+  },
+  "Register donor / ദാതാവിനെ രജിസ്റ്റർ ചെയ്യുക": {
+    "en": "Register donor",
+    "ml": "ദാതാവിനെ രജിസ്റ്റർ ചെയ്യുക"
+  },
+  "Know before you donate / ദാനം ചെയ്യുന്നതിന് മുമ്പ് അറിയുക": {
+    "en": "Know before you donate",
+    "ml": "രക്തദാനം ചെയ്യുന്നതിന് മുമ്പ് അറിയേണ്ടത്"
+  },
+  "Who can donate? / ആർക്കെല്ലാം രക്തം ദാനം ചെയ്യാം?": {
+    "en": "Who can donate?",
+    "ml": "ആർക്കെല്ലാം രക്തദാനം ചെയ്യാം?"
+  },
+  "Age / പ്രായം:": {
+    "en": "Age",
+    "ml": "പ്രായം:"
+  },
+  "Generally 18–65; first-time donors should not be over 60. / സാധാരണയായി 18–65; ആദ്യമായി ദാനം ചെയ്യുന്നവർക്ക് 60 വയസ്സിൽ കൂടരുത്.": {
+    "en": "Generally 18–65; first-time donors should not be over 60.",
+    "ml": "സാധാരണയായി 18 മുതൽ 65 വയസ്സ് വരെ. ആദ്യമായി രക്തദാനം ചെയ്യുന്നവർക്ക് 60 വയസ്സിൽ കൂടരുത്."
+  },
+  "Weight / ഭാരം:": {
+    "en": "Weight",
+    "ml": "ഭാരം:"
+  },
+  "At least 45 kg for 350 ml; over 55 kg for 450 ml. Staff decide the suitable collection volume. / 350 മില്ലിക്ക് കുറഞ്ഞത് 45 കിലോ; 450 മില്ലിക്ക് 55 കിലോയിൽ കൂടുതൽ. അളവ് ആരോഗ്യപ്രവർത്തകർ തീരുമാനിക്കും.": {
+    "en": "At least 45 kg for 350 ml; over 55 kg for 450 ml. Staff decide the suitable collection volume.",
+    "ml": "350 മില്ലിലിറ്റർ രക്തം ദാനം ചെയ്യാൻ കുറഞ്ഞത് 45 കിലോഗ്രാം ഭാരം വേണം. 450 മില്ലിലിറ്ററിന് 55 കിലോഗ്രാമിൽ കൂടുതൽ വേണം. എത്ര രക്തം ശേഖരിക്കാമെന്ന് ആരോഗ്യപ്രവർത്തകർ തീരുമാനിക്കും."
+  },
+  "Whole-blood interval / സമ്പൂർണ രക്തദാന ഇടവേള:": {
+    "en": "Whole-blood interval",
+    "ml": "സമ്പൂർണ രക്തദാനങ്ങൾക്കിടയിലെ ഇടവേള"
+  },
+  "Men: at least 90 days. Women: at least 120 days. / പുരുഷന്മാർ: കുറഞ്ഞത് 90 ദിവസം. സ്ത്രീകൾ: കുറഞ്ഞത് 120 ദിവസം.": {
+    "en": "Men: at least 90 days. Women: at least 120 days.",
+    "ml": "പുരുഷന്മാർക്ക് കുറഞ്ഞത് 90 ദിവസവും സ്ത്രീകൾക്ക് കുറഞ്ഞത് 120 ദിവസവും ഇടവേള വേണം."
+  },
+  "Health screening / ആരോഗ്യ പരിശോധന:": {
+    "en": "Health screening",
+    "ml": "ആരോഗ്യപരിശോധന"
+  },
+  "Tell staff about illness, medicines, pregnancy, recent surgery, tattoos and previous donations. Other waiting periods may apply. / അസുഖം, മരുന്നുകൾ, ഗർഭാവസ്ഥ, സമീപകാല ശസ്ത്രക്രിയ, ടാറ്റൂ, മുൻ രക്തദാനം എന്നിവ ജീവനക്കാരെ അറിയിക്കുക. കൂടുതൽ കാത്തിരിപ്പ് ആവശ്യമായേക്കാം.": {
+    "en": "Tell staff about illness, medicines, pregnancy, recent surgery, tattoos and previous donations. Other waiting periods may apply.",
+    "ml": "അസുഖങ്ങൾ, കഴിക്കുന്ന മരുന്നുകൾ, ഗർഭാവസ്ഥ, സമീപകാല ശസ്ത്രക്രിയകൾ, ടാറ്റൂ, മുൻ രക്തദാനങ്ങൾ എന്നിവ ആരോഗ്യപ്രവർത്തകരെ അറിയിക്കുക. ഇവയെ ആശ്രയിച്ച് കൂടുതൽ ഇടവേള ആവശ്യമായേക്കാം."
+  },
+  "This app records whole-blood waiting periods only. A completed interval is not medical clearance. / ഈ ആപ്പ് സമ്പൂർണ രക്തദാനത്തിന്റെ ഇടവേള മാത്രമാണ് കണക്കാക്കുന്നത്. ഇടവേള പൂർത്തിയായാലും വൈദ്യപരിശോധന ആവശ്യമാണ്.": {
+    "en": "This app records whole-blood waiting periods only. A completed interval is not medical clearance.",
+    "ml": "ഈ ആപ്പ് സമ്പൂർണ രക്തദാനങ്ങൾക്കിടയിലെ ഇടവേള മാത്രമാണ് കണക്കാക്കുന്നത്. ഇടവേള പൂർത്തിയായതുകൊണ്ട് മാത്രം രക്തദാനത്തിനുള്ള വൈദ്യാനുമതി ലഭിക്കില്ല."
+  },
+  "Official donor guidance / ഔദ്യോഗിക മാർഗനിർദേശങ്ങൾ ↗": {
+    "en": "Official donor guidance ↗",
+    "ml": "ഔദ്യോഗിക രക്തദാന മാർഗനിർദേശങ്ങൾ ↗"
+  },
+  "Search / തിരയുക": {
+    "en": "Search",
+    "ml": "തിരയുക"
+  },
+  "RedBlood | Admin dashboard / അഡ്മിൻ ഡാഷ്ബോർഡ്": {
+    "en": "RedBlood | Admin dashboard",
+    "ml": "റെഡ്ബ്ലഡ് | അഡ്മിൻ നിയന്ത്രണപ്പേജ്"
+  },
+  "Admin dashboard / അഡ്മിൻ ഡാഷ്ബോർഡ്": {
+    "en": "Admin dashboard",
+    "ml": "അഡ്മിൻ നിയന്ത്രണപ്പേജ്"
+  },
+  "Total donors / ആകെ ദാതാക്കൾ": {
+    "en": "Total donors",
+    "ml": "ആകെ ദാതാക്കൾ"
+  },
+  "Approved / അംഗീകരിച്ചു": {
+    "en": "Approved",
+    "ml": "അംഗീകരിച്ചു"
+  },
+  "Available / ലഭ്യമാണ്": {
+    "en": "Available",
+    "ml": "ലഭ്യമാണ്"
+  },
+  "Pending / അനുമതി കാത്തിരിക്കുന്നു": {
+    "en": "Pending",
+    "ml": "പരിശോധന ബാക്കി"
+  },
+  "Manage donors / ദാതാക്കളെ നിയന്ത്രിക്കുക": {
+    "en": "Manage donors",
+    "ml": "രക്തദാതാക്കളുടെ വിവരങ്ങൾ നിയന്ത്രിക്കുക"
+  },
+  "Export backup / പകർപ്പ് എടുക്കുക": {
+    "en": "Export backup",
+    "ml": "വിവരങ്ങളുടെ പകർപ്പ് എടുക്കുക"
+  },
+  "Import backup / പകർപ്പ് ചേർക്കുക": {
+    "en": "Import backup",
+    "ml": "വിവരങ്ങളുടെ പകർപ്പ് ചേർക്കുക"
+  },
+  "Clear all / എല്ലാം നീക്കം ചെയ്യുക": {
+    "en": "Clear all",
+    "ml": "എല്ലാം നീക്കം ചെയ്യുക"
+  },
+  "All groups / എല്ലാ ഗ്രൂപ്പുകളും": {
+    "en": "All groups",
+    "ml": "എല്ലാ ഗ്രൂപ്പുകളും"
+  },
+  "All statuses / എല്ലാ നിലകളും": {
+    "en": "All statuses",
+    "ml": "എല്ലാ രജിസ്ട്രേഷൻ നിലകളും"
+  },
+  "Rejected / നിരസിച്ചു": {
+    "en": "Rejected",
+    "ml": "നിരസിച്ചു"
+  },
+  "Update donor / വിവരങ്ങൾ തിരുത്തുക": {
+    "en": "Update donor",
+    "ml": "ദാതാവിന്റെ വിവരങ്ങൾ പുതുക്കുക"
+  },
+  "Full name / മുഴുവൻ പേര്": {
+    "en": "Full name",
+    "ml": "മുഴുവൻ പേര്"
+  },
+  "Age / പ്രായം": {
+    "en": "Age",
+    "ml": "പ്രായം"
+  },
+  "Gender / ലിംഗം": {
+    "en": "Gender",
+    "ml": "ലിംഗം"
+  },
+  "Mobile number / മൊബൈൽ നമ്പർ": {
+    "en": "Mobile number",
+    "ml": "മൊബൈൽ നമ്പർ"
+  },
+  "Cancel / റദ്ദാക്കുക": {
+    "en": "Cancel",
+    "ml": "റദ്ദാക്കുക"
+  },
+  "Save changes / മാറ്റങ്ങൾ സംരക്ഷിക്കുക": {
+    "en": "Save changes",
+    "ml": "മാറ്റങ്ങൾ സംരക്ഷിക്കുക"
+  },
+  "RedBlood | My dashboard / എന്റെ വിവരങ്ങൾ": {
+    "en": "RedBlood | My dashboard",
+    "ml": "റെഡ്ബ്ലഡ് | എന്റെ രജിസ്ട്രേഷൻ വിവരങ്ങൾ"
+  },
+  "Donor profile / ദാതാവിന്റെ വിവരങ്ങൾ": {
+    "en": "Donor profile",
+    "ml": "രക്തദാതാവിന്റെ വിവരങ്ങൾ"
+  },
+  "My donor dashboard / എന്റെ ദാതൃ ഡാഷ്ബോർഡ്": {
+    "en": "My donor dashboard",
+    "ml": "എന്റെ രജിസ്ട്രേഷൻ വിവരങ്ങൾ"
+  },
+  "Select donor profile / ദാതാവിന്റെ പ്രൊഫൈൽ തിരഞ്ഞെടുക്കുക": {
+    "en": "Select donor profile",
+    "ml": "ദാതാവിന്റെ രജിസ്ട്രേഷൻ തിരഞ്ഞെടുക്കുക"
+  },
+  "Save my details / വിവരങ്ങൾ സംരക്ഷിക്കുക": {
+    "en": "Save my details",
+    "ml": "എന്റെ വിവരങ്ങൾ സംരക്ഷിക്കുക"
+  },
+  "Allow contact details in donor search / തിരച്ചിലിൽ ബന്ധപ്പെടാനുള്ള വിവരങ്ങൾ കാണിക്കാൻ സമ്മതിക്കുന്നു": {
+    "en": "Allow contact details in donor search",
+    "ml": "ദാതാക്കളെ തിരയുന്നവർക്ക് എന്നെ ബന്ധപ്പെടാനുള്ള വിവരങ്ങൾ കാണിക്കാൻ ഞാൻ സമ്മതിക്കുന്നു."
+  },
+  "I confirm these details are correct. / ഈ വിവരങ്ങൾ ശരിയാണെന്ന് ഞാൻ സ്ഥിരീകരിക്കുന്നു.": {
+    "en": "I confirm these details are correct.",
+    "ml": "ഈ വിവരങ്ങൾ ശരിയാണെന്ന് ഞാൻ സ്ഥിരീകരിക്കുന്നു."
+  },
+  "Delete my profile / എന്റെ വിവരങ്ങൾ നീക്കം ചെയ്യുക": {
+    "en": "Delete my profile",
+    "ml": "എന്റെ രജിസ്ട്രേഷൻ നീക്കം ചെയ്യുക"
+  },
+  "Blood-bank review needed / രക്തബാങ്കിന്റെ പരിശോധന ആവശ്യമാണ്": {
+    "en": "Blood-bank review needed",
+    "ml": "രക്തബാങ്കിന്റെ പരിശോധന ആവശ്യമാണ്"
+  },
+  "Donation history needed / ദാനചരിത്രം ആവശ്യമാണ്": {
+    "en": "Donation history needed",
+    "ml": "മുൻ രക്തദാനത്തിന്റെ വിവരങ്ങൾ ആവശ്യമാണ്"
+  },
+  "Check donation date / ദാന തീയതി പരിശോധിക്കുക": {
+    "en": "Check donation date",
+    "ml": "അവസാന രക്തദാന തീയതി പരിശോധിക്കുക"
+  },
+  "Waiting until / കാത്തിരിപ്പ്:": {
+    "en": "Waiting until",
+    "ml": "കാത്തിരിപ്പ്:"
+  },
+  "Unavailable / ലഭ്യമല്ല": {
+    "en": "Unavailable",
+    "ml": "ലഭ്യമല്ല"
+  },
+  "Current area needed / ഇപ്പോഴുള്ള സ്ഥലം ആവശ്യമാണ്": {
+    "en": "Current area needed",
+    "ml": "ഇപ്പോഴുള്ള സ്ഥലം ആവശ്യമാണ്"
+  },
+  "Availability expired / ലഭ്യതയുടെ സമയം അവസാനിച്ചു": {
+    "en": "Availability expired",
+    "ml": "ലഭ്യതയുടെ സമയം അവസാനിച്ചു"
+  },
+  "Available for screening / പരിശോധനയ്ക്ക് സന്നദ്ധം": {
+    "en": "Available for screening",
+    "ml": "രക്തദാനത്തിന് മുമ്പുള്ള പരിശോധനയ്ക്ക് സന്നദ്ധം"
+  },
+  "Allow map sharing first. / ആദ്യം മാപ്പിൽ സ്ഥലം പങ്കിടാൻ സമ്മതിക്കുക.": {
+    "en": "Allow map sharing first.",
+    "ml": "ആദ്യം താഴെയുള്ള മാപ്പിൽ സ്ഥലം കാണിക്കാനുള്ള സമ്മതം തിരഞ്ഞെടുക്കുക."
+  },
+  "Waiting for permission… / അനുമതിക്കായി കാത്തിരിക്കുന്നു…": {
+    "en": "Waiting for permission…",
+    "ml": "സ്ഥലം കണ്ടെത്താനുള്ള അനുമതിക്കായി കാത്തിരിക്കുന്നു…"
+  },
+  "Location added. Save your details. / സ്ഥലം കണ്ടെത്തി. വിവരങ്ങൾ സംരക്ഷിക്കുക.": {
+    "en": "Location added. Save your details.",
+    "ml": "നിങ്ങളുടെ സ്ഥലം കണ്ടെത്തി. വിവരങ്ങൾ സംരക്ഷിക്കുക."
+  },
+  "Location unavailable. Enter your area name. / സ്ഥലം കണ്ടെത്താനായില്ല. സ്ഥലത്തിന്റെ പേര് നൽകുക.": {
+    "en": "Location unavailable. Enter your area name.",
+    "ml": "നിങ്ങളുടെ സ്ഥലം കണ്ടെത്താനായില്ല. പഞ്ചായത്തിന്റെ പേര് നൽകുക."
+  },
+  "Choose a new availability period. / ലഭ്യതയ്ക്കായി പുതിയ സമയം തിരഞ്ഞെടുക്കുക.": {
+    "en": "Choose a new availability period.",
+    "ml": "ലഭ്യതയ്ക്കായി പുതിയ സമയം തിരഞ്ഞെടുക്കുക."
+  },
+  "Enter your current panchayat and area. / ഇപ്പോഴുള്ള പഞ്ചായത്തും സ്ഥലവും നൽകുക.": {
+    "en": "Enter your current panchayat and area.",
+    "ml": "ഇപ്പോഴുള്ള പഞ്ചായത്തും സ്ഥലവും നൽകുക."
+  },
+  "Complete panchayat, ward, residency and donor type. / പഞ്ചായത്ത്, വാർഡ്, താമസം, ദാതാവിന്റെ തരം എന്നിവ പൂരിപ്പിക്കുക.": {
+    "en": "Complete panchayat, ward, residency and donor type.",
+    "ml": "പഞ്ചായത്ത്, വാർഡ്, സ്ഥിരതാമസം, മുൻ രക്തദാന വിവരങ്ങൾ എന്നിവ പൂരിപ്പിക്കുക."
+  },
+  "Available until / ലഭ്യമാകുന്ന അവസാന സമയം:": {
+    "en": "Available until",
+    "ml": "ലഭ്യമാകുന്ന അവസാന സമയം:"
+  },
+  "Confirm that your details are correct. / വിവരങ്ങൾ ശരിയാണെന്ന് സ്ഥിരീകരിക്കുക.": {
+    "en": "Confirm that your details are correct.",
+    "ml": "നൽകിയ വിവരങ്ങൾ ശരിയാണെന്ന് സ്ഥിരീകരിക്കുക."
+  },
+  "· Saved / സംരക്ഷിച്ചു": {
+    "en": "· Saved",
+    "ml": "സംരക്ഷിച്ചു"
+  },
+  "Delete this donor profile permanently from this browser? / ഈ ദാതാവിന്റെ വിവരങ്ങൾ ഈ ബ്രൗസറിൽ നിന്ന് പൂർണമായി നീക്കം ചെയ്യണോ?": {
+    "en": "Delete this donor profile permanently from this browser?",
+    "ml": "ഈ ദാതാവിന്റെ രജിസ്ട്രേഷൻ വിവരങ്ങൾ ഈ ബ്രൗസറിൽ നിന്ന് പൂർണമായി നീക്കം ചെയ്യണോ?"
+  },
+  "Profile deleted / വിവരങ്ങൾ നീക്കം ചെയ്തു": {
+    "en": "Profile deleted",
+    "ml": "രജിസ്ട്രേഷൻ നീക്കം ചെയ്തു"
+  },
+  "Donor details / ദാതാവിന്റെ വിവരങ്ങൾ": {
+    "en": "Donor details",
+    "ml": "രക്തദാതാവിന്റെ വിവരങ്ങൾ"
+  },
+  "Home panchayat / പഞ്ചായത്ത് *": {
+    "en": "Home panchayat *",
+    "ml": "പഞ്ചായത്ത് *"
+  },
+  "Home ward / വാർഡ് *": {
+    "en": "Home ward *",
+    "ml": "വാർഡ് *"
+  },
+  "Are you permanently settled in Alappuzha district? / ആലപ്പുഴ ജില്ലയിൽ സ്ഥിരതാമസമാണോ? *": {
+    "en": "Are you permanently settled in Alappuzha district? *",
+    "ml": "ആലപ്പുഴ ജില്ലയിൽ സ്ഥിരതാമസമാണോ? *"
+  },
+  "Yes / അതെ": {
+    "en": "Yes",
+    "ml": "അതെ"
+  },
+  "No / അല്ല": {
+    "en": "No",
+    "ml": "അല്ല"
+  },
+  "Current panchayat / ഇപ്പോഴുള്ള പഞ്ചായത്ത് *": {
+    "en": "Current panchayat *",
+    "ml": "ഇപ്പോഴുള്ള പഞ്ചായത്ത് *"
+  },
+  "Current ward / ഇപ്പോഴുള്ള വാർഡ് (optional / നിർബന്ധമില്ല)": {
+    "en": "Current ward (optional)",
+    "ml": "ഇപ്പോഴുള്ള വാർഡ് (നിർബന്ധമില്ല)"
+  },
+  "Current area / ഇപ്പോഴുള്ള സ്ഥലം *": {
+    "en": "Current area *",
+    "ml": "ഇപ്പോഴുള്ള സ്ഥലം *"
+  },
+  "Enter where you are now. / ഇപ്പോൾ ഉള്ള സ്ഥലം നൽകുക.": {
+    "en": "Enter where you are now.",
+    "ml": "ഇപ്പോൾ ഉള്ള സ്ഥലം നൽകുക."
+  },
+  "Are you available? / ഇപ്പോൾ ലഭ്യമാണോ?": {
+    "en": "Are you available?",
+    "ml": "ഇപ്പോൾ ലഭ്യമാണോ?"
+  },
+  "Unavailable / ഇപ്പോൾ ലഭ്യമല്ല": {
+    "en": "Unavailable",
+    "ml": "ഇപ്പോൾ ലഭ്യമല്ല"
+  },
+  "Available for how long? / എത്ര സമയം ലഭ്യമാണ്?": {
+    "en": "Available for how long?",
+    "ml": "എത്ര സമയം ലഭ്യമാണ്?"
+  },
+  "Keep current period / നിലവിലെ സമയം തുടരുക": {
+    "en": "Keep current period",
+    "ml": "നിലവിലെ സമയം തുടരുക"
+  },
+  "4 hours / 4 മണിക്കൂർ": {
+    "en": "4 hours",
+    "ml": "4 മണിക്കൂർ"
+  },
+  "12 hours / 12 മണിക്കൂർ": {
+    "en": "12 hours",
+    "ml": "12 മണിക്കൂർ"
+  },
+  "24 hours / 24 മണിക്കൂർ": {
+    "en": "24 hours",
+    "ml": "24 മണിക്കൂർ"
+  },
+  "3 days / 3 ദിവസം": {
+    "en": "3 days",
+    "ml": "3 ദിവസം"
+  },
+  "7 days / 7 ദിവസം": {
+    "en": "7 days",
+    "ml": "7 ദിവസം"
+  },
+  "Choose a period when you are available. / ലഭ്യമാകുന്ന സമയം തിരഞ്ഞെടുക്കുക.": {
+    "en": "Choose a period when you are available.",
+    "ml": "ലഭ്യമാകുന്ന സമയം തിരഞ്ഞെടുക്കുക."
+  },
+  "Have you donated before? / മുമ്പ് രക്തം ദാനം ചെയ്തിട്ടുണ്ടോ? *": {
+    "en": "Have you donated before? *",
+    "ml": "മുമ്പ് രക്തദാനം ചെയ്തിട്ടുണ്ടോ? *"
+  },
+  "First-time donor / ആദ്യമായി ദാനം ചെയ്യുന്നു": {
+    "en": "First-time donor",
+    "ml": "ഇതുവരെ ചെയ്തിട്ടില്ല"
+  },
+  "Regular donor / പതിവായി ദാനം ചെയ്യുന്നു": {
+    "en": "Regular donor",
+    "ml": "പതിവായി ചെയ്യാറുണ്ട്"
+  },
+  "Donated before, occasionally / മുമ്പ് ഇടയ്ക്കിടെ ദാനം ചെയ്തിട്ടുണ്ട്": {
+    "en": "Donated before, occasionally",
+    "ml": "ഇടയ്ക്ക് ചെയ്തിട്ടുണ്ട്"
+  },
+  "Last donation date / അവസാന രക്തദാന തീയതി": {
+    "en": "Last donation date",
+    "ml": "അവസാനമായി രക്തദാനം ചെയ്ത തീയതി"
+  },
+  "Waiting period in days / കാത്തിരിപ്പ് ദിവസങ്ങൾ": {
+    "en": "Waiting period in days",
+    "ml": "കാത്തിരിപ്പ് ദിവസങ്ങൾ"
+  },
+  "At least 90 days for men, 120 for women. Follow blood-bank advice. / പുരുഷന്മാർക്ക് കുറഞ്ഞത് 90 ദിവസം; സ്ത്രീകൾക്ക് 120 ദിവസം. രക്തബാങ്കിന്റെ നിർദേശം പാലിക്കുക.": {
+    "en": "At least 90 days for men, 120 for women. Follow blood-bank advice.",
+    "ml": "പുരുഷന്മാർക്ക് കുറഞ്ഞത് 90 ദിവസം; സ്ത്രീകൾക്ക് 120 ദിവസം. രക്തബാങ്കിന്റെ നിർദേശം പാലിക്കുക."
+  },
+  "Show my approximate area on the map (optional). / എന്റെ ഏകദേശ സ്ഥലം മാപ്പിൽ കാണിക്കാം (നിർബന്ധമില്ല).": {
+    "en": "Show my approximate area on the map (optional).",
+    "ml": "എന്റെ ഏകദേശ സ്ഥലം മാപ്പിൽ കാണിക്കാൻ സമ്മതിക്കുന്നു. ഇത് നിർബന്ധമല്ല."
+  },
+  "Use my location / എന്റെ സ്ഥലം കണ്ടെത്തുക": {
+    "en": "Use my location",
+    "ml": "എന്റെ ഇപ്പോഴുള്ള സ്ഥലം കണ്ടെത്തുക"
+  },
+  "Remove map location / മാപ്പിലെ സ്ഥലം നീക്കുക": {
+    "en": "Remove map location",
+    "ml": "മാപ്പിൽ സൂക്ഷിച്ച സ്ഥലം നീക്കം ചെയ്യുക"
+  },
+  "Your exact location is not shown. / നിങ്ങളുടെ കൃത്യമായ സ്ഥലം കാണിക്കില്ല.": {
+    "en": "Your exact location is not shown.",
+    "ml": "നിങ്ങളുടെ കൃത്യമായ സ്ഥാനം മാപ്പിൽ കാണിക്കില്ല."
+  },
+  "An area name is enough for search. Location sharing is optional. / തിരച്ചിലിന് സ്ഥലത്തിന്റെ പേര് മതി. സ്ഥലം പങ്കിടൽ നിർബന്ധമില്ല.": {
+    "en": "An area name is enough for search. Location sharing is optional.",
+    "ml": "രജിസ്ട്രേഷനിൽ പഞ്ചായത്തിന്റെ പേര് നൽകിയാൽ മതി. മാപ്പിൽ സ്ഥലം പങ്കിടുന്നത് നിർബന്ധമല്ല."
+  },
+  "Edit / തിരുത്തുക": {
+    "en": "Edit",
+    "ml": "തിരുത്തുക"
+  },
+  "Delete / നീക്കുക": {
+    "en": "Delete",
+    "ml": "നീക്കുക"
+  },
+  "Donor type and donation history must agree. / ദാതാവിന്റെ തരവും ദാനചരിത്രവും പൊരുത്തപ്പെടണം.": {
+    "en": "Donor type and donation history must agree.",
+    "ml": "തിരഞ്ഞെടുത്ത ദാതാവിന്റെ തരവും മുൻ രക്തദാന വിവരങ്ങളും തമ്മിൽ പൊരുത്തപ്പെടണം."
+  },
+  "Enter a valid past donation date. / ഭാവിയിലല്ലാത്ത ശരിയായ രക്തദാന തീയതി നൽകുക.": {
+    "en": "Enter a valid past donation date.",
+    "ml": "അവസാനമായി രക്തദാനം ചെയ്ത ശരിയായ തീയതി നൽകുക. ഭാവിയിലെ തീയതി നൽകരുത്."
+  },
+  "Enter a valid name. / ശരിയായ പേര് നൽകുക.": {
+    "en": "Enter a valid name.",
+    "ml": "ശരിയായ പേര് നൽകുക."
+  },
+  "Age must be 18–65. / പ്രായം 18–65 ആയിരിക്കണം.": {
+    "en": "Age must be 18–65.",
+    "ml": "പ്രായം 18–65 ആയിരിക്കണം."
+  },
+  "Phone must contain 10–15 digits. / ഫോണിൽ 10–15 അക്കങ്ങൾ വേണം.": {
+    "en": "Phone must contain 10–15 digits.",
+    "ml": "ഫോൺ നമ്പറിൽ 10 മുതൽ 15 വരെ അക്കങ്ങൾ ഉണ്ടായിരിക്കണം."
+  },
+  "This mobile number is already registered. / ഈ മൊബൈൽ നമ്പർ രജിസ്റ്റർ ചെയ്തിട്ടുണ്ട്.": {
+    "en": "This mobile number is already registered.",
+    "ml": "ഈ മൊബൈൽ നമ്പർ രജിസ്റ്റർ ചെയ്തിട്ടുണ്ട്."
+  },
+  "Registration saved for approval. / അംഗീകാരത്തിനായി രജിസ്ട്രേഷൻ സംരക്ഷിച്ചു.": {
+    "en": "Registration saved for approval.",
+    "ml": "രജിസ്ട്രേഷൻ വിവരങ്ങൾ സംരക്ഷിച്ചു. അഡ്മിന്റെ അംഗീകാരത്തിനായി കാത്തിരിക്കുന്നു."
+  },
+  "Choose a blood group / രക്തഗ്രൂപ്പ് തിരഞ്ഞെടുക്കുക": {
+    "en": "Choose a blood group",
+    "ml": "രക്തഗ്രൂപ്പ് തിരഞ്ഞെടുക്കുക"
+  },
+  "No matching donors / അനുയോജ്യമായ ദാതാക്കളെ കണ്ടെത്തിയില്ല": {
+    "en": "No matching donors",
+    "ml": "ഈ രക്തഗ്രൂപ്പിന് അനുയോജ്യമായ ദാതാക്കളെ കണ്ടെത്തിയില്ല"
+  },
+  "Community blood donor network": {
+    "en": "Community blood donor network",
+    "ml": "രക്തദാതാക്കളുടെ കൂട്ടായ്മ"
+  },
+  "Account protection and shared storage are not configured. Records are saved only in this browser. Do not enter personal donor information yet.": {
+    "en": "Account protection and shared storage are not configured. Records are saved only in this browser. Do not enter personal donor information yet.",
+    "ml": "അക്കൗണ്ട് സുരക്ഷയും പങ്കിട്ട ഡാറ്റാ സംഭരണവും സജ്ജമാക്കിയിട്ടില്ല. വിവരങ്ങൾ ഈ ബ്രൗസറിൽ മാത്രമാണ് സൂക്ഷിക്കുന്നത്. വ്യക്തിഗത ദാതൃവിവരങ്ങൾ ഇപ്പോൾ നൽകരുത്."
+  },
+  "Account protection and shared storage are not configured. Records are saved only in this browser.": {
+    "en": "Account protection and shared storage are not configured. Records are saved only in this browser.",
+    "ml": "അക്കൗണ്ട് സുരക്ഷയും പങ്കിട്ട സംഭരണവും സജ്ജമാക്കിയിട്ടില്ല. വിവരങ്ങൾ ഈ ബ്രൗസറിൽ മാത്രമാണ് സൂക്ഷിക്കുന്നത്."
+  },
+  "Manage contact details, donation history and availability. Profile selection does not verify identity; secure sign-in is not configured.": {
+    "en": "Manage contact details, donation history and availability. Profile selection does not verify identity; secure sign-in is not configured.",
+    "ml": "ബന്ധപ്പെടാനുള്ള വിവരങ്ങളും രക്തദാനചരിത്രവും ലഭ്യതയും നിയന്ത്രിക്കുക. പ്രൊഫൈൽ തിരഞ്ഞെടുക്കുന്നത് വ്യക്തിത്വം സ്ഥിരീകരിക്കുന്നില്ല; സുരക്ഷിത ലോഗിൻ സജ്ജമാക്കിയിട്ടില്ല."
+  },
+  "Browser storage": {
+    "en": "Browser storage",
+    "ml": "ബ്രൗസറിലെ സംഭരണം"
+  },
+  "Directory administration": {
+    "en": "Directory administration",
+    "ml": "രക്തദാതാക്കളുടെ വിവരങ്ങളുടെ നിയന്ത്രണം"
+  },
+  "Directory management": {
+    "en": "Directory management",
+    "ml": "രക്തദാതാക്കളുടെ വിവരങ്ങളുടെ നിയന്ത്രണം"
+  },
+  "A few minutes for you.": {
+    "en": "A few minutes for you.",
+    "ml": "നിങ്ങളുടെ ഏതാനും നിമിഷങ്ങൾ."
+  },
+  "A lifetime for someone.": {
+    "en": "A lifetime for someone.",
+    "ml": "മറ്റൊരാൾക്ക് ഒരു ജീവിതം."
+  },
+  "RedBlood helps volunteers register as donors and allows families to find available donors by blood group and location.": {
+    "en": "RedBlood helps volunteers register as donors and allows families to find available donors by blood group and location.",
+    "ml": "സന്നദ്ധരായവർക്ക് രക്തദാതാക്കളായി രജിസ്റ്റർ ചെയ്യാനും കുടുംബങ്ങൾക്ക് രക്തഗ്രൂപ്പും പ്രദേശവും അനുസരിച്ച് ദാതാക്കളെ കണ്ടെത്താനും റെഡ്ബ്ലഡ് സഹായിക്കുന്നു."
+  },
+  "Emergency?": {
+    "en": "Emergency?",
+    "ml": "അടിയന്തര സാഹചര്യമാണോ?"
+  },
+  "Contact a licensed blood bank or hospital first. Please coordinate donations through a licensed blood bank.": {
+    "en": "Contact a licensed blood bank or hospital first. Please coordinate donations through a licensed blood bank.",
+    "ml": "ആദ്യം അംഗീകൃത രക്തബാങ്കിനെയോ ആശുപത്രിയെയോ ബന്ധപ്പെടുക. രക്തദാനം അംഗീകൃത രക്തബാങ്കിലൂടെ ഏകോപിപ്പിക്കുക."
+  },
+  "Search quickly": {
+    "en": "Search quickly",
+    "ml": "വേഗത്തിൽ തിരയുക"
+  },
+  "Group + location": {
+    "en": "Group + location",
+    "ml": "രക്തഗ്രൂപ്പും സ്ഥലവും"
+  },
+  "Volunteer safely": {
+    "en": "Volunteer safely",
+    "ml": "സുരക്ഷിതമായി രക്തദാനം ചെയ്യാം"
+  },
+  "Consent-based listing": {
+    "en": "Consent-based listing",
+    "ml": "സമ്മതത്തോടെ മാത്രം വിവരങ്ങൾ കാണിക്കുന്നു"
+  },
+  "Blood groups supported": {
+    "en": "Blood groups supported",
+    "ml": "രക്തഗ്രൂപ്പുകൾ"
+  },
+  "Group, area, region & ward": {
+    "en": "Group, area, region & ward",
+    "ml": "രക്തഗ്രൂപ്പ്, സ്ഥലം, പഞ്ചായത്ത്, വാർഡ്"
+  },
+  "Community directory": {
+    "en": "Community directory",
+    "ml": "സാമൂഹിക ഡയറക്ടറി"
+  },
+  "Directory access": {
+    "en": "Directory access",
+    "ml": "ഡയറക്ടറി പ്രവേശനം"
+  },
+  "Donor search": {
+    "en": "Donor search",
+    "ml": "രക്തദാതാക്കളെ തിരയാം"
+  },
+  "Find an available blood donor": {
+    "en": "Find an available blood donor",
+    "ml": "ലഭ്യമായ രക്തദാതാവിനെ കണ്ടെത്തുക"
+  },
+  "Search current availability by region and ward. Matching donors have completed their recorded waiting period; medical screening is still required.": {
+    "en": "Search current availability by region and ward. Matching donors have completed their recorded waiting period; medical screening is still required.",
+    "ml": "പഞ്ചായത്തും വാർഡും അനുസരിച്ച് ലഭ്യമായ ദാതാക്കളെ തിരയുക. കാണിക്കുന്ന ദാതാക്കളുടെ രേഖപ്പെടുത്തിയ കാത്തിരിപ്പ് പൂർത്തിയായിട്ടുണ്ട്; വൈദ്യപരിശോധന തുടർന്നും ആവശ്യമാണ്."
+  },
+  "Current area": {
+    "en": "Current area",
+    "ml": "ഇപ്പോഴുള്ള സ്ഥലം"
+  },
+  "(optional)": {
+    "en": "(optional)",
+    "ml": "(നിർബന്ധമില്ല)"
+  },
+  "See how many available donors are nearby. Only donors who allow map sharing appear; exact locations are not shown.": {
+    "en": "See how many available donors are nearby. Only donors who allow map sharing appear; exact locations are not shown.",
+    "ml": "സമീപത്ത് എത്ര ദാതാക്കൾ ലഭ്യമാണെന്ന് കാണുക. മാപ്പിൽ സ്ഥലം പങ്കിടാൻ സമ്മതിച്ചവരെ മാത്രമേ കാണിക്കൂ; കൃത്യമായ സ്ഥലം കാണിക്കില്ല."
+  },
+  "Loading uses Leaflet CDN and OpenStreetMap tiles. These providers receive your network request and map viewport; no donor names or phone numbers are sent.": {
+    "en": "Loading uses Leaflet CDN and OpenStreetMap tiles. These providers receive your network request and map viewport; no donor names or phone numbers are sent.",
+    "ml": "മാപ്പ് തുറക്കാൻ Leaflet, OpenStreetMap സേവനങ്ങൾ ഉപയോഗിക്കുന്നു. ഈ സേവനങ്ങൾക്ക് നിങ്ങളുടെ നെറ്റ്‌വർക്ക് അഭ്യർത്ഥനയും മാപ്പിൽ കാണുന്ന പ്രദേശത്തെ വിവരങ്ങളും ലഭിക്കും. ദാതാക്കളുടെ പേരോ ഫോൺ നമ്പറോ അയയ്ക്കില്ല."
+  },
+  "Search to see matching area counts. Map loading is optional.": {
+    "en": "Search to see matching area counts. Map loading is optional.",
+    "ml": "തിരച്ചിൽ നടത്തിയാൽ ഓരോ പ്രദേശത്തും എത്ര അനുയോജ്യമായ ദാതാക്കളുണ്ടെന്ന് കാണാം. മാപ്പ് തുറക്കുന്നത് നിർബന്ധമല്ല."
+  },
+  "Your search results will appear here": {
+    "en": "Your search results will appear here",
+    "ml": "തിരച്ചിലിന്റെ ഫലങ്ങൾ ഇവിടെ കാണാം"
+  },
+  "Only approved, available donors who consented to contact sharing are shown.": {
+    "en": "Only approved, available donors who consented to contact sharing are shown.",
+    "ml": "വിവരങ്ങൾ പങ്കിടാൻ സമ്മതിച്ച, അംഗീകരിക്കപ്പെട്ട, ലഭ്യമായ ദാതാക്കളെ മാത്രമേ കാണിക്കൂ."
+  },
+  "Volunteer registration": {
+    "en": "Volunteer registration",
+    "ml": "രക്തദാതൃ രജിസ്ട്രേഷൻ"
+  },
+  "Join the donor community": {
+    "en": "Join the donor community",
+    "ml": "രക്തദാതാക്കളുടെ കൂട്ടായ്മയിൽ ചേരുക"
+  },
+  "Add your details to the directory so people searching for your blood group can contact you when needed.": {
+    "en": "Add your details to the directory so people searching for your blood group can contact you when needed.",
+    "ml": "നിങ്ങളുടെ രക്തഗ്രൂപ്പ് അന്വേഷിക്കുന്നവർക്ക് ആവശ്യസമയത്ത് നിങ്ങളെ ബന്ധപ്പെടാനായി വിവരങ്ങൾ നൽകുക."
+  },
+  "Register in less than two minutes": {
+    "en": "Register in less than two minutes",
+    "ml": "രണ്ട് മിനിറ്റിനുള്ളിൽ രജിസ്റ്റർ ചെയ്യാം"
+  },
+  "Searchable by blood group and location": {
+    "en": "Searchable by blood group and location",
+    "ml": "രക്തഗ്രൂപ്പും പ്രദേശവും അനുസരിച്ച് കണ്ടെത്താം"
+  },
+  "Phone sharing requires your consent": {
+    "en": "Phone sharing requires your consent",
+    "ml": "ഫോൺ നമ്പർ പങ്കിടാൻ നിങ്ങളുടെ സമ്മതം വേണം"
+  },
+  "Medical screening remains with the blood bank": {
+    "en": "Medical screening remains with the blood bank",
+    "ml": "രക്തദാന യോഗ്യത രക്തബാങ്ക് പരിശോധിച്ച് തീരുമാനിക്കും"
+  },
+  "Privacy reminder": {
+    "en": "Privacy reminder",
+    "ml": "സ്വകാര്യത സംബന്ധിച്ച ഓർമ്മപ്പെടുത്തൽ"
+  },
+  "Location sharing is optional. Only your approximate area is shown on the map.": {
+    "en": "Location sharing is optional. Only your approximate area is shown on the map.",
+    "ml": "നിങ്ങളുടെ സ്ഥലം പങ്കിടുന്നത് നിർബന്ധമല്ല. ഏകദേശ സ്ഥലം മാത്രമാണ് മാപ്പിൽ കാണിക്കുന്നത്."
+  },
+  "Stored only in this browser. New registrations are marked pending until approved in the administration dashboard.": {
+    "en": "Stored only in this browser. New registrations are marked pending until approved in the administration dashboard.",
+    "ml": "വിവരങ്ങൾ ഈ ബ്രൗസറിൽ മാത്രമാണ് സൂക്ഷിക്കുന്നത്. അഡ്മിൻ അംഗീകരിക്കുന്നതുവരെ പുതിയ രജിസ്ട്രേഷനുകൾക്ക് അംഗീകാരം ലഭിക്കില്ല."
+  },
+  "How RedBlood works": {
+    "en": "How RedBlood works",
+    "ml": "റെഡ്ബ്ലഡ് എങ്ങനെ പ്രവർത്തിക്കുന്നു?"
+  },
+  "A simple connection between donors and people in need": {
+    "en": "A simple connection between donors and people in need",
+    "ml": "രക്തദാതാക്കളെയും രക്തം ആവശ്യമുള്ളവരെയും ബന്ധിപ്പിക്കുന്നു"
+  },
+  "A volunteer submits their blood group, location, and contact details with consent.": {
+    "en": "A volunteer submits their blood group, location, and contact details with consent.",
+    "ml": "സന്നദ്ധരായ ദാതാക്കൾ രക്തഗ്രൂപ്പും പ്രദേശവും ബന്ധപ്പെടാനുള്ള വിവരങ്ങളും സമ്മതത്തോടെ നൽകുന്നു."
+  },
+  "A visitor searches the directory using the required blood group and an optional location.": {
+    "en": "A visitor searches the directory using the required blood group and an optional location.",
+    "ml": "ആവശ്യമായ രക്തഗ്രൂപ്പും സ്ഥലവും ഉപയോഗിച്ച് ദാതാക്കളെ തിരയുന്നു."
+  },
+  "Connect": {
+    "en": "Connect",
+    "ml": "ബന്ധപ്പെടുക"
+  },
+  "The visitor contacts a matching donor and coordinates through a licensed hospital or blood bank.": {
+    "en": "The visitor contacts a matching donor and coordinates through a licensed hospital or blood bank.",
+    "ml": "തിരച്ചിലിൽ കണ്ടെത്തിയ അനുയോജ്യമായ ദാതാവിനെ ബന്ധപ്പെടുക. തുടർന്ന് അംഗീകൃത ആശുപത്രിയിലൂടെയോ രക്തബാങ്കിലൂടെയോ രക്തദാനം ഏകോപിപ്പിക്കുക."
+  },
+  "Screen": {
+    "en": "Screen",
+    "ml": "യോഗ്യതാ പരിശോധന"
+  },
+  "Medical professionals confirm donor eligibility and complete the safe donation process.": {
+    "en": "Medical professionals confirm donor eligibility and complete the safe donation process.",
+    "ml": "ആരോഗ്യപ്രവർത്തകർ ദാതാവിന്റെ യോഗ്യത പരിശോധിച്ച് ഉറപ്പാക്കുകയും സുരക്ഷിതമായി രക്തദാനം നടത്തുകയും ചെയ്യുന്നു."
+  },
+  "Questions or feedback?": {
+    "en": "Questions or feedback?",
+    "ml": "ചോദ്യങ്ങളോ അഭിപ്രായങ്ങളോ ഉണ്ടോ?"
+  },
+  "Help us make the directory better.": {
+    "en": "Help us make the directory better.",
+    "ml": "ഈ സേവനം മെച്ചപ്പെടുത്താൻ സഹായിക്കുക."
+  },
+  "Contact the service coordinator for corrections, privacy requests, or technical feedback.": {
+    "en": "Contact the service coordinator for corrections, privacy requests, or technical feedback.",
+    "ml": "തിരുത്തലുകൾക്കും സ്വകാര്യതാ ആവശ്യങ്ങൾക്കും സാങ്കേതിക അഭിപ്രായങ്ങൾക്കും സേവന ഏകോപകനെ ബന്ധപ്പെടുക."
+  },
+  "Contact support": {
+    "en": "Contact support",
+    "ml": "സഹായത്തിനായി ബന്ധപ്പെടുക"
+  },
+  "A responsive blood donor directory with region maps and availability updates.": {
+    "en": "A responsive blood donor directory with region maps and availability updates.",
+    "ml": "പ്രദേശത്തെ മാപ്പും ദാതാക്കളുടെ ലഭ്യതാ വിവരങ്ങളും ഉൾക്കൊള്ളുന്ന രക്തദാതൃ ഡയറക്ടറി."
+  },
+  "Quick links": {
+    "en": "Quick links",
+    "ml": "പ്രധാന ലിങ്കുകൾ"
+  },
+  "Important": {
+    "en": "Important",
+    "ml": "ശ്രദ്ധിക്കുക"
+  },
+  "For urgent blood requirements, contact a hospital or licensed blood bank immediately.": {
+    "en": "For urgent blood requirements, contact a hospital or licensed blood bank immediately.",
+    "ml": "അടിയന്തര രക്താവശ്യത്തിന് ആശുപത്രിയെയോ അംഗീകൃത രക്തബാങ്കിനെയോ ഉടൻ ബന്ധപ്പെടുക."
+  },
+  "RedBlood. Community blood donor network.": {
+    "en": "RedBlood. Community blood donor network.",
+    "ml": "റെഡ്ബ്ലഡ്. രക്തദാതാക്കളുടെ കൂട്ടായ്മ."
+  },
+  "Contact & privacy requests": {
+    "en": "Contact & privacy requests",
+    "ml": "ബന്ധപ്പെടാനും സ്വകാര്യതാ ആവശ്യങ്ങൾ അറിയിക്കാനും"
+  },
+  "Review and manage the donor records saved in this browser.": {
+    "en": "Review and manage the donor records saved in this browser.",
+    "ml": "ഈ ബ്രൗസറിൽ സൂക്ഷിച്ച ദാതൃവിവരങ്ങൾ പരിശോധിക്കുകയും നിയന്ത്രിക്കുകയും ചെയ്യുക."
+  },
+  "All saved records": {
+    "en": "All saved records",
+    "ml": "സംരക്ഷിച്ച എല്ലാ രജിസ്ട്രേഷനുകളും"
+  },
+  "Visible when available": {
+    "en": "Visible when available",
+    "ml": "ലഭ്യമാകുമ്പോൾ കാണിക്കും"
+  },
+  "Approved and active": {
+    "en": "Approved and active",
+    "ml": "അംഗീകരിച്ചതും സജീവമായതും"
+  },
+  "Awaiting review": {
+    "en": "Awaiting review",
+    "ml": "പരിശോധന കാത്തിരിക്കുന്നു"
+  },
+  "Donor records": {
+    "en": "Donor records",
+    "ml": "രക്തദാതാക്കളുടെ വിവരങ്ങൾ"
+  },
+  "Donor": {
+    "en": "Donor",
+    "ml": "രക്തദാതാവ്"
+  },
+  "Blood": {
+    "en": "Blood",
+    "ml": "രക്തഗ്രൂപ്പ്"
+  },
+  "Status": {
+    "en": "Status",
+    "ml": "രജിസ്ട്രേഷൻ നില"
+  },
+  "Availability": {
+    "en": "Availability",
+    "ml": "ലഭ്യത"
+  },
+  "Actions": {
+    "en": "Actions",
+    "ml": "ചെയ്യാവുന്ന കാര്യങ്ങൾ"
+  },
+  "No donor records found": {
+    "en": "No donor records found",
+    "ml": "രക്തദാതാക്കളുടെ വിവരങ്ങൾ കണ്ടെത്തിയില്ല"
+  },
+  "No records match your filters. Register a donor to get started.": {
+    "en": "No records match your filters. Register a donor to get started.",
+    "ml": "തിരഞ്ഞെടുത്ത നിബന്ധനകൾക്ക് അനുയോജ്യമായ രജിസ്ട്രേഷനുകളില്ല. ആദ്യം ഒരു ദാതാവിനെ രജിസ്റ്റർ ചെയ്യുക."
+  },
+  "Register donor": {
+    "en": "Register donor",
+    "ml": "ദാതാവിനെ രജിസ്റ്റർ ചെയ്യുക"
+  },
+  "Edit record": {
+    "en": "Edit record",
+    "ml": "വിവരങ്ങൾ തിരുത്തുക"
+  },
+  "Choose a record": {
+    "en": "Choose a record",
+    "ml": "ഒരു രജിസ്ട്രേഷൻ തിരഞ്ഞെടുക്കുക"
+  },
+  "Connecting willing donors with people who need them.": {
+    "en": "Connecting willing donors with people who need them.",
+    "ml": "രക്തദാനം ചെയ്യാൻ സന്നദ്ധരായവരെയും രക്തം ആവശ്യമുള്ളവരെയും ബന്ധിപ്പിക്കുന്നു."
+  },
+  "Get in touch": {
+    "en": "Get in touch",
+    "ml": "ബന്ധപ്പെടുക"
+  },
+  "Request a donor-profile correction, removal, or share technical feedback about RedBlood.": {
+    "en": "Request a donor-profile correction, removal, or share technical feedback about RedBlood.",
+    "ml": "ദാതാവിന്റെ വിവരങ്ങൾ തിരുത്താനോ രജിസ്ട്രേഷൻ നീക്കം ചെയ്യാനോ റെഡ്ബ്ലഡിനെക്കുറിച്ചുള്ള സാങ്കേതിക അഭിപ്രായങ്ങൾ അറിയിക്കാനോ ബന്ധപ്പെടുക."
+  },
+  "For service feedback, donor corrections, and privacy requests.": {
+    "en": "For service feedback, donor corrections, and privacy requests.",
+    "ml": "സേവനത്തെക്കുറിച്ചുള്ള അഭിപ്രായങ്ങൾക്കും ദാതൃവിവരങ്ങളിലെ തിരുത്തലുകൾക്കും സ്വകാര്യതയുമായി ബന്ധപ്പെട്ട ആവശ്യങ്ങൾക്കും."
+  },
+  "Contact the service coordinator regarding directory information.": {
+    "en": "Contact the service coordinator regarding directory information.",
+    "ml": "ദാതാക്കളുടെ ഡയറക്ടറിയുമായി ബന്ധപ്പെട്ട വിവരങ്ങൾക്ക് സേവന ഏകോപകനെ ബന്ധപ്പെടുക."
+  },
+  "Service coordinator’s current location.": {
+    "en": "Service coordinator’s current location.",
+    "ml": "സേവന ഏകോപകന്റെ ഇപ്പോഴുള്ള സ്ഥലം."
+  },
+  "Need blood urgently?": {
+    "en": "Need blood urgently?",
+    "ml": "അടിയന്തരമായി രക്തം ആവശ്യമുണ്ടോ?"
+  },
+  "Contact a hospital or licensed blood bank. You can also check official blood-stock information on e-RaktKosh.": {
+    "en": "Contact a hospital or licensed blood bank. You can also check official blood-stock information on e-RaktKosh.",
+    "ml": "ആശുപത്രിയെയോ അംഗീകൃത രക്തബാങ്കിനെയോ ബന്ധപ്പെടുക. ഇ-രക്തകോശിൽ രക്തബാങ്കുകളിലെ ഔദ്യോഗിക രക്തലഭ്യതയും പരിശോധിക്കാം."
+  },
+  "Open e-RaktKosh": {
+    "en": "Open e-RaktKosh",
+    "ml": "ഇ-രക്തകോശ് തുറക്കുക"
+  },
+  "Phone": {
+    "en": "Phone",
+    "ml": "ഫോൺ നമ്പർ"
+  },
+  "Email": {
+    "en": "Email",
+    "ml": "ഇമെയിൽ"
+  },
+  "Eligibility": {
+    "en": "Eligibility",
+    "ml": "രക്തദാന യോഗ്യത"
+  },
+  "Skip to main content": {
+    "en": "Skip to main content",
+    "ml": "പ്രധാന ഉള്ളടക്കത്തിലേക്ക് പോകുക"
+  },
+  "Toggle navigation": {
+    "en": "Toggle navigation",
+    "ml": "മെനു തുറക്കുക"
+  },
+  "Language": {
+    "en": "Language",
+    "ml": "ഭാഷ"
+  },
+  "Name, phone, or location": {
+    "en": "Name, phone, or location",
+    "ml": "പേര്, ഫോൺ അല്ലെങ്കിൽ സ്ഥലം"
+  },
+  "Any region": {
+    "en": "Any region",
+    "ml": "ഏതെങ്കിലും പഞ്ചായത്ത്"
+  },
+  "Any ward": {
+    "en": "Any ward",
+    "ml": "ഏതെങ്കിലും വാർഡ്"
+  },
+  "Example: Alappuzha": {
+    "en": "Example: Alappuzha",
+    "ml": "ഉദാഹരണം: ആലപ്പുഴ"
+  },
+  "e.g. your panchayat": {
+    "en": "e.g. your panchayat",
+    "ml": "നിങ്ങളുടെ പഞ്ചായത്ത്"
+  },
+  "Ward number or name": {
+    "en": "Ward number or name",
+    "ml": "വാർഡ് നമ്പർ അല്ലെങ്കിൽ പേര്"
+  },
+  "10–15 digits": {
+    "en": "10–15 digits",
+    "ml": "10–15 അക്കങ്ങൾ"
+  },
+  "Loading online map…": {
+    "en": "Loading online map…",
+    "ml": "മാപ്പ് തുറക്കുന്നു…"
+  },
+  "Map could not load. Check your connection and retry; donor search and area counts still work.": {
+    "en": "Map could not load. Check your connection and retry; donor search and area counts still work.",
+    "ml": "മാപ്പ് തുറക്കാനായില്ല. ഇന്റർനെറ്റ് ബന്ധം പരിശോധിച്ച് വീണ്ടും ശ്രമിക്കുക. ദാതാക്കളെ തിരയാനും പ്രദേശത്തെ എണ്ണം കാണാനും തുടർന്നും കഴിയും."
+  },
+  "Some map tiles could not load. Donor list and area counts are still available.": {
+    "en": "Some map tiles could not load. Donor list and area counts are still available.",
+    "ml": "മാപ്പിന്റെ ചില ഭാഗങ്ങൾ ലഭ്യമല്ല. ദാതാക്കളുടെ പട്ടികയും പ്രദേശത്തെ എണ്ണവും ലഭ്യമാണ്."
+  },
+  "Geolocation unavailable. Enter your area manually.": {
+    "en": "Geolocation unavailable. Enter your area manually.",
+    "ml": "നിങ്ങളുടെ സ്ഥലം കണ്ടെത്താനായില്ല. പഞ്ചായത്തിന്റെ പേര് നൽകുക."
+  },
+  "The selected donor could not be found.": {
+    "en": "The selected donor could not be found.",
+    "ml": "തിരഞ്ഞെടുത്ത ദാതാവിന്റെ രജിസ്ട്രേഷൻ കണ്ടെത്തിയില്ല."
+  },
+  "Another donor already uses this mobile number.": {
+    "en": "Another donor already uses this mobile number.",
+    "ml": "ഈ മൊബൈൽ നമ്പർ മറ്റൊരു ദാതാവിന്റെ പേരിൽ രജിസ്റ്റർ ചെയ്തിട്ടുണ്ട്."
+  },
+  "Choose a valid gender option.": {
+    "en": "Choose a valid gender option.",
+    "ml": "ശരിയായ ലിംഗം തിരഞ്ഞെടുക്കുക."
+  },
+  "Choose a valid blood group.": {
+    "en": "Choose a valid blood group.",
+    "ml": "ശരിയായ രക്തഗ്രൂപ്പ് തിരഞ്ഞെടുക്കുക."
+  },
+  "The location must contain at least two characters.": {
+    "en": "The location must contain at least two characters.",
+    "ml": "ശരിയായ സ്ഥലത്തിന്റെ പേര് നൽകുക."
+  },
+  "Donor details updated.": {
+    "en": "Donor details updated.",
+    "ml": "രക്തദാതാവിന്റെ വിവരങ്ങൾ പുതുക്കി."
+  },
+  "All local donor records deleted.": {
+    "en": "All local donor records deleted.",
+    "ml": "ഈ ബ്രൗസറിലെ എല്ലാ ദാതൃവിവരങ്ങളും നീക്കം ചെയ്തു."
+  },
+  "Importing will replace all current local donor records. Continue?": {
+    "en": "Importing will replace all current local donor records. Continue?",
+    "ml": "പകർപ്പ് ചേർക്കുമ്പോൾ ഈ ബ്രൗസറിലെ നിലവിലെ എല്ലാ ദാതൃവിവരങ്ങളും മാറ്റപ്പെടും. തുടരണോ?"
+  },
+  "Delete every local donor record? Export a backup first if needed.": {
+    "en": "Delete every local donor record? Export a backup first if needed.",
+    "ml": "ഈ ബ്രൗസറിലെ എല്ലാ ദാതൃവിവരങ്ങളും നീക്കം ചെയ്യണോ? ആവശ്യമെങ്കിൽ ആദ്യം ഒരു പകർപ്പ് എടുത്തുവയ്ക്കുക."
+  },
+  "Choose a blood group": {
+    "en": "Choose a blood group",
+    "ml": "രക്തഗ്രൂപ്പ് തിരഞ്ഞെടുക്കുക"
+  },
+  "Select a group before searching the local donor directory.": {
+    "en": "Select a group before searching the local donor directory.",
+    "ml": "ദാതാക്കളെ തിരയുന്നതിന് മുമ്പ് രക്തഗ്രൂപ്പ് തിരഞ്ഞെടുക്കുക."
+  },
+  "Try another current area or check approval, availability expiry and donation waiting periods in the administration dashboard.": {
+    "en": "Try another current area or check approval, availability expiry and donation waiting periods in the administration dashboard.",
+    "ml": "മറ്റൊരു സ്ഥലം തിരയുക; അല്ലെങ്കിൽ അഡ്മിൻ പേജിൽ അംഗീകാരവും ലഭ്യതയും കാത്തിരിപ്പും പരിശോധിക്കുക."
+  },
+  "Open admin dashboard": {
+    "en": "Open admin dashboard",
+    "ml": "അഡ്മിൻ പേജ് തുറക്കുക"
+  },
+  "Voice search is not supported by this browser.": {
+    "en": "Voice search is not supported by this browser.",
+    "ml": "ഈ ബ്രൗസറിൽ ശബ്ദം ഉപയോഗിച്ചുള്ള തിരച്ചിൽ ലഭ്യമല്ല."
+  },
+  "Microphone permission was not granted.": {
+    "en": "Microphone permission was not granted.",
+    "ml": "മൈക്രോഫോൺ ഉപയോഗിക്കാനുള്ള അനുമതി ലഭിച്ചില്ല."
+  },
+  "Voice search could not start. Please choose a blood group manually.": {
+    "en": "Voice search could not start. Please choose a blood group manually.",
+    "ml": "ശബ്ദം ഉപയോഗിച്ചുള്ള തിരച്ചിൽ ആരംഭിക്കാനായില്ല. രക്തഗ്രൂപ്പ് നേരിട്ട് തിരഞ്ഞെടുക്കുക."
+  },
+  "Voice search is already listening. Please speak now.": {
+    "en": "Voice search is already listening. Please speak now.",
+    "ml": "ശബ്ദതിരച്ചിൽ പ്രവർത്തിക്കുന്നുണ്ട്. ഇപ്പോൾ സംസാരിക്കുക."
+  },
+  "Listening… say a blood group, such as “O positive”.": {
+    "en": "Listening… say a blood group, such as “O positive”.",
+    "ml": "കേൾക്കുന്നു… “O positive” പോലുള്ള രക്തഗ്രൂപ്പ് ഇംഗ്ലീഷിൽ പറയുക."
+  },
+  "Confirm current area and renew availability in the form.": {
+    "en": "Confirm current area and renew availability in the form.",
+    "ml": "ഇപ്പോഴുള്ള സ്ഥലം സ്ഥിരീകരിച്ച് ലഭ്യതയുടെ സമയം പുതുക്കുക."
+  },
+  "Selected area": {
+    "en": "Selected area",
+    "ml": "തിരഞ്ഞെടുത്ത സ്ഥലം"
+  },
+  "Not confirmed": {
+    "en": "Not confirmed",
+    "ml": "സ്ഥിരീകരിച്ചിട്ടില്ല"
+  },
+  "Home": {
+    "en": "Home",
+    "ml": "മുഖപ്പേജ്"
+  },
+  "Find donors": {
+    "en": "Find donors",
+    "ml": "രക്തദാതാക്കളെ കണ്ടെത്തുക"
+  },
+  "Register": {
+    "en": "Register",
+    "ml": "രജിസ്റ്റർ ചെയ്യുക"
+  },
+  "About": {
+    "en": "About",
+    "ml": "ഞങ്ങളെക്കുറിച്ച്"
+  },
+  "Administration": {
+    "en": "Administration",
+    "ml": "അഡ്മിൻ നിയന്ത്രണം"
+  },
+  "Contact": {
+    "en": "Contact",
+    "ml": "ബന്ധപ്പെടുക"
+  },
+  "Home town": {
+    "en": "Home town",
+    "ml": "താമസസ്ഥലം"
+  },
+  "My dashboard": {
+    "en": "My dashboard",
+    "ml": "എന്റെ വിവരങ്ങൾ"
+  },
+  "Donor guidance": {
+    "en": "Donor guidance",
+    "ml": "രക്തദാന മാർഗനിർദേശങ്ങൾ"
+  },
+  "Become a donor": {
+    "en": "Become a donor",
+    "ml": "രക്തദാതാവാകുക"
+  },
+  "Blood group": {
+    "en": "Blood group",
+    "ml": "രക്തഗ്രൂപ്പ്"
+  },
+  "Choose": {
+    "en": "Choose",
+    "ml": "തിരഞ്ഞെടുക്കുക"
+  },
+  "Region": {
+    "en": "Region / panchayat",
+    "ml": "പഞ്ചായത്ത്"
+  },
+  "Ward": {
+    "en": "Ward",
+    "ml": "വാർഡ്"
+  },
+  "Search donors": {
+    "en": "Search donors",
+    "ml": "രക്തദാതാക്കളെ തിരയുക"
+  },
+  "Donors by area": {
+    "en": "Donors by area",
+    "ml": "പ്രദേശത്തെ രക്തദാതാക്കൾ"
+  },
+  "Load map": {
+    "en": "Load map",
+    "ml": "മാപ്പ് തുറക്കുക"
+  },
+  "Donor registration": {
+    "en": "Donor registration",
+    "ml": "രക്തദാതൃ രജിസ്ട്രേഷൻ"
+  },
+  "Fields marked * are required.": {
+    "en": "Fields marked * are required.",
+    "ml": "* അടയാളമുള്ളവ നിർബന്ധമാണ്."
+  },
+  "Full name *": {
+    "en": "Full name *",
+    "ml": "മുഴുവൻ പേര് *"
+  },
+  "Age *": {
+    "en": "Age *",
+    "ml": "പ്രായം *"
+  },
+  "Gender *": {
+    "en": "Gender *",
+    "ml": "ലിംഗം *"
+  },
+  "Male": {
+    "en": "Male",
+    "ml": "പുരുഷൻ"
+  },
+  "Female": {
+    "en": "Female",
+    "ml": "സ്ത്രീ"
+  },
+  "Other": {
+    "en": "Other",
+    "ml": "മറ്റുള്ളവ"
+  },
+  "Blood group *": {
+    "en": "Blood group *",
+    "ml": "രക്തഗ്രൂപ്പ് *"
+  },
+  "Mobile number *": {
+    "en": "Mobile number *",
+    "ml": "മൊബൈൽ നമ്പർ *"
+  },
+  "Home town *": {
+    "en": "Home town *",
+    "ml": "താമസസ്ഥലം *"
+  },
+  "Allow my name, blood group, area and phone in donor search (optional).": {
+    "en": "Allow my name, blood group, area and phone in donor search (optional).",
+    "ml": "ദാതാക്കളെ തിരയുന്നവർക്ക് എന്റെ പേര്, രക്തഗ്രൂപ്പ്, പ്രദേശം, ഫോൺ നമ്പർ എന്നിവ കാണിക്കാൻ ഞാൻ സമ്മതിക്കുന്നു. ഈ സമ്മതം നൽകുന്നത് നിർബന്ധമല്ല."
+  },
+  "I confirm my details are accurate.": {
+    "en": "I confirm my details are accurate.",
+    "ml": "ഞാൻ നൽകിയ എല്ലാ വിവരങ്ങളും ശരിയാണെന്ന് സ്ഥിരീകരിക്കുന്നു."
+  },
+  "Know before you donate": {
+    "en": "Know before you donate",
+    "ml": "രക്തദാനം ചെയ്യുന്നതിന് മുമ്പ് അറിയേണ്ടത്"
+  },
+  "Who can donate?": {
+    "en": "Who can donate?",
+    "ml": "ആർക്കെല്ലാം രക്തദാനം ചെയ്യാം?"
+  },
+  "Age": {
+    "en": "Age",
+    "ml": "പ്രായം:"
+  },
+  "Generally 18–65; first-time donors should not be over 60.": {
+    "en": "Generally 18–65; first-time donors should not be over 60.",
+    "ml": "സാധാരണയായി 18 മുതൽ 65 വയസ്സ് വരെ. ആദ്യമായി രക്തദാനം ചെയ്യുന്നവർക്ക് 60 വയസ്സിൽ കൂടരുത്."
+  },
+  "Weight": {
+    "en": "Weight",
+    "ml": "ഭാരം:"
+  },
+  "At least 45 kg for 350 ml; over 55 kg for 450 ml. Staff decide the suitable collection volume.": {
+    "en": "At least 45 kg for 350 ml; over 55 kg for 450 ml. Staff decide the suitable collection volume.",
+    "ml": "350 മില്ലിലിറ്റർ രക്തം ദാനം ചെയ്യാൻ കുറഞ്ഞത് 45 കിലോഗ്രാം ഭാരം വേണം. 450 മില്ലിലിറ്ററിന് 55 കിലോഗ്രാമിൽ കൂടുതൽ വേണം. എത്ര രക്തം ശേഖരിക്കാമെന്ന് ആരോഗ്യപ്രവർത്തകർ തീരുമാനിക്കും."
+  },
+  "Whole-blood interval": {
+    "en": "Whole-blood interval",
+    "ml": "സമ്പൂർണ രക്തദാനങ്ങൾക്കിടയിലെ ഇടവേള"
+  },
+  "Men: at least 90 days. Women: at least 120 days.": {
+    "en": "Men: at least 90 days. Women: at least 120 days.",
+    "ml": "പുരുഷന്മാർക്ക് കുറഞ്ഞത് 90 ദിവസവും സ്ത്രീകൾക്ക് കുറഞ്ഞത് 120 ദിവസവും ഇടവേള വേണം."
+  },
+  "Health screening": {
+    "en": "Health screening",
+    "ml": "ആരോഗ്യപരിശോധന"
+  },
+  "Tell staff about illness, medicines, pregnancy, recent surgery, tattoos and previous donations. Other waiting periods may apply.": {
+    "en": "Tell staff about illness, medicines, pregnancy, recent surgery, tattoos and previous donations. Other waiting periods may apply.",
+    "ml": "അസുഖങ്ങൾ, കഴിക്കുന്ന മരുന്നുകൾ, ഗർഭാവസ്ഥ, സമീപകാല ശസ്ത്രക്രിയകൾ, ടാറ്റൂ, മുൻ രക്തദാനങ്ങൾ എന്നിവ ആരോഗ്യപ്രവർത്തകരെ അറിയിക്കുക. ഇവയെ ആശ്രയിച്ച് കൂടുതൽ ഇടവേള ആവശ്യമായേക്കാം."
+  },
+  "This app records whole-blood waiting periods only. A completed interval is not medical clearance.": {
+    "en": "This app records whole-blood waiting periods only. A completed interval is not medical clearance.",
+    "ml": "ഈ ആപ്പ് സമ്പൂർണ രക്തദാനങ്ങൾക്കിടയിലെ ഇടവേള മാത്രമാണ് കണക്കാക്കുന്നത്. ഇടവേള പൂർത്തിയായതുകൊണ്ട് മാത്രം രക്തദാനത്തിനുള്ള വൈദ്യാനുമതി ലഭിക്കില്ല."
+  },
+  "Official donor guidance": {
+    "en": "Official donor guidance",
+    "ml": "ഔദ്യോഗിക രക്തദാന മാർഗനിർദേശങ്ങൾ"
+  },
+  "Search": {
+    "en": "Search",
+    "ml": "തിരയുക"
+  },
+  "RedBlood | Admin dashboard": {
+    "en": "RedBlood | Admin dashboard",
+    "ml": "റെഡ്ബ്ലഡ് | അഡ്മിൻ നിയന്ത്രണപ്പേജ്"
+  },
+  "Admin dashboard": {
+    "en": "Admin dashboard",
+    "ml": "അഡ്മിൻ നിയന്ത്രണപ്പേജ്"
+  },
+  "Total donors": {
+    "en": "Total donors",
+    "ml": "ആകെ ദാതാക്കൾ"
+  },
+  "Approved": {
+    "en": "Approved",
+    "ml": "അംഗീകരിച്ചു"
+  },
+  "Available": {
+    "en": "Available",
+    "ml": "ലഭ്യമാണ്"
+  },
+  "Pending": {
+    "en": "Pending",
+    "ml": "പരിശോധന ബാക്കി"
+  },
+  "Manage donors": {
+    "en": "Manage donors",
+    "ml": "രക്തദാതാക്കളുടെ വിവരങ്ങൾ നിയന്ത്രിക്കുക"
+  },
+  "Export backup": {
+    "en": "Export backup",
+    "ml": "വിവരങ്ങളുടെ പകർപ്പ് എടുക്കുക"
+  },
+  "Import backup": {
+    "en": "Import backup",
+    "ml": "വിവരങ്ങളുടെ പകർപ്പ് ചേർക്കുക"
+  },
+  "Clear all": {
+    "en": "Clear all",
+    "ml": "എല്ലാം നീക്കം ചെയ്യുക"
+  },
+  "All groups": {
+    "en": "All groups",
+    "ml": "എല്ലാ ഗ്രൂപ്പുകളും"
+  },
+  "All statuses": {
+    "en": "All statuses",
+    "ml": "എല്ലാ രജിസ്ട്രേഷൻ നിലകളും"
+  },
+  "Rejected": {
+    "en": "Rejected",
+    "ml": "നിരസിച്ചു"
+  },
+  "Update donor": {
+    "en": "Update donor",
+    "ml": "ദാതാവിന്റെ വിവരങ്ങൾ പുതുക്കുക"
+  },
+  "Full name": {
+    "en": "Full name",
+    "ml": "മുഴുവൻ പേര്"
+  },
+  "Gender": {
+    "en": "Gender",
+    "ml": "ലിംഗം"
+  },
+  "Mobile number": {
+    "en": "Mobile number",
+    "ml": "മൊബൈൽ നമ്പർ"
+  },
+  "Cancel": {
+    "en": "Cancel",
+    "ml": "റദ്ദാക്കുക"
+  },
+  "Save changes": {
+    "en": "Save changes",
+    "ml": "മാറ്റങ്ങൾ സംരക്ഷിക്കുക"
+  },
+  "RedBlood | My dashboard": {
+    "en": "RedBlood | My dashboard",
+    "ml": "റെഡ്ബ്ലഡ് | എന്റെ രജിസ്ട്രേഷൻ വിവരങ്ങൾ"
+  },
+  "Donor profile": {
+    "en": "Donor profile",
+    "ml": "രക്തദാതാവിന്റെ വിവരങ്ങൾ"
+  },
+  "My donor dashboard": {
+    "en": "My donor dashboard",
+    "ml": "എന്റെ രജിസ്ട്രേഷൻ വിവരങ്ങൾ"
+  },
+  "Select donor profile": {
+    "en": "Select donor profile",
+    "ml": "ദാതാവിന്റെ രജിസ്ട്രേഷൻ തിരഞ്ഞെടുക്കുക"
+  },
+  "Save my details": {
+    "en": "Save my details",
+    "ml": "എന്റെ വിവരങ്ങൾ സംരക്ഷിക്കുക"
+  },
+  "Allow contact details in donor search": {
+    "en": "Allow contact details in donor search",
+    "ml": "ദാതാക്കളെ തിരയുന്നവർക്ക് എന്നെ ബന്ധപ്പെടാനുള്ള വിവരങ്ങൾ കാണിക്കാൻ ഞാൻ സമ്മതിക്കുന്നു."
+  },
+  "I confirm these details are correct.": {
+    "en": "I confirm these details are correct.",
+    "ml": "ഈ വിവരങ്ങൾ ശരിയാണെന്ന് ഞാൻ സ്ഥിരീകരിക്കുന്നു."
+  },
+  "Delete my profile": {
+    "en": "Delete my profile",
+    "ml": "എന്റെ രജിസ്ട്രേഷൻ നീക്കം ചെയ്യുക"
+  },
+  "Blood-bank review needed": {
+    "en": "Blood-bank review needed",
+    "ml": "രക്തബാങ്കിന്റെ പരിശോധന ആവശ്യമാണ്"
+  },
+  "Donation history needed": {
+    "en": "Donation history needed",
+    "ml": "മുൻ രക്തദാനത്തിന്റെ വിവരങ്ങൾ ആവശ്യമാണ്"
+  },
+  "Check donation date": {
+    "en": "Check donation date",
+    "ml": "അവസാന രക്തദാന തീയതി പരിശോധിക്കുക"
+  },
+  "Waiting until": {
+    "en": "Waiting until",
+    "ml": "കാത്തിരിപ്പ്:"
+  },
+  "Unavailable": {
+    "en": "Unavailable",
+    "ml": "ലഭ്യമല്ല"
+  },
+  "Current area needed": {
+    "en": "Current area needed",
+    "ml": "ഇപ്പോഴുള്ള സ്ഥലം ആവശ്യമാണ്"
+  },
+  "Availability expired": {
+    "en": "Availability expired",
+    "ml": "ലഭ്യതയുടെ സമയം അവസാനിച്ചു"
+  },
+  "Available for screening": {
+    "en": "Available for screening",
+    "ml": "രക്തദാനത്തിന് മുമ്പുള്ള പരിശോധനയ്ക്ക് സന്നദ്ധം"
+  },
+  "Allow map sharing first.": {
+    "en": "Allow map sharing first.",
+    "ml": "ആദ്യം താഴെയുള്ള മാപ്പിൽ സ്ഥലം കാണിക്കാനുള്ള സമ്മതം തിരഞ്ഞെടുക്കുക."
+  },
+  "Waiting for permission…": {
+    "en": "Waiting for permission…",
+    "ml": "സ്ഥലം കണ്ടെത്താനുള്ള അനുമതിക്കായി കാത്തിരിക്കുന്നു…"
+  },
+  "Location added. Save your details.": {
+    "en": "Location added. Save your details.",
+    "ml": "നിങ്ങളുടെ സ്ഥലം കണ്ടെത്തി. വിവരങ്ങൾ സംരക്ഷിക്കുക."
+  },
+  "Location unavailable. Enter your area name.": {
+    "en": "Location unavailable. Enter your area name.",
+    "ml": "നിങ്ങളുടെ സ്ഥലം കണ്ടെത്താനായില്ല. പഞ്ചായത്തിന്റെ പേര് നൽകുക."
+  },
+  "Choose a new availability period.": {
+    "en": "Choose a new availability period.",
+    "ml": "ലഭ്യതയ്ക്കായി പുതിയ സമയം തിരഞ്ഞെടുക്കുക."
+  },
+  "Enter your current panchayat and area.": {
+    "en": "Enter your current panchayat and area.",
+    "ml": "ഇപ്പോഴുള്ള പഞ്ചായത്തും സ്ഥലവും നൽകുക."
+  },
+  "Complete panchayat, ward, residency and donor type.": {
+    "en": "Complete panchayat, ward, residency and donor type.",
+    "ml": "പഞ്ചായത്ത്, വാർഡ്, സ്ഥിരതാമസം, മുൻ രക്തദാന വിവരങ്ങൾ എന്നിവ പൂരിപ്പിക്കുക."
+  },
+  "Available until": {
+    "en": "Available until",
+    "ml": "ലഭ്യമാകുന്ന അവസാന സമയം"
+  },
+  "Confirm that your details are correct.": {
+    "en": "Confirm that your details are correct.",
+    "ml": "നൽകിയ വിവരങ്ങൾ ശരിയാണെന്ന് സ്ഥിരീകരിക്കുക."
+  },
+  "· Saved": {
+    "en": "· Saved",
+    "ml": "സംരക്ഷിച്ചു"
+  },
+  "Delete this donor profile permanently from this browser?": {
+    "en": "Delete this donor profile permanently from this browser?",
+    "ml": "ഈ ദാതാവിന്റെ രജിസ്ട്രേഷൻ വിവരങ്ങൾ ഈ ബ്രൗസറിൽ നിന്ന് പൂർണമായി നീക്കം ചെയ്യണോ?"
+  },
+  "Profile deleted": {
+    "en": "Profile deleted",
+    "ml": "രജിസ്ട്രേഷൻ നീക്കം ചെയ്തു"
+  },
+  "Donor details": {
+    "en": "Donor details",
+    "ml": "രക്തദാതാവിന്റെ വിവരങ്ങൾ"
+  },
+  "Home panchayat *": {
+    "en": "Home panchayat *",
+    "ml": "പഞ്ചായത്ത് *"
+  },
+  "Home ward *": {
+    "en": "Home ward *",
+    "ml": "വാർഡ് *"
+  },
+  "Are you permanently settled in Alappuzha district? *": {
+    "en": "Are you permanently settled in Alappuzha district? *",
+    "ml": "ആലപ്പുഴ ജില്ലയിൽ സ്ഥിരതാമസമാണോ? *"
+  },
+  "Yes": {
+    "en": "Yes",
+    "ml": "അതെ"
+  },
+  "No": {
+    "en": "No",
+    "ml": "അല്ല"
+  },
+  "Current panchayat *": {
+    "en": "Current panchayat *",
+    "ml": "ഇപ്പോഴുള്ള പഞ്ചായത്ത് *"
+  },
+  "Current ward (optional)": {
+    "en": "Current ward (optional)",
+    "ml": "ഇപ്പോഴുള്ള വാർഡ് (നിർബന്ധമില്ല)"
+  },
+  "Current area *": {
+    "en": "Current area *",
+    "ml": "ഇപ്പോഴുള്ള സ്ഥലം *"
+  },
+  "Enter where you are now.": {
+    "en": "Enter where you are now.",
+    "ml": "ഇപ്പോൾ ഉള്ള സ്ഥലം നൽകുക."
+  },
+  "Are you available?": {
+    "en": "Are you available?",
+    "ml": "ഇപ്പോൾ ലഭ്യമാണോ?"
+  },
+  "Available for how long?": {
+    "en": "Available for how long?",
+    "ml": "എത്ര സമയം ലഭ്യമാണ്?"
+  },
+  "Keep current period": {
+    "en": "Keep current period",
+    "ml": "നിലവിലെ സമയം തുടരുക"
+  },
+  "4 hours": {
+    "en": "4 hours",
+    "ml": "4 മണിക്കൂർ"
+  },
+  "12 hours": {
+    "en": "12 hours",
+    "ml": "12 മണിക്കൂർ"
+  },
+  "24 hours": {
+    "en": "24 hours",
+    "ml": "24 മണിക്കൂർ"
+  },
+  "3 days": {
+    "en": "3 days",
+    "ml": "3 ദിവസം"
+  },
+  "7 days": {
+    "en": "7 days",
+    "ml": "7 ദിവസം"
+  },
+  "Choose a period when you are available.": {
+    "en": "Choose a period when you are available.",
+    "ml": "ലഭ്യമാകുന്ന സമയം തിരഞ്ഞെടുക്കുക."
+  },
+  "Have you donated before? *": {
+    "en": "Have you donated before? *",
+    "ml": "മുമ്പ് രക്തദാനം ചെയ്തിട്ടുണ്ടോ? *"
+  },
+  "First-time donor": {
+    "en": "First-time donor",
+    "ml": "ഇതുവരെ ചെയ്തിട്ടില്ല"
+  },
+  "Regular donor": {
+    "en": "Regular donor",
+    "ml": "പതിവായി ചെയ്യാറുണ്ട്"
+  },
+  "Donated before, occasionally": {
+    "en": "Donated before, occasionally",
+    "ml": "ഇടയ്ക്ക് ചെയ്തിട്ടുണ്ട്"
+  },
+  "Last donation date": {
+    "en": "Last donation date",
+    "ml": "അവസാനമായി രക്തദാനം ചെയ്ത തീയതി"
+  },
+  "Waiting period in days": {
+    "en": "Waiting period in days",
+    "ml": "കാത്തിരിപ്പ് ദിവസങ്ങൾ"
+  },
+  "At least 90 days for men, 120 for women. Follow blood-bank advice.": {
+    "en": "At least 90 days for men, 120 for women. Follow blood-bank advice.",
+    "ml": "പുരുഷന്മാർക്ക് കുറഞ്ഞത് 90 ദിവസം; സ്ത്രീകൾക്ക് 120 ദിവസം. രക്തബാങ്കിന്റെ നിർദേശം പാലിക്കുക."
+  },
+  "Show my approximate area on the map (optional).": {
+    "en": "Show my approximate area on the map (optional).",
+    "ml": "എന്റെ ഏകദേശ സ്ഥലം മാപ്പിൽ കാണിക്കാൻ സമ്മതിക്കുന്നു. ഇത് നിർബന്ധമല്ല."
+  },
+  "Use my location": {
+    "en": "Use my location",
+    "ml": "എന്റെ ഇപ്പോഴുള്ള സ്ഥലം കണ്ടെത്തുക"
+  },
+  "Remove map location": {
+    "en": "Remove map location",
+    "ml": "മാപ്പിൽ സൂക്ഷിച്ച സ്ഥലം നീക്കം ചെയ്യുക"
+  },
+  "Your exact location is not shown.": {
+    "en": "Your exact location is not shown.",
+    "ml": "നിങ്ങളുടെ കൃത്യമായ സ്ഥാനം മാപ്പിൽ കാണിക്കില്ല."
+  },
+  "An area name is enough for search. Location sharing is optional.": {
+    "en": "An area name is enough for search. Location sharing is optional.",
+    "ml": "രജിസ്ട്രേഷനിൽ പഞ്ചായത്തിന്റെ പേര് നൽകിയാൽ മതി. മാപ്പിൽ സ്ഥലം പങ്കിടുന്നത് നിർബന്ധമല്ല."
+  },
+  "Edit": {
+    "en": "Edit",
+    "ml": "തിരുത്തുക"
+  },
+  "Delete": {
+    "en": "Delete",
+    "ml": "നീക്കുക"
+  },
+  "Donor type and donation history must agree.": {
+    "en": "Donor type and donation history must agree.",
+    "ml": "തിരഞ്ഞെടുത്ത ദാതാവിന്റെ തരവും മുൻ രക്തദാന വിവരങ്ങളും തമ്മിൽ പൊരുത്തപ്പെടണം."
+  },
+  "Enter a valid past donation date.": {
+    "en": "Enter a valid past donation date.",
+    "ml": "അവസാനമായി രക്തദാനം ചെയ്ത ശരിയായ തീയതി നൽകുക. ഭാവിയിലെ തീയതി നൽകരുത്."
+  },
+  "Enter a valid name.": {
+    "en": "Enter a valid name.",
+    "ml": "ശരിയായ പേര് നൽകുക."
+  },
+  "Age must be 18–65.": {
+    "en": "Age must be 18–65.",
+    "ml": "പ്രായം 18–65 ആയിരിക്കണം."
+  },
+  "Phone must contain 10–15 digits.": {
+    "en": "Phone must contain 10–15 digits.",
+    "ml": "ഫോൺ നമ്പറിൽ 10 മുതൽ 15 വരെ അക്കങ്ങൾ ഉണ്ടായിരിക്കണം."
+  },
+  "This mobile number is already registered.": {
+    "en": "This mobile number is already registered.",
+    "ml": "ഈ മൊബൈൽ നമ്പർ രജിസ്റ്റർ ചെയ്തിട്ടുണ്ട്."
+  },
+  "Registration saved for approval.": {
+    "en": "Registration saved for approval.",
+    "ml": "രജിസ്ട്രേഷൻ വിവരങ്ങൾ സംരക്ഷിച്ചു. അഡ്മിന്റെ അംഗീകാരത്തിനായി കാത്തിരിക്കുന്നു."
+  },
+  "No matching donors": {
+    "en": "No matching donors",
+    "ml": "ഈ രക്തഗ്രൂപ്പിന് അനുയോജ്യമായ ദാതാക്കളെ കണ്ടെത്തിയില്ല"
+  },
+  "First-time donor? No previous date needed. / ആദ്യമായാണെങ്കിൽ മുൻ ദാന തീയതി ആവശ്യമില്ല.": {
+    "en": "First-time donor? No previous date needed.",
+    "ml": "ആദ്യമായാണ് രക്തദാനം ചെയ്യുന്നതെങ്കിൽ മുൻ രക്തദാന തീയതി നൽകേണ്ടതില്ല."
+  },
+  "Bangalore, Karnataka, India": {
+    "en": "Bangalore, Karnataka, India",
+    "ml": "ബെംഗളൂരു, കർണാടക, ഇന്ത്യ"
+  },
+  "Screening required.": {
+    "en": "Screening required.",
+    "ml": "രക്തദാനത്തിന് മുമ്പ് വൈദ്യപരിശോധന ആവശ്യമാണ്."
+  },
+  "Near": {
+    "en": "Near",
+    "ml": "സമീപം"
+  },
+  "Close edit form": {
+    "en": "Close edit form",
+    "ml": "തിരുത്തൽ ഫോം അടയ്ക്കുക"
+  },
+  "Choose blood group using voice": {
+    "en": "Choose blood group using voice",
+    "ml": "ശബ്ദം ഉപയോഗിച്ച് രക്തഗ്രൂപ്പ് തിരഞ്ഞെടുക്കുക"
+  },
+  "Voice search": {
+    "en": "Voice search",
+    "ml": "ശബ്ദം ഉപയോഗിച്ചുള്ള തിരച്ചിൽ"
+  },
+  "Panchayath / പഞ്ചായത്ത് *": {
+    "en": "Panchayath *",
+    "ml": "പഞ്ചായത്ത് *"
+  },
+  "Ward / വാർഡ് *": {
+    "en": "Ward *",
+    "ml": "വാർഡ് *"
+  },
+  "About RedBlood": {
+    "en": "About RedBlood",
+    "ml": "റെഡ്ബ്ലഡിനെക്കുറിച്ച്"
+  },
+  "Contact the donor to confirm availability.": {
+    "en": "Contact the donor to confirm availability.",
+    "ml": "രക്തദാനം ചെയ്യാൻ കഴിയുമോ എന്ന് ദാതാവിനെ ബന്ധപ്പെട്ടു ഉറപ്പാക്കുക."
+  },
+  "Listed donor / രജിസ്റ്റർ ചെയ്ത ദാതാവ്": {
+    "en": "Listed donor",
+    "ml": "രജിസ്റ്റർ ചെയ്ത ദാതാവ്"
+  },
+  "Panchayath": {
+    "en": "Panchayath",
+    "ml": "പഞ്ചായത്ത്"
+  },
+  "Blood group, panchayath and ward": {
+    "en": "Blood group, panchayath and ward",
+    "ml": "രക്തഗ്രൂപ്പ്, പഞ്ചായത്ത്, വാർഡ്"
+  },
+  "Search by blood group, panchayath and ward. Contact the donor to confirm availability.": {
+    "en": "Search by blood group, panchayath and ward. Contact the donor to confirm availability.",
+    "ml": "രക്തഗ്രൂപ്പ്, പഞ്ചായത്ത്, വാർഡ് എന്നിവ ഉപയോഗിച്ച് തിരയുക. ലഭ്യത ഉറപ്പാക്കാൻ ദാതാവിനെ ബന്ധപ്പെടുക."
+  },
+  "Find a blood donor": {
+    "en": "Find a blood donor",
+    "ml": "രക്തദാതാവിനെ കണ്ടെത്തുക"
+  },
+  "Manage contact details and donation history. Profile selection does not verify identity; secure sign-in is not configured.": {
+    "en": "Manage contact details and donation history. Profile selection does not verify identity; secure sign-in is not configured.",
+    "ml": "ബന്ധപ്പെടാനുള്ള വിവരങ്ങളും രക്തദാനചരിത്രവും നിയന്ത്രിക്കുക. പ്രൊഫൈൽ തിരഞ്ഞെടുക്കുന്നത് വ്യക്തിത്വം സ്ഥിരീകരിക്കുന്നില്ല; സുരക്ഷിത ലോഗിൻ സജ്ജമാക്കിയിട്ടില്ല."
+  },
+  "Donor Registration": {
+    "en": "Donor Registration",
+    "ml": "രക്തദാതൃ രജിസ്ട്രേഷൻ"
+  },
+  "Hospital": {
+    "en": "Hospital",
+    "ml": "ആശുപത്രി"
+  },
+  "Hospital where blood is needed": {
+    "en": "Hospital where blood is needed",
+    "ml": "ആശുപത്രിയുടെ പേര്"
+  },
+  "Optional: shown with your search, not used to filter donors.": {
+    "en": "Optional: shown with your search, not used to filter donors.",
+    "ml": "ആശുപത്രിയുടെ പേര് നൽകുന്നത് നിർബന്ധമല്ല. ഇത് തിരച്ചിലിനൊപ്പം കാണിക്കും; ദാതാക്കളെ തിരഞ്ഞെടുക്കുന്നതിനുള്ള മാനദണ്ഡമല്ല."
+  },
+  "Choose a blood group and optionally enter the hospital name. Contact the donor to confirm availability.": {
+    "en": "Choose a blood group and optionally enter the hospital name. Contact the donor to confirm availability.",
+    "ml": "രക്തഗ്രൂപ്പ് തിരഞ്ഞെടുക്കുക. ആവശ്യമെങ്കിൽ ആശുപത്രിയുടെ പേര് നൽകുക. രക്തദാനം ചെയ്യാൻ കഴിയുമോ എന്ന് ദാതാവിനെ നേരിട്ട് ബന്ധപ്പെട്ടു ഉറപ്പാക്കുക."
+  },
+  "Blood group + hospital": {
+    "en": "Blood group + hospital",
+    "ml": "രക്തഗ്രൂപ്പും ആശുപത്രിയും"
+  },
+  "Every donor makes a difference.": {
+    "en": "Every donor makes a difference.",
+    "ml": "ഓരോ രക്തദാതാവിനും ഒരു മാറ്റം സൃഷ്ടിക്കാനാകും."
+  },
+  "A small act. A lasting connection.": {
+    "en": "A small act. A lasting connection.",
+    "ml": "ഒരു ചെറിയ പ്രവൃത്തി. നിലനിൽക്കുന്ന ബന്ധം."
+  },
+  "About our community": {
+    "en": "About our community",
+    "ml": "നമ്മുടെ രക്തദാതാക്കളുടെ കൂട്ടായ്മ"
+  },
+  "RedBlood connects people who need blood with willing donors. Accurate details, consent and blood-bank screening guide every connection.": {
+    "en": "RedBlood connects people who need blood with willing donors. Accurate details, consent and blood-bank screening guide every connection.",
+    "ml": "രക്തം ആവശ്യമുള്ളവരെയും ദാനം ചെയ്യാൻ സന്നദ്ധരായവരെയും റെഡ്ബ്ലഡ് ബന്ധിപ്പിക്കുന്നു. ശരിയായ വിവരങ്ങളും ദാതാവിന്റെ സമ്മതവും രക്തബാങ്കിന്റെ പരിശോധനയും ഈ സേവനത്തിന്റെ അടിസ്ഥാനമാണ്."
+  },
+  "From registration to connection": {
+    "en": "From registration to connection",
+    "ml": "രജിസ്റ്റർ ചെയ്യുന്നതിൽ നിന്ന് ദാതാവിനെ ബന്ധപ്പെടുന്നതുവരെ"
+  },
+  "Optional — the hospital where blood is needed.": {
+    "en": "Optional — the hospital where blood is needed.",
+    "ml": "ആവശ്യമെങ്കിൽ രക്തം ആവശ്യമുള്ള ആശുപത്രിയുടെ പേര് നൽകുക."
+  },
+  "Or choose a blood group": {
+    "en": "Or choose a blood group",
+    "ml": "അല്ലെങ്കിൽ രക്തഗ്രൂപ്പ് നേരിട്ട് തിരഞ്ഞെടുക്കുക"
+  },
+  "Map privacy": {
+    "en": "Map privacy",
+    "ml": "മാപ്പിലെ വിവരങ്ങളുടെ സ്വകാര്യത"
+  },
+  "Search by blood group and add the hospital name if needed.": {
+    "en": "Search by blood group and add the hospital name if needed.",
+    "ml": "രക്തഗ്രൂപ്പ് ഉപയോഗിച്ച് തിരയുക. ആവശ്യമെങ്കിൽ ആശുപത്രിയുടെ പേരും നൽകുക."
+  },
+  "Approve / അംഗീകരിക്കുക": {
+    "en": "Approve",
+    "ml": "അംഗീകരിക്കുക"
+  },
+  "Approve": {
+    "en": "Approve",
+    "ml": "അംഗീകരിക്കുക"
+  },
+  "Reject / നിരസിക്കുക": {
+    "en": "Reject",
+    "ml": "നിരസിക്കുക"
+  },
+  "Reject": {
+    "en": "Reject",
+    "ml": "നിരസിക്കുക"
+  },
+  "RedBlood | Blood Donor Directory": {
+    "en": "RedBlood | Blood Donor Directory",
+    "ml": "റെഡ്ബ്ലഡ് | രക്തദാതാക്കളുടെ ഡയറക്ടറി"
+  },
+  "Contact | RedBlood": {
+    "en": "Contact | RedBlood",
+    "ml": "റെഡ്ബ്ലഡ് | ബന്ധപ്പെടുക"
+  },
+  "Have you donated before?": {
+    "en": "Have you donated before?",
+    "ml": "മുമ്പ് രക്തദാനം ചെയ്തിട്ടുണ്ടോ?"
+  },
+  "First-time donor? No previous date needed.": {
+    "en": "First-time donor? No previous date needed.",
+    "ml": "ആദ്യമായാണ് രക്തദാനം ചെയ്യുന്നതെങ്കിൽ മുൻ രക്തദാന തീയതി നൽകേണ്ടതില്ല."
+  },
+  "Region / panchayat": {
+    "en": "Region / panchayat",
+    "ml": "പഞ്ചായത്ത്"
+  },
+  "Panchayath *": {
+    "en": "Panchayath *",
+    "ml": "പഞ്ചായത്ത് *"
+  },
+  "Ward *": {
+    "en": "Ward *",
+    "ml": "വാർഡ് *"
+  },
+  "Listed donor": {
+    "en": "Listed donor",
+    "ml": "രജിസ്റ്റർ ചെയ്ത ദാതാവ്"
+  },
+  "Main navigation": {
+    "en": "Main navigation",
+    "ml": "പ്രധാന മെനു"
+  },
+  "Quick blood group search": {
+    "en": "Quick blood group search",
+    "ml": "രക്തഗ്രൂപ്പ് നേരിട്ട് തിരഞ്ഞെടുക്കാം"
+  },
+  "Approximate donor map": {
+    "en": "Approximate donor map",
+    "ml": "ദാതാക്കളുടെ ഏകദേശ സ്ഥലം കാണിക്കുന്ന മാപ്പ്"
+  },
+  "Donor statistics": {
+    "en": "Donor statistics",
+    "ml": "ദാതാക്കളുടെ കണക്കുകൾ"
+  },
+  "RedBlood home": {
+    "en": "RedBlood home",
+    "ml": "റെഡ്ബ്ലഡിന്റെ മുഖപ്പേജ്"
+  },
+  "Location": {
+    "en": "Location",
+    "ml": "സ്ഥലം"
+  },
+  "Check the approved donor registrations, contact-sharing consent and last donation dates in Administration.": {
+    "en": "Check the approved donor registrations, contact-sharing consent and last donation dates in Administration.",
+    "ml": "അഡ്മിൻ നിയന്ത്രണപ്പേജിൽ ദാതാക്കളുടെ അംഗീകാരം, ബന്ധപ്പെടാനുള്ള വിവരങ്ങൾ പങ്കിടാനുള്ള സമ്മതം, അവസാന രക്തദാന തീയതി എന്നിവ പരിശോധിക്കുക."
+  },
+  "The map shows approximate areas of matching donors who consented to location sharing. Exact positions are not shown.": {
+    "en": "The map shows approximate areas of matching donors who consented to location sharing. Exact positions are not shown.",
+    "ml": "സ്ഥലം പങ്കിടാൻ സമ്മതിച്ച അനുയോജ്യമായ ദാതാക്കളുടെ ഏകദേശ പ്രദേശങ്ങൾ മാപ്പിൽ കാണാം. കൃത്യമായ സ്ഥാനം കാണിക്കില്ല."
+  },
+  "Your panchayath identifies your area. Sharing your map location is optional.": {
+    "en": "Your panchayath identifies your area. Sharing your map location is optional.",
+    "ml": "നിങ്ങളുടെ പ്രദേശം തിരിച്ചറിയാൻ പഞ്ചായത്തിന്റെ പേര് ഉപയോഗിക്കുന്നു. മാപ്പിൽ സ്ഥലം പങ്കിടുന്നത് നിർബന്ധമല്ല."
+  },
+  "Nearby hospital with blood bank": {
+    "en": "Nearby hospital with blood bank",
+    "ml": "ബ്ലഡ് ബാങ്കുള്ള സമീപത്തെ ആശുപത്രി"
+  }
+}

@@ -33,6 +33,23 @@ if (navToggle && siteNav) {
     siteNav.classList.toggle("is-open", !isOpen);
   });
 
+  function closeNavigation(restoreFocus = false) {
+    const wasOpen = navToggle.getAttribute('aria-expanded') === 'true';
+    navToggle.setAttribute('aria-expanded', 'false');
+    siteNav.classList.remove('is-open');
+    if (restoreFocus && wasOpen) navToggle.focus();
+  }
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape') closeNavigation(true);
+  });
+  document.addEventListener('click', event => {
+    if (!event.target.closest('.site-header')) closeNavigation();
+  });
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 1340) closeNavigation();
+  });
+  document.querySelector('[data-language]')?.addEventListener('change', () => closeNavigation());
+
   siteNav.querySelectorAll("a").forEach((link) => {
     link.addEventListener("click", () => {
       navToggle.setAttribute("aria-expanded", "false");
@@ -56,20 +73,22 @@ if (registrationForm && formError && window.RedGoldStore) {
     const formData = new FormData(registrationForm);
 
     try {
+      if(!registrationForm.elements.truth.checked) throw Error('Confirm that your details are correct. / വിവരങ്ങൾ ശരിയാണെന്ന് സ്ഥിരീകരിക്കുക.');
       window.RedGoldStore.addDonor({
         name: formData.get("name"),
         age: Number(formData.get("age")),
         sex: formData.get("sex"),
         bloodGroup: formData.get("blood_group"),
         phone: formData.get("phone"),
-        location: formData.get("location"),
+
         sharePhone: formData.get("share_phone") === "1",
-        available: true,
+        ...window.RedBloodFeatures.readFields(registrationForm),
         status: "pending"
       });
 
       registrationForm.reset();
-      showToast("Donor saved locally and sent for admin approval.");
+      window.RedBloodFeatures.afterRegistration();
+      showToast("Registration saved for approval. / അംഗീകാരത്തിനായി രജിസ്ട്രേഷൻ സംരക്ഷിച്ചു.");
     } catch (error) {
       formError.textContent = error.message;
       formError.scrollIntoView({ behavior: "smooth", block: "center" });
@@ -89,13 +108,16 @@ function renderSearchResults() {
   }
 
   const bloodGroup = bloodGroupSelect.value;
+  const hospital = document.querySelector('#search-hospital')?.value.trim() || '';
+  const hospitalContext = hospital ? `<p class="hospital-context"><span>Hospital</span>: <span data-user-content>${escapeHtml(hospital)}</span></p>` : '';
   const location = locationInput ? locationInput.value.trim().toLowerCase() : "";
 
   if (!bloodGroup) {
+    window.RedBloodFeatures?.renderMap([]);
     searchResults.innerHTML = `
       <div class="empty-state compact-empty">
         <span aria-hidden="true">⌕</span>
-        <h3>Choose a blood group</h3>
+        <h3>Choose a blood group / രക്തഗ്രൂപ്പ് തിരഞ്ഞെടുക്കുക</h3>
         <p>Select a group before searching the local donor directory.</p>
       </div>
     `;
@@ -103,20 +125,19 @@ function renderSearchResults() {
   }
 
   const donors = window.RedGoldStore.getDonors()
-    .filter((donor) => donor.status === "approved")
-    .filter((donor) => donor.available)
-    .filter((donor) => donor.sharePhone)
-    .filter((donor) => donor.bloodGroup === bloodGroup)
-    .filter((donor) => !location || donor.location.toLowerCase().includes(location))
+    .filter((donor) => window.RedBloodAvailability.matches(donor, {
+      bloodGroup
+    }))
     .sort((a, b) => a.name.localeCompare(b.name));
 
+  window.RedBloodFeatures?.renderMap(donors);
   if (donors.length === 0) {
     searchResults.innerHTML = `
       <div class="empty-state compact-empty">
         <span aria-hidden="true">♥</span>
-        <h3>No matching local donors</h3>
-        <p>Try another location, load demo data from the admin dashboard, or approve a pending donor.</p>
-        <a class="button button-secondary" href="#admin-dashboard">Open admin dashboard</a>
+        <h3>No matching donors / അനുയോജ്യമായ ദാതാക്കളെ കണ്ടെത്തിയില്ല</h3>${hospitalContext}
+        <p>Check the approved donor registrations, contact-sharing consent and last donation dates in Administration.</p>
+        <a class="button button-secondary" href="admin.html">Open admin dashboard</a>
       </div>
     `;
     return;
@@ -126,10 +147,10 @@ function renderSearchResults() {
     <article class="donor-card">
       <div class="donor-card-head">
         <span class="blood-badge">${escapeHtml(donor.bloodGroup)}</span>
-        <span class="available-badge">Available</span>
+        <span class="available-badge">Listed donor / രജിസ്റ്റർ ചെയ്ത ദാതാവ്</span>
       </div>
-      <h3>${escapeHtml(donor.name)}</h3>
-      <p class="donor-location">📍 ${escapeHtml(donor.location)}</p>
+      <h3 data-user-content>${escapeHtml(donor.name)}</h3>
+      <p class="donor-location">📍 <span data-user-content>${escapeHtml(donor.homePanchayat || donor.region)}</span>${(donor.homeWard || donor.ward) ? ` · <span>Ward</span> <span data-user-content>${escapeHtml(donor.homeWard || donor.ward)}</span>` : ""}</p><p class="local-storage-note"><span>Contact the donor to confirm availability.</span> <span>Screening required.</span></p>
       <div class="donor-meta">
         <div><span>Age</span><strong>${escapeHtml(donor.age)}</strong></div>
         <div><span>Gender</span><strong>${escapeHtml({ M: "Male", F: "Female", O: "Other" }[donor.sex] || "Other")}</strong></div>
@@ -141,10 +162,11 @@ function renderSearchResults() {
   `).join("");
 
   searchResults.innerHTML = `
+    ${hospitalContext}
     <div class="result-summary">
       <div>
         <h3>${donors.length} matching donor${donors.length === 1 ? "" : "s"}</h3>
-        <p>${escapeHtml(bloodGroup)}${location ? ` near ${escapeHtml(locationInput.value.trim())}` : ""}</p>
+        <p>${escapeHtml(bloodGroup)}${location ? ` <span>Near</span> <span data-user-content>${escapeHtml(locationInput.value.trim())}</span>` : ""}</p>
       </div>
     </div>
     <div class="donor-grid">${donorCards}</div>
@@ -223,7 +245,7 @@ if (voiceButton && voiceStatus && bloodGroupSelect) {
 
     recognition.addEventListener("result", (event) => {
       const transcript = event.results[0][0].transcript.trim().toLowerCase();
-      const matchedKey = Object.keys(spokenGroups).find((key) => transcript.includes(key));
+      const matchedKey = Object.keys(spokenGroups).sort((a,b) => b.length-a.length).find((key) => transcript.includes(key));
 
       if (matchedKey) {
         bloodGroupSelect.value = spokenGroups[matchedKey];
