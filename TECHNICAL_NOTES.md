@@ -1,3 +1,10 @@
+# Supabase registration integration
+
+See SUPABASE_SETUP.md for the current setup, scope and test instructions.
+Registration now uses cloud-registration.js and supabase-config.js; the old
+local registration handler was removed from app.js. The following notes describe
+the legacy local directory/dashboard implementation still in this release.
+
 # RedBlood — developer notes
 
 ## Scope

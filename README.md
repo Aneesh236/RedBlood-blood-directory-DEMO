@@ -1,5 +1,8 @@
 # RedBlood — Setup guide
 
+**Start with SUPABASE_SETUP.md.** This release adds cloud registration and
+email/password accounts. Run the included SQL and configure Supabase Auth first.
+
 1. Extract the ZIP and open the **redblood** folder in VS Code.
 2. Open **Terminal → New Terminal**.
 3. Run `python -m http.server 8000` (Windows: `py -m http.server 8000`).
@@ -22,8 +25,9 @@ translated. Voice blood-group search, where supported, expects English.
   delete a profile after confirmation.
 - **admin.html** — Approve registrations, edit records and manage backups.
 
-Register a record first, then use Administration to approve it. Name, phone or
-blood-group changes from the donor dashboard require approval again.
+The donor and admin dashboards still manage legacy local records. They do not
+show or approve new Supabase registrations yet. Cloud dashboard integration
+is the next stage.
 
 Map sharing is optional. Enter an area name, or allow sharing and choose
 **Use my location**. Coordinates do not need to be entered. The online map needs
@@ -31,13 +35,11 @@ an internet connection and shows only an approximate area.
 
 ## Current storage and account setup
 
-Records are saved only in this browser. Secure accounts and a shared database
-are not configured. Profile selection does not verify identity. Do not enter
-personal donor information until these services are implemented. Deletion removes
-the current browser record; exported backups remain separate copies.
-
-വിവരങ്ങൾ ഈ ബ്രൗസറിൽ മാത്രമാണ് സൂക്ഷിക്കുന്നത്. സുരക്ഷിത അക്കൗണ്ടുകളും
-പങ്കിട്ട ഡാറ്റാബേസും സജ്ജമാക്കുന്നതുവരെ വ്യക്തിഗത ദാതൃവിവരങ്ങൾ നൽകരുത്.
+New registrations are saved in Supabase after authenticated submission. Account
+creation and email confirmation do not themselves create a donor registration.
+Existing local records remain in this browser and are not automatically migrated.
+Search, map results and both dashboards still use those legacy local records.
+Cloud records are private until cloud search/admin access is implemented.
 
 Technical details and tests: **TECHNICAL_NOTES.md**.
 
@@ -47,7 +49,7 @@ Registration and profile editing use the same personal-detail fields. Enter one
 applicable. There are no separate home/current-area fields, availability-duration
 questions or editable waiting-period inputs.
 
-The app automatically checks the donation interval. It no longer expires donor
+The existing local search automatically checks the donation interval. It no longer expires donor
 listings based on availability time. Search results are directory matches: contact
 the donor to confirm they can help. Medical screening remains required. Existing
 longer recorded deferrals and administration listing pauses are preserved.
@@ -73,8 +75,7 @@ To use it on a phone, serve the files from an HTTPS host and open the website
 address in the phone browser. For a quick check on the same Wi-Fi network, run
 the server command above on your computer and open `http://YOUR-COMPUTER-IP:8000`
 on the phone. Location permission generally needs HTTPS; ordinary local network
-HTTP does not enable it. Data still belongs to each browser until a shared backend
-is added.
+HTTP does not enable it. New registrations save to Supabase; legacy dashboard/search data remains local.
 
 Malayalam wording has been reviewed for complete meaning, with clearer donor-history answers and phone-number/location consent. Labels and explanations wrap on mobile; dropdown choices remain readable on narrow screens.
 

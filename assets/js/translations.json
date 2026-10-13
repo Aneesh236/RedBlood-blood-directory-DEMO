@@ -1377,7 +1377,7 @@
   },
   "Confirm that your details are correct.": {
     "en": "Confirm that your details are correct.",
-    "ml": "നൽകിയ വിവരങ്ങൾ ശരിയാണെന്ന് സ്ഥിരീകരിക്കുക."
+    "ml": "നിങ്ങളുടെ വിവരങ്ങൾ ശരിയാണെന്ന് സ്ഥിരീകരിക്കുക."
   },
   "· Saved": {
     "en": "· Saved",
@@ -1770,5 +1770,85 @@
   "Nearby hospital with blood bank": {
     "en": "Nearby hospital with blood bank",
     "ml": "ബ്ലഡ് ബാങ്കുള്ള സമീപത്തെ ആശുപത്രി"
+  },
+  "Your account": {
+    "en": "Your account",
+    "ml": "നിങ്ങളുടെ അക്കൗണ്ട്"
+  },
+  "Create an account, confirm your email, then sign in to register as a donor.": {
+    "en": "Create an account, confirm your email, then sign in to register as a donor.",
+    "ml": "അക്കൗണ്ട് സൃഷ്ടിച്ച് ഇമെയിൽ സ്ഥിരീകരിക്കുക. തുടർന്ന് പ്രവേശിച്ച് ദാതാവായി രജിസ്റ്റർ ചെയ്യുക."
+  },
+  "Password": {
+    "en": "Password",
+    "ml": "പാസ്‌വേഡ്"
+  },
+  "Use at least 8 characters.": {
+    "en": "Use at least 8 characters.",
+    "ml": "കുറഞ്ഞത് 8 അക്ഷരങ്ങളോ അക്കങ്ങളോ ചിഹ്നങ്ങളോ ഉപയോഗിക്കുക."
+  },
+  "Create account": {
+    "en": "Create account",
+    "ml": "അക്കൗണ്ട് സൃഷ്ടിക്കുക"
+  },
+  "Sign in": {
+    "en": "Sign in",
+    "ml": "പ്രവേശിക്കുക"
+  },
+  "Sign out": {
+    "en": "Sign out",
+    "ml": "പുറത്തുകടക്കുക"
+  },
+  "Create an account or sign in before registering.": {
+    "en": "Create an account or sign in before registering.",
+    "ml": "രജിസ്റ്റർ ചെയ്യുന്നതിന് മുമ്പ് അക്കൗണ്ട് സൃഷ്ടിക്കുകയോ പ്രവേശിക്കുകയോ ചെയ്യുക."
+  },
+  "Signed in. Complete your donor details and submit the registration.": {
+    "en": "Signed in. Complete your donor details and submit the registration.",
+    "ml": "പ്രവേശിച്ചു. ദാതാവിന്റെ വിവരങ്ങൾ പൂരിപ്പിച്ച് രജിസ്ട്രേഷൻ സമർപ്പിക്കുക."
+  },
+  "Check your email to confirm your account, then sign in. Your donor details have not been saved yet.": {
+    "en": "Check your email to confirm your account, then sign in. Your donor details have not been saved yet.",
+    "ml": "ഇമെയിലിലെ ലിങ്ക് വഴി അക്കൗണ്ട് സ്ഥിരീകരിച്ച ശേഷം പ്രവേശിക്കുക. ദാതാവിന്റെ വിവരങ്ങൾ ഇതുവരെ സംരക്ഷിച്ചിട്ടില്ല."
+  },
+  "Your donor registration was saved in Supabase and is waiting for approval.": {
+    "en": "Your donor registration was saved in Supabase and is waiting for approval.",
+    "ml": "ദാതാവിന്റെ രജിസ്ട്രേഷൻ Supabase-ൽ സംരക്ഷിച്ചു. അംഗീകാരത്തിനായി കാത്തിരിക്കുന്നു."
+  },
+  "Registrations are saved in Supabase after you sign in. New registrations wait for approval.": {
+    "en": "Registrations are saved in Supabase after you sign in. New registrations wait for approval.",
+    "ml": "പ്രവേശിച്ചതിന് ശേഷം രജിസ്ട്രേഷൻ വിവരങ്ങൾ Supabase-ൽ സംരക്ഷിക്കും. പുതിയ രജിസ്ട്രേഷനുകൾക്ക് അംഗീകാരം ആവശ്യമാണ്."
+  },
+  "Supabase configuration is missing.": {
+    "en": "Supabase configuration is missing.",
+    "ml": "Supabase ക്രമീകരണം നൽകിയിട്ടില്ല."
+  },
+  "Enter a valid email address.": {
+    "en": "Enter a valid email address.",
+    "ml": "ശരിയായ ഇമെയിൽ വിലാസം നൽകുക."
+  },
+  "Use a password with at least 8 characters.": {
+    "en": "Use a password with at least 8 characters.",
+    "ml": "കുറഞ്ഞത് 8 അക്ഷരങ്ങളോ അക്കങ്ങളോ ചിഹ്നങ്ങളോ അടങ്ങിയ പാസ്‌വേഡ് ഉപയോഗിക്കുക."
+  },
+  "Sign in before submitting donor details.": {
+    "en": "Sign in before submitting donor details.",
+    "ml": "ദാതാവിന്റെ വിവരങ്ങൾ സമർപ്പിക്കുന്നതിന് മുമ്പ് പ്രവേശിക്കുക."
+  },
+  "This account or phone number is already registered.": {
+    "en": "This account or phone number is already registered.",
+    "ml": "ഈ അക്കൗണ്ട് അല്ലെങ്കിൽ ഫോൺ നമ്പർ ഇതിനകം രജിസ്റ്റർ ചെയ്തിട്ടുണ്ട്."
+  },
+  "The request failed. Please try again.": {
+    "en": "The request failed. Please try again.",
+    "ml": "ശ്രമം പരാജയപ്പെട്ടു. വീണ്ടും ശ്രമിക്കുക."
+  },
+  "Could not connect to Supabase. Check your internet connection and reload the page.": {
+    "en": "Could not connect to Supabase. Check your internet connection and reload the page.",
+    "ml": "Supabase-ലേക്ക് ബന്ധപ്പെടാനായില്ല. ഇന്റർനെറ്റ് ബന്ധം പരിശോധിച്ച് പേജ് വീണ്ടും തുറക്കുക."
+  },
+  "Cloud registration is enabled. Donor search and dashboards are not connected to Supabase yet.": {
+    "en": "Cloud registration is enabled. Donor search and dashboards are not connected to Supabase yet.",
+    "ml": "രജിസ്ട്രേഷൻ വിവരങ്ങൾ Supabase-ൽ സംരക്ഷിക്കാം. ദാതാക്കളെ തിരയുന്നതും ഡാഷ്‌ബോർഡുകളും ഇതുവരെ Supabase-ലേക്ക് ബന്ധിപ്പിച്ചിട്ടില്ല."
   }
 }

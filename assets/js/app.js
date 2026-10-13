@@ -65,38 +65,6 @@ document.querySelectorAll("[data-current-year]").forEach((element) => {
 const registrationForm = document.querySelector("[data-registration-form]");
 const formError = document.querySelector("[data-form-error]");
 
-if (registrationForm && formError && window.RedGoldStore) {
-  registrationForm.addEventListener("submit", (event) => {
-    event.preventDefault();
-    formError.textContent = "";
-
-    const formData = new FormData(registrationForm);
-
-    try {
-      if(!registrationForm.elements.truth.checked) throw Error('Confirm that your details are correct. / വിവരങ്ങൾ ശരിയാണെന്ന് സ്ഥിരീകരിക്കുക.');
-      window.RedGoldStore.addDonor({
-        name: formData.get("name"),
-        age: Number(formData.get("age")),
-        sex: formData.get("sex"),
-        bloodGroup: formData.get("blood_group"),
-        phone: formData.get("phone"),
-
-        sharePhone: formData.get("share_phone") === "1",
-        ...window.RedBloodFeatures.readFields(registrationForm),
-        status: "pending"
-      });
-
-      registrationForm.reset();
-      window.RedBloodFeatures.afterRegistration();
-      showToast("Registration saved for approval. / അംഗീകാരത്തിനായി രജിസ്ട്രേഷൻ സംരക്ഷിച്ചു.");
-    } catch (error) {
-      formError.textContent = error.message;
-      formError.scrollIntoView({ behavior: "smooth", block: "center" });
-      showToast(error.message, "error");
-    }
-  });
-}
-
 const donorSearchForm = document.querySelector("#donor-search-form");
 const searchResults = document.querySelector("#search-results");
 const bloodGroupSelect = document.querySelector("#search-blood-group");
