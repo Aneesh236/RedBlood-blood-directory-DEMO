@@ -1,508 +1,276 @@
 <!DOCTYPE html>
+
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="RedGold is a college blood donor directory project for registering volunteers and finding donors by blood group and location.">
-  <meta name="theme-color" content="#b5122b">
-  <title>RedGold | Blood Donor Directory</title>
-  <link rel="icon" href="assets/images/donate-blood.jpg">
-  <link rel="stylesheet" href="assets/css/styles.css">
-  <script src="assets/js/storage.js" defer></script>
-  <script src="assets/js/app.js" defer></script>
-  <script src="assets/js/admin.js" defer></script>
-</head>
-
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="RedBlood is a community blood donor directory for registering volunteers and finding donors by blood group and location." name="description"/>
+<meta content="#b5122b" name="theme-color"/>
+<title>RedBlood | Blood Donor Directory</title>
+<link href="assets/images/redblood-mark.svg" rel="icon" type="image/svg+xml"/>
+<link href="assets/css/styles.css" rel="stylesheet"/>
+<script defer="" src="assets/js/availability.js"></script>
+<script defer="" src="assets/js/storage.js"></script>
+<script defer="" src="assets/js/features.js"></script>
+<script defer="" src="assets/js/app.js"></script>
+<script defer="" src="assets/js/admin.js"></script>
+<script defer="True" src="assets/js/language.js"></script><link href="assets/css/responsive.css" rel="stylesheet"/></head>
 <body>
-  <a class="skip-link" href="#main-content">Skip to main content</a>
-
-  <header class="site-header" id="home">
-    <div class="container nav-wrap">
-      <a class="brand" href="index.html" aria-label="RedGold home">
-        <span class="brand-mark" aria-hidden="true">♥</span>
-        <span>RedGold</span>
-      </a>
-
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-navigation">
-        <span class="sr-only">Toggle navigation</span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-
-      <nav class="site-nav" id="main-navigation" aria-label="Main navigation">
-        <a href="#home">Home</a>
-        <a href="#find-donor">Find a donor</a>
-        <a href="#register">Register</a>
-        <a href="#eligibility">Eligibility</a>
-        <a href="#about">About</a>
-        <a href="#admin-dashboard">Admin demo</a>
-        <a class="nav-cta" href="contacts.html">Contact</a>
-      </nav>
-    </div>
-  </header>
-
-  <main id="main-content">
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow"><span aria-hidden="true">●</span> Offline college-project demo</p>
-          <h1>A few minutes for you. <span>A lifetime for someone.</span></h1>
-          <p class="hero-text">
-            RedGold helps volunteers register as donors and allows families to find
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header" id="home">
+<div class="container nav-wrap">
+<a aria-label="RedBlood home" class="brand" href="index.html">
+<span aria-hidden="true" class="brand-mark"><img alt="" height="30" src="assets/images/redblood-mark.svg" width="24"/></span>
+<span>RedBlood</span>
+</a><label class="language-control"><span class="sr-only">Language</span><select aria-label="Language" data-language=""><option value="en">English</option><option value="ml">മലയാളം</option></select></label><button aria-controls="main-navigation" aria-expanded="false" class="nav-toggle" type="button">
+<span class="sr-only">Toggle navigation</span>
+<span></span>
+<span></span>
+<span></span>
+</button>
+<nav aria-label="Main navigation" class="site-nav" id="main-navigation">
+<a href="#home">Home / മുഖപ്പേജ്</a><a href="#about">About</a>
+<a href="#find-donor">Find donors / ദാതാക്കളെ കണ്ടെത്തുക</a>
+<a href="#register">Register / രജിസ്റ്റർ ചെയ്യുക</a>
+<a href="donor.html">My dashboard / എന്റെ വിവരങ്ങൾ</a>
+<a href="admin.html">Administration / അഡ്മിനിസ്ട്രേഷൻ</a>
+<a class="nav-cta" href="contacts.html">Contact / ബന്ധപ്പെടുക</a>
+</nav>
+</div>
+</header>
+<main id="main-content">
+<div class="service-notice">Account protection and shared storage are not configured. Records are saved only in this browser. Do not enter personal donor information yet.</div>
+<section class="hero">
+<div class="container hero-grid">
+<div class="hero-copy">
+<p class="eyebrow"><span aria-hidden="true">●</span> Community blood donor network</p>
+<h1>A few minutes for you. <span>A lifetime for someone.</span></h1>
+<p class="hero-text">
+            RedBlood helps volunteers register as donors and allows families to find
             available donors by blood group and location.
           </p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#find-donor">Find a donor</a>
-            <a class="button button-secondary" href="#register">Become a donor</a>
-          </div>
-          <p class="hero-note">
-            <strong>Emergency?</strong> Contact a licensed blood bank or hospital first.
-            This college project is a directory, not an emergency medical service.
+<div class="hero-actions">
+<a class="button button-primary" href="#find-donor">Find donors / ദാതാക്കളെ കണ്ടെത്തുക</a>
+<a class="button button-secondary" href="#register">Become a donor / ദാതാവാകുക</a>
+</div>
+<p class="hero-note">
+<strong>Emergency?</strong> Contact a licensed blood bank or hospital first.
+            Please coordinate donations through a licensed blood bank.
           </p>
-        </div>
-
-        <div class="hero-visual">
-          <div class="hero-image-card">
-            <img src="assets/images/donate-blood.jpg" alt="Donate blood illustration">
-          </div>
-          <div class="floating-card floating-card-top">
-            <span class="mini-icon" aria-hidden="true">⌕</span>
-            <div><strong>Search quickly</strong><small>Group + location</small></div>
-          </div>
-          <div class="floating-card floating-card-bottom">
-            <span class="mini-icon" aria-hidden="true">✓</span>
-            <div><strong>Volunteer safely</strong><small>Consent-based listing</small></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="quick-strip" aria-label="Directory highlights">
-      <div class="container quick-grid">
-        <div><strong>8</strong><span>Blood groups supported</span></div>
-        <div><strong>2</strong><span>Simple search filters</span></div>
-        <div><strong>1</strong><span>Community directory</span></div>
-        <div><strong>24/7</strong><span>Directory access</span></div>
-      </div>
-    </section>
-
-    <section class="section find-section" id="find-donor">
-      <div class="container">
-        <div class="section-heading centered">
-          <p class="eyebrow">Donor search</p>
-          <h2>Find an available blood donor</h2>
-          <p>Select a blood group and optionally narrow the results by town, city, or district.</p>
-        </div>
-
-        <form class="search-panel" id="donor-search-form">
-          <div class="form-field">
-            <label for="search-blood-group">Blood group</label>
-            <select id="search-blood-group" name="blood_group" required>
-              <option value="">Choose a group</option>
-              <option value="A+">A+</option>
-              <option value="A-">A−</option>
-              <option value="B+">B+</option>
-              <option value="B-">B−</option>
-              <option value="AB+">AB+</option>
-              <option value="AB-">AB−</option>
-              <option value="O+">O+</option>
-              <option value="O-">O−</option>
-            </select>
-          </div>
-
-          <div class="form-field grow">
-            <label for="search-location">Location <span>(optional)</span></label>
-            <input id="search-location" name="location" type="search" maxlength="120" placeholder="Example: Alappuzha">
-          </div>
-
-          <button class="voice-button" type="button" data-voice-search aria-label="Choose blood group using voice" title="Voice search">
-            <span aria-hidden="true">🎙</span>
-          </button>
-
-          <button class="button button-primary search-button" type="submit">Search donors</button>
-          <p class="voice-status" data-voice-status aria-live="polite"></p>
-        </form>
-
-        <div class="blood-group-links" role="group" aria-label="Quick blood group search">
-          <button type="button" data-quick-blood="A+">A+</button>
-          <button type="button" data-quick-blood="A-">A−</button>
-          <button type="button" data-quick-blood="B+">B+</button>
-          <button type="button" data-quick-blood="B-">B−</button>
-          <button type="button" data-quick-blood="AB+">AB+</button>
-          <button type="button" data-quick-blood="AB-">AB−</button>
-          <button type="button" data-quick-blood="O+">O+</button>
-          <button type="button" data-quick-blood="O-">O−</button>
-        </div>
-
-        <div class="search-results" id="search-results" aria-live="polite">
-          <div class="empty-state compact-empty">
-            <span aria-hidden="true">⌕</span>
-            <h3>Your search results will appear here</h3>
-            <p>Only approved, available donors who consented to contact sharing are shown.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section soft-section" id="register">
-      <div class="container register-grid">
-        <div class="register-copy">
-          <p class="eyebrow">Volunteer registration</p>
-          <h2>Join the donor community</h2>
-          <p>
+</div>
+<div aria-hidden="true" class="hero-visual"><span class="hero-orbit hero-orbit-one"></span><span class="hero-orbit hero-orbit-two"></span>
+<div class="hero-image-card">
+<img alt="" height="300" src="assets/images/redblood-mark.svg" width="240"/>
+</div>
+<div class="floating-card floating-card-top">
+<span aria-hidden="true" class="mini-icon">⌕</span>
+<div><strong>Search quickly</strong><small>Blood group + hospital</small></div>
+</div>
+<div class="floating-card floating-card-bottom">
+<span aria-hidden="true" class="mini-icon">✓</span>
+<div><strong>Volunteer safely</strong><small>Consent-based listing</small></div>
+</div>
+<div class="hero-visual-caption"><strong>Every donor makes a difference.</strong><span>A small act. A lasting connection.</span></div></div>
+</div>
+</section>
+<section class="section" id="about">
+<div class="container about-intro">
+<div class="eligibility-copy"><p class="eyebrow">About our community</p><h2>About RedBlood</h2><p class="about-lead">RedBlood connects people who need blood with willing donors. Accurate details, consent and blood-bank screening guide every connection.</p>
+<p>Healthy adults can volunteer. Registration does not confirm medical eligibility; the blood bank screens every donor.</p>
+</div>
+<ul class="donor-guidance"><li><strong>Age / പ്രായം:</strong> Generally 18–65; first-time donors should not be over 60. / സാധാരണയായി 18–65; ആദ്യമായി ദാനം ചെയ്യുന്നവർക്ക് 60 വയസ്സിൽ കൂടരുത്.</li>
+<li><strong>Weight / ഭാരം:</strong> At least 45 kg for 350 ml; over 55 kg for 450 ml. Staff decide the suitable collection volume. / 350 മില്ലിക്ക് കുറഞ്ഞത് 45 കിലോ; 450 മില്ലിക്ക് 55 കിലോയിൽ കൂടുതൽ. അളവ് ആരോഗ്യപ്രവർത്തകർ തീരുമാനിക്കും.</li>
+<li><strong>Whole-blood interval / സമ്പൂർണ രക്തദാന ഇടവേള:</strong> Men: at least 90 days. Women: at least 120 days. / പുരുഷന്മാർ: കുറഞ്ഞത് 90 ദിവസം. സ്ത്രീകൾ: കുറഞ്ഞത് 120 ദിവസം.</li>
+<li><strong>Health screening / ആരോഗ്യ പരിശോധന:</strong> Tell staff about illness, medicines, pregnancy, recent surgery, tattoos and previous donations. Other waiting periods may apply. / അസുഖം, മരുന്നുകൾ, ഗർഭാവസ്ഥ, സമീപകാല ശസ്ത്രക്രിയ, ടാറ്റൂ, മുൻ രക്തദാനം എന്നിവ ജീവനക്കാരെ അറിയിക്കുക. കൂടുതൽ കാത്തിരിപ്പ് ആവശ്യമായേക്കാം.</li></ul><div class="about-guidance-note"><p class="medical-note">This app records whole-blood waiting periods only. A completed interval is not medical clearance. / ഈ ആപ്പ് സമ്പൂർണ രക്തദാനത്തിന്റെ ഇടവേള മാത്രമാണ് കണക്കാക്കുന്നത്. ഇടവേള പൂർത്തിയായാലും വൈദ്യപരിശോധന ആവശ്യമാണ്.</p><a class="text-link" href="https://eraktkosh.mohfw.gov.in/BLDAHIMS/bloodbank/donateblood.cnt" rel="noopener" target="_blank">Official donor guidance / ഔദ്യോഗിക മാർഗനിർദേശങ്ങൾ ↗</a></div></div>
+<div class="container about-process dark-section">
+<div class="section-heading centered light-heading">
+<p class="eyebrow">How RedBlood works</p>
+<h2>From registration to connection</h2>
+</div>
+<div class="steps-grid">
+<article>
+<span>01</span>
+<h3>Register / രജിസ്റ്റർ ചെയ്യുക</h3>
+<p>A volunteer submits their blood group, location, and contact details with consent.</p>
+</article>
+<article>
+<span>02</span>
+<h3>Search / തിരയുക</h3>
+<p>Search by blood group and add the hospital name if needed.</p>
+</article>
+<article>
+<span>03</span>
+<h3>Connect</h3>
+<p>The visitor contacts a matching donor and coordinates through a licensed hospital or blood bank.</p>
+</article>
+<article>
+<span>04</span>
+<h3>Screen</h3>
+<p>Medical professionals confirm donor eligibility and complete the safe donation process.</p>
+</article>
+</div>
+</div></section><section class="section find-section" id="find-donor">
+<div class="container">
+<div class="section-heading centered">
+<p class="eyebrow">Donor search</p>
+<h2>Find a blood donor</h2>
+<p>Choose a blood group and optionally enter the hospital name. Contact the donor to confirm availability.</p>
+</div>
+<form class="search-panel" id="donor-search-form">
+<div class="form-field">
+<label for="search-blood-group">Blood group / രക്തഗ്രൂപ്പ്</label>
+<select id="search-blood-group" name="blood_group" required="">
+<option value="">Choose / തിരഞ്ഞെടുക്കുക</option>
+<option value="A+">A+</option>
+<option value="A-">A−</option>
+<option value="B+">B+</option>
+<option value="B-">B−</option>
+<option value="AB+">AB+</option>
+<option value="AB-">AB−</option>
+<option value="O+">O+</option>
+<option value="O-">O−</option>
+</select>
+</div>
+<div class="form-field"><label for="search-hospital">Hospital</label><input id="search-hospital" maxlength="160" name="hospital" placeholder="Hospital where blood is needed" type="text"/><small>Optional — the hospital where blood is needed.</small></div>
+<div class="search-actions"><button class="button button-primary search-button" type="submit">Search donors / ദാതാക്കളെ തിരയുക</button><button aria-label="Choose blood group using voice" class="voice-button" data-voice-search="" title="Voice search" type="button"><svg aria-hidden="true" fill="none" height="22" viewbox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><rect height="12" rx="3" stroke="currentColor" stroke-width="1.7" width="6" x="9" y="2"></rect><path d="M5 10v2a7 7 0 0 0 14 0v-2M12 19v3m-4 0h8" stroke="currentColor" stroke-linecap="round" stroke-width="1.7"></path></svg></button></div><p aria-live="polite" class="voice-status" data-voice-status=""></p>
+</form>
+<p class="quick-search-label">Or choose a blood group</p><div aria-label="Quick blood group search" class="blood-group-links" role="group">
+<button data-quick-blood="A+" type="button">A+</button>
+<button data-quick-blood="A-" type="button">A−</button>
+<button data-quick-blood="B+" type="button">B+</button>
+<button data-quick-blood="B-" type="button">B−</button>
+<button data-quick-blood="AB+" type="button">AB+</button>
+<button data-quick-blood="AB-" type="button">AB−</button>
+<button data-quick-blood="O+" type="button">O+</button>
+<button data-quick-blood="O-" type="button">O−</button>
+</div>
+<div aria-live="polite" class="search-results" id="search-results">
+<div class="empty-state compact-empty">
+<span aria-hidden="true">⌕</span>
+<h3>Your search results will appear here</h3>
+<p>Only approved, available donors who consented to contact sharing are shown.</p>
+</div>
+</div><section aria-label="Approximate donor map" class="map-panel">
+<h3>Donors by area / പ്രദേശത്തെ ദാതാക്കൾ</h3>
+<p>The map shows approximate areas of matching donors who consented to location sharing. Exact positions are not shown.</p>
+<button class="button button-secondary" id="load-map" type="button">Load map / മാപ്പ് തുറക്കുക</button>
+<details class="map-privacy"><summary>Map privacy</summary><p class="local-storage-note">Loading uses Leaflet CDN and OpenStreetMap tiles. These providers receive your network request and map viewport; no donor names or phone numbers are sent.</p></details><p id="map-status" role="status">Search to see matching area counts. Map loading is optional.</p>
+<div hidden="" id="donor-map"></div><div class="region-counts" id="map-counts"></div>
+</section>
+</div>
+</section>
+<section class="section soft-section" id="register">
+<div class="container register-grid">
+<div class="register-copy registration-intro">
+<p class="eyebrow">Volunteer registration</p>
+<h2>Donor Registration</h2>
+<p>
             Add your details to the directory so people searching for your blood
             group can contact you when needed.
           </p>
-
-          <ul class="feature-list">
-            <li><span aria-hidden="true">✓</span> Register in less than two minutes</li>
-            <li><span aria-hidden="true">✓</span> Searchable by blood group and location</li>
-            <li><span aria-hidden="true">✓</span> Phone sharing requires your consent</li>
-            <li><span aria-hidden="true">✓</span> Medical screening remains with the blood bank</li>
-          </ul>
-
-          <div class="privacy-card">
-            <strong>Privacy reminder</strong>
-            <p>Only submit information you are comfortable listing in this college-project directory.</p>
-          </div>
-        </div>
-
-        <form class="registration-card" id="registration-form" data-registration-form>
-          <div class="form-header">
-            <span class="form-icon" aria-hidden="true">♥</span>
-            <div>
-              <h3>Donor registration</h3>
-              <p>All fields marked with * are required.</p>
-            </div>
-          </div>
-
-          <div class="form-grid">
-            <div class="form-field full">
-              <label for="donor-name">Full name *</label>
-              <input id="donor-name" name="name" type="text" minlength="2" maxlength="100" autocomplete="name" required>
-            </div>
-
-            <div class="form-field">
-              <label for="donor-age">Age *</label>
-              <input id="donor-age" name="age" type="number" min="18" max="65" inputmode="numeric" required>
-            </div>
-
-            <fieldset class="form-field">
-              <legend>Gender *</legend>
-              <div class="radio-row">
-                <label><input type="radio" name="sex" value="M" required> Male</label>
-                <label><input type="radio" name="sex" value="F"> Female</label>
-                <label><input type="radio" name="sex" value="O"> Other</label>
-              </div>
-            </fieldset>
-
-            <div class="form-field">
-              <label for="donor-blood-group">Blood group *</label>
-              <select id="donor-blood-group" name="blood_group" required>
-                <option value="">Choose a group</option>
-                <option value="A+">A+</option>
-                <option value="A-">A−</option>
-                <option value="B+">B+</option>
-                <option value="B-">B−</option>
-                <option value="AB+">AB+</option>
-                <option value="AB-">AB−</option>
-                <option value="O+">O+</option>
-                <option value="O-">O−</option>
-              </select>
-            </div>
-
-            <div class="form-field">
-              <label for="donor-phone">Mobile number *</label>
-              <input id="donor-phone" name="phone" type="tel" maxlength="15" inputmode="tel" autocomplete="tel" placeholder="10–15 digits" required>
-            </div>
-
-            <div class="form-field full">
-              <label for="donor-location">Town / city / district *</label>
-              <input id="donor-location" name="location" type="text" minlength="2" maxlength="120" autocomplete="address-level2" required>
-            </div>
-
-            <label class="consent-row full">
-              <input type="checkbox" name="share_phone" value="1" required>
-              <span>I consent to my name, blood group, location, and phone number being displayed in donor-search results. *</span>
-            </label>
-          </div>
-
-          <p class="form-error" data-form-error role="alert"></p>
-          <button class="button button-primary full-button" type="submit">Save donor locally</button>
-          <p class="local-storage-note">
-            Stored only in this browser. New registrations are marked pending until approved in the local admin dashboard.
+<ul class="feature-list">
+<li><span aria-hidden="true">✓</span> Register in less than two minutes</li>
+<li><span aria-hidden="true">✓</span> Searchable by blood group and location</li>
+<li><span aria-hidden="true">✓</span> Phone sharing requires your consent</li>
+<li><span aria-hidden="true">✓</span> Medical screening remains with the blood bank</li>
+</ul>
+<div class="privacy-card">
+<strong>Privacy reminder</strong>
+<p>Location sharing is optional. Only your approximate area is shown on the map.</p>
+</div>
+</div>
+<form class="registration-card" data-registration-form="" id="registration-form"><aside class="truth-notice"><strong>Correct information can save a life. Never submit false details.</strong></aside>
+<div class="form-header">
+<span aria-hidden="true" class="form-icon">♥</span>
+<div>
+<h3>Donor Registration</h3>
+<p>Fields marked * are required. / * അടയാളമുള്ളവ നിർബന്ധമാണ്.</p>
+</div>
+</div>
+<div class="form-grid">
+<div class="form-field full">
+<label for="donor-name">Full name / മുഴുവൻ പേര് *</label>
+<input autocomplete="name" id="donor-name" maxlength="100" minlength="2" name="name" required="" type="text"/>
+</div>
+<div class="form-field">
+<label for="donor-age">Age / പ്രായം *</label>
+<input id="donor-age" inputmode="numeric" max="65" min="18" name="age" required="" type="number"/>
+</div>
+<fieldset class="form-field">
+<legend>Gender / ലിംഗം *</legend>
+<div class="radio-row">
+<label><input name="sex" required="" type="radio" value="M"/>Male / പുരുഷൻ</label>
+<label><input name="sex" type="radio" value="F"/>Female / സ്ത്രീ</label>
+<label><input name="sex" type="radio" value="O"/>Other / മറ്റുള്ളവ</label>
+</div>
+</fieldset>
+<div class="form-field">
+<label for="donor-blood-group">Blood group / രക്തഗ്രൂപ്പ് *</label>
+<select id="donor-blood-group" name="blood_group" required="">
+<option value="">Choose / തിരഞ്ഞെടുക്കുക</option>
+<option value="A+">A+</option>
+<option value="A-">A−</option>
+<option value="B+">B+</option>
+<option value="B-">B−</option>
+<option value="AB+">AB+</option>
+<option value="AB-">AB−</option>
+<option value="O+">O+</option>
+<option value="O-">O−</option>
+</select>
+</div>
+<div class="form-field">
+<label for="donor-phone">Mobile number / മൊബൈൽ നമ്പർ *</label>
+<input autocomplete="tel" id="donor-phone" inputmode="tel" maxlength="15" name="phone" placeholder="10–15 digits" required="" type="tel"/>
+</div>
+</div>
+<div data-registration-details=""></div><label class="consent-row full">
+<input name="share_phone" type="checkbox" value="1"/>
+<span>Allow my name, blood group, area and phone in donor search (optional). / തിരച്ചിലിൽ എന്റെ പേര്, രക്തഗ്രൂപ്പ്, സ്ഥലം, ഫോൺ എന്നിവ കാണിക്കാൻ സമ്മതിക്കുന്നു (നിർബന്ധമില്ല).</span>
+</label><label class="consent-row"><input name="truth" required="" type="checkbox"/><span>I confirm my details are accurate. / ഞാൻ നൽകിയ വിവരങ്ങൾ ശരിയാണെന്ന് സ്ഥിരീകരിക്കുന്നു.</span></label><p class="form-error" data-form-error="" role="alert"></p>
+<button class="button button-primary full-button" type="submit">Register donor / ദാതാവിനെ രജിസ്റ്റർ ചെയ്യുക</button>
+<p class="local-storage-note">
+            Stored only in this browser. New registrations are marked pending until approved in the administration dashboard.
           </p>
-        </form>
-      </div>
-    </section>
-
-    <section class="section" id="eligibility">
-      <div class="container eligibility-grid">
-        <div class="eligibility-image">
-          <img src="assets/images/blood-bag.jpg" alt="Blood donation bag and tubing" loading="lazy">
-        </div>
-
-        <div class="eligibility-copy">
-          <p class="eyebrow">Before registering</p>
-          <h2>General donor guidance</h2>
-          <p>
-            India’s e-RaktKosh guidance describes healthy blood donors as generally
-            18–65 years old and at least 45 kg. Every donor must still complete
-            confidential screening at a licensed blood bank.
-          </p>
-
-          <div class="guidance-grid">
-            <div><strong>18–65</strong><span>General age range</span></div>
-            <div><strong>45 kg+</strong><span>General minimum weight</span></div>
-            <div><strong>Screening</strong><span>Required before donation</span></div>
-            <div><strong>Honesty</strong><span>Share health concerns</span></div>
-          </div>
-
-          <p class="medical-note">
-            This information is educational and does not determine eligibility.
-            Always follow the medical team’s decision at the donation centre.
-          </p>
-          <a class="text-link" href="https://eraktkosh.mohfw.gov.in/BLDAHIMS/bloodbank/donateblood.cnt" target="_blank" rel="noopener noreferrer">
-            Read official e-RaktKosh donor guidance <span aria-hidden="true">↗</span>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section dark-section" id="about">
-      <div class="container">
-        <div class="section-heading centered light-heading">
-          <p class="eyebrow">How RedGold works</p>
-          <h2>A simple connection between donors and people in need</h2>
-        </div>
-
-        <div class="steps-grid">
-          <article>
-            <span>01</span>
-            <h3>Register</h3>
-            <p>A volunteer submits their blood group, location, and contact details with consent.</p>
-          </article>
-          <article>
-            <span>02</span>
-            <h3>Search</h3>
-            <p>A visitor searches the directory using the required blood group and an optional location.</p>
-          </article>
-          <article>
-            <span>03</span>
-            <h3>Connect</h3>
-            <p>The visitor contacts a matching donor and coordinates through a licensed hospital or blood bank.</p>
-          </article>
-          <article>
-            <span>04</span>
-            <h3>Screen</h3>
-            <p>Medical professionals confirm donor eligibility and complete the safe donation process.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="dashboard-hero" id="admin-dashboard">
-      <div class="container dashboard-hero-row">
-        <div>
-          <p class="eyebrow">Offline management</p>
-          <h2>Donor dashboard</h2>
-          <p>Review and manage the donor records saved in this browser.</p>
-        </div>
-        <div class="offline-badge"><span aria-hidden="true">●</span> Local demo mode</div>
-      </div>
-    </section>
-
-    <section class="dashboard-section">
-      <div class="container">
-        <div class="notice-card">
-          <strong>Demonstration dashboard</strong>
-          <p>There is no real authentication because the project is fully offline. Data is available only in this browser profile.</p>
-        </div>
-
-        <div class="stats-grid" role="group" aria-label="Donor statistics">
-          <article><span>Total donors</span><strong data-stat="total">0</strong><small>All local records</small></article>
-          <article><span>Approved</span><strong data-stat="approved">0</strong><small>Visible when available</small></article>
-          <article><span>Available</span><strong data-stat="available">0</strong><small>Approved and active</small></article>
-          <article><span>Pending</span><strong data-stat="pending">0</strong><small>Awaiting review</small></article>
-        </div>
-
-        <section class="management-card">
-          <div class="management-head">
-            <div>
-              <p class="eyebrow">Donor records</p>
-              <h2>Manage the directory</h2>
-            </div>
-            <div class="management-actions">
-              <button class="button button-secondary button-small" type="button" data-load-demo>Load demo data</button>
-              <button class="button button-secondary button-small" type="button" data-export>Export JSON</button>
-              <label class="button button-secondary button-small file-button">
-                Import JSON
-                <input type="file" accept="application/json,.json" data-import>
-              </label>
-              <button class="button button-danger button-small" type="button" data-clear>Clear all</button>
-            </div>
-          </div>
-
-          <div class="admin-filters">
-            <div class="form-field">
-              <label for="admin-search">Search</label>
-              <input id="admin-search" type="search" placeholder="Name, phone, or location" data-admin-search>
-            </div>
-            <div class="form-field">
-              <label for="admin-blood">Blood group</label>
-              <select id="admin-blood" data-admin-blood>
-                <option value="">All groups</option>
-                <option value="A+">A+</option>
-                <option value="A-">A−</option>
-                <option value="B+">B+</option>
-                <option value="B-">B−</option>
-                <option value="AB+">AB+</option>
-                <option value="AB-">AB−</option>
-                <option value="O+">O+</option>
-                <option value="O-">O−</option>
-              </select>
-            </div>
-            <div class="form-field">
-              <label for="admin-status">Status</label>
-              <select id="admin-status" data-admin-status>
-                <option value="">All statuses</option>
-                <option value="pending">Pending</option>
-                <option value="approved">Approved</option>
-                <option value="rejected">Rejected</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="table-wrap">
-            <table class="admin-table">
-              <thead>
-                <tr>
-                  <th>Donor</th>
-                  <th>Blood</th>
-                  <th>Contact</th>
-                  <th>Status</th>
-                  <th>Availability</th>
-                  <th>Actions</th>
-                </tr>
-              </thead>
-              <tbody data-donor-table></tbody>
-            </table>
-          </div>
-
-          <div class="empty-state admin-empty" data-admin-empty hidden>
-            <span aria-hidden="true">⌕</span>
-            <h3>No donor records found</h3>
-            <p>Register a donor above or load the optional demonstration records.</p>
-            <a class="button button-primary" href="#register">Register donor</a>
-          </div>
-        </section>
-      </div>
-    </section>
-
-    <section class="section contact-cta">
-      <div class="container cta-card">
-        <div>
-          <p class="eyebrow">Questions or feedback?</p>
-          <h2>Help us make the directory better.</h2>
-          <p>Contact the project owner for corrections, privacy requests, or technical feedback.</p>
-        </div>
-        <a class="button button-light" href="contacts.html">Contact project owner</a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <a class="brand footer-brand" href="index.html">
-          <span class="brand-mark" aria-hidden="true">♥</span>
-          <span>RedGold</span>
-        </a>
-        <p>A responsive blood donor directory developed as a college web project.</p>
-      </div>
-
-      <div>
-        <h2>Quick links</h2>
-        <a href="#find-donor">Find a donor</a>
-        <a href="#register">Register</a>
-        <a href="#eligibility">Eligibility</a>
-        <a href="#admin-dashboard">Admin demo</a>
-      </div>
-
-      <div>
-        <h2>Important</h2>
-        <p>For urgent blood requirements, contact a hospital or licensed blood bank immediately.</p>
-      </div>
-    </div>
-
-    <div class="container footer-bottom">
-      <p>© <span data-current-year>2026</span> RedGold. College project.</p>
-      <a href="contacts.html">Contact &amp; privacy requests</a>
-    </div>
-  </footer>
-
-  <dialog class="edit-dialog" data-edit-dialog>
-    <form method="dialog" class="dialog-card" data-edit-form>
-      <div class="dialog-head">
-        <div>
-          <p class="eyebrow">Edit record</p>
-          <h2>Update donor</h2>
-        </div>
-        <button class="dialog-close" type="button" data-dialog-cancel aria-label="Close edit form">×</button>
-      </div>
-
-      <input type="hidden" name="id">
-      <div class="form-grid">
-        <div class="form-field full">
-          <label for="edit-name">Full name</label>
-          <input id="edit-name" name="name" type="text" minlength="2" maxlength="100" required>
-        </div>
-        <div class="form-field">
-          <label for="edit-age">Age</label>
-          <input id="edit-age" name="age" type="number" min="18" max="65" required>
-        </div>
-        <div class="form-field">
-          <label for="edit-sex">Gender</label>
-          <select id="edit-sex" name="sex" required>
-            <option value="M">Male</option>
-            <option value="F">Female</option>
-            <option value="O">Other</option>
-          </select>
-        </div>
-        <div class="form-field">
-          <label for="edit-blood">Blood group</label>
-          <select id="edit-blood" name="bloodGroup" required>
-            <option value="A+">A+</option>
-            <option value="A-">A−</option>
-            <option value="B+">B+</option>
-            <option value="B-">B−</option>
-            <option value="AB+">AB+</option>
-            <option value="AB-">AB−</option>
-            <option value="O+">O+</option>
-            <option value="O-">O−</option>
-          </select>
-        </div>
-        <div class="form-field">
-          <label for="edit-phone">Mobile number</label>
-          <input id="edit-phone" name="phone" type="tel" maxlength="15" required>
-        </div>
-        <div class="form-field full">
-          <label for="edit-location">Location</label>
-          <input id="edit-location" name="location" type="text" maxlength="120" required>
-        </div>
-      </div>
-
-      <p class="form-error" data-edit-error role="alert"></p>
-      <div class="dialog-actions">
-        <button class="button button-secondary" type="button" data-dialog-cancel>Cancel</button>
-        <button class="button button-primary" type="submit">Save changes</button>
-      </div>
-    </form>
-  </dialog>
-
-  <div class="toast" data-toast role="status" aria-live="polite"></div>
+</form>
+</div>
+</section>
+<section class="section contact-cta">
+<div class="container cta-card">
+<div>
+<p class="eyebrow">Questions or feedback?</p>
+<h2>Help us make the directory better.</h2>
+<p>Contact the service coordinator for corrections, privacy requests, or technical feedback.</p>
+</div>
+<a class="button button-light" href="contacts.html">Contact support</a>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container footer-grid">
+<div>
+<a class="brand footer-brand" href="index.html">
+<span aria-hidden="true" class="brand-mark"><img alt="" height="30" src="assets/images/redblood-mark.svg" width="24"/></span>
+<span>RedBlood</span>
+</a>
+<p>A responsive blood donor directory with region maps and availability updates.</p>
+</div>
+<div>
+<h2>Quick links</h2>
+<a href="#find-donor">Find donors / ദാതാക്കളെ കണ്ടെത്തുക</a>
+<a href="#register">Register / രജിസ്റ്റർ ചെയ്യുക</a>
+<a href="donor.html">My dashboard / എന്റെ വിവരങ്ങൾ</a>
+<a href="admin.html">Administration / അഡ്മിനിസ്ട്രേഷൻ</a>
+</div>
+<div>
+<h2>Important</h2>
+<p>For urgent blood requirements, contact a hospital or licensed blood bank immediately.</p>
+</div>
+</div>
+<div class="container footer-bottom">
+<p>© <span data-current-year="">2026</span> RedBlood. Community blood donor network.</p>
+<a href="contacts.html">Contact &amp; privacy requests</a>
+</div>
+</footer>
+<div aria-live="polite" class="toast" data-toast="" role="status"></div>
 </body>
-
 </html>

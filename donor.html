@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="RedBlood is a community blood donor directory for registering volunteers and finding donors by blood group and location." name="description"/>
+<meta content="#b5122b" name="theme-color"/>
+<title>RedBlood | My dashboard / എന്റെ വിവരങ്ങൾ</title>
+<link href="assets/images/redblood-mark.svg" rel="icon" type="image/svg+xml"/>
+<link href="assets/css/styles.css" rel="stylesheet"/>
+<script defer="" src="assets/js/availability.js"></script>
+<script defer="" src="assets/js/storage.js"></script>
+<script defer="" src="assets/js/features.js"></script>
+<script defer="" src="assets/js/app.js"></script>
+<script defer="" src="assets/js/admin.js"></script>
+<script defer="True" src="assets/js/language.js"></script><link href="assets/css/responsive.css" rel="stylesheet"/></head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header" id="home">
+<div class="container nav-wrap">
+<a aria-label="RedBlood home" class="brand" href="index.html">
+<span aria-hidden="true" class="brand-mark"><img alt="" height="30" src="assets/images/redblood-mark.svg" width="24"/></span>
+<span>RedBlood</span>
+</a><label class="language-control"><span class="sr-only">Language</span><select aria-label="Language" data-language=""><option value="en">English</option><option value="ml">മലയാളം</option></select></label><button aria-controls="main-navigation" aria-expanded="false" class="nav-toggle" type="button">
+<span class="sr-only">Toggle navigation</span>
+<span></span>
+<span></span>
+<span></span>
+</button>
+<nav aria-label="Main navigation" class="site-nav" id="main-navigation">
+<a href="index.html#home">Home / മുഖപ്പേജ്</a><a href="index.html#about">About</a>
+<a href="index.html#find-donor">Find donors / ദാതാക്കളെ കണ്ടെത്തുക</a>
+<a href="index.html#register">Register / രജിസ്റ്റർ ചെയ്യുക</a>
+<a aria-current="page" href="donor.html">My dashboard / എന്റെ വിവരങ്ങൾ</a>
+<a href="admin.html">Administration / അഡ്മിനിസ്ട്രേഷൻ</a>
+<a class="nav-cta" href="contacts.html">Contact / ബന്ധപ്പെടുക</a>
+</nav>
+</div>
+</header>
+<main id="main-content"><div class="service-notice">Account protection and shared storage are not configured. Records are saved only in this browser. Do not enter personal donor information yet.</div><section class="section" id="my-availability">
+<div class="container"><div class="section-heading"><h2>Donor Registration</h2><p>Manage contact details and donation history. Profile selection does not verify identity; secure sign-in is not configured.</p></div>
+<div class="registration-card"><label for="self-donor">Select donor profile / ദാതാവിന്റെ പ്രൊഫൈൽ തിരഞ്ഞെടുക്കുക</label><select id="self-donor"><option value="">Choose a record</option></select>
+<p id="self-status" role="status"></p><form hidden="" id="self-form"><div class="form-grid">
+<div class="form-field full">
+<label for="self-name">Full name / മുഴുവൻ പേര് *</label>
+<input autocomplete="name" id="self-name" maxlength="100" minlength="2" name="name" required="" type="text"/>
+</div>
+<div class="form-field">
+<label for="self-age">Age / പ്രായം *</label>
+<input id="self-age" inputmode="numeric" max="65" min="18" name="age" required="" type="number"/>
+</div>
+<fieldset class="form-field">
+<legend>Gender / ലിംഗം *</legend>
+<div class="radio-row">
+<label><input name="sex" required="" type="radio" value="M"/>Male / പുരുഷൻ</label>
+<label><input name="sex" type="radio" value="F"/>Female / സ്ത്രീ</label>
+<label><input name="sex" type="radio" value="O"/>Other / മറ്റുള്ളവ</label>
+</div>
+</fieldset>
+<div class="form-field">
+<label for="self-blood-group">Blood group / രക്തഗ്രൂപ്പ് *</label>
+<select id="self-blood-group" name="bloodGroup" required="">
+<option value="">Choose / തിരഞ്ഞെടുക്കുക</option>
+<option value="A+">A+</option>
+<option value="A-">A−</option>
+<option value="B+">B+</option>
+<option value="B-">B−</option>
+<option value="AB+">AB+</option>
+<option value="AB-">AB−</option>
+<option value="O+">O+</option>
+<option value="O-">O−</option>
+</select>
+</div>
+<div class="form-field">
+<label for="self-phone">Mobile number / മൊബൈൽ നമ്പർ *</label>
+<input autocomplete="tel" id="self-phone" inputmode="tel" maxlength="15" name="phone" placeholder="10–15 digits" required="" type="tel"/>
+</div>
+</div><div data-self-fields=""></div><p class="form-error" id="self-error" role="alert"></p><label class="consent-row"><input name="sharePhone" type="checkbox"/><span>Allow my name, blood group, area and phone in donor search (optional). / തിരച്ചിലിൽ എന്റെ പേര്, രക്തഗ്രൂപ്പ്, സ്ഥലം, ഫോൺ എന്നിവ കാണിക്കാൻ സമ്മതിക്കുന്നു (നിർബന്ധമില്ല).</span></label><label class="consent-row"><input name="truth" required="" type="checkbox"/><span>I confirm my details are accurate. / ഞാൻ നൽകിയ വിവരങ്ങൾ ശരിയാണെന്ന് സ്ഥിരീകരിക്കുന്നു.</span></label><button class="button button-primary" type="submit">Save my details / വിവരങ്ങൾ സംരക്ഷിക്കുക</button><button class="button button-danger" id="delete-my-profile" type="button">Delete my profile / എന്റെ വിവരങ്ങൾ നീക്കം ചെയ്യുക</button></form></div></div>
+</section></main>
+<footer class="site-footer">
+<div class="container footer-grid">
+<div>
+<a class="brand footer-brand" href="index.html">
+<span aria-hidden="true" class="brand-mark"><img alt="" height="30" src="assets/images/redblood-mark.svg" width="24"/></span>
+<span>RedBlood</span>
+</a>
+<p>A responsive blood donor directory with region maps and availability updates.</p>
+</div>
+<div>
+<h2>Quick links</h2>
+<a href="index.html#find-donor">Find donors / ദാതാക്കളെ കണ്ടെത്തുക</a>
+<a href="index.html#register">Register / രജിസ്റ്റർ ചെയ്യുക</a>
+<a href="donor.html">My dashboard / എന്റെ വിവരങ്ങൾ</a>
+<a href="admin.html">Administration / അഡ്മിനിസ്ട്രേഷൻ</a>
+</div>
+<div>
+<h2>Important</h2>
+<p>For urgent blood requirements, contact a hospital or licensed blood bank immediately.</p>
+</div>
+</div>
+<div class="container footer-bottom">
+<p>© <span data-current-year="">2026</span> RedBlood. Community blood donor network.</p>
+<a href="contacts.html">Contact &amp; privacy requests</a>
+</div>
+</footer>
+<div aria-live="polite" class="toast" data-toast="" role="status"></div>
+</body>
+</html>

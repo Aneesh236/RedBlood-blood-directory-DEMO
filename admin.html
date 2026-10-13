@@ -1,19 +1,207 @@
 <!DOCTYPE html>
+
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="refresh" content="0; url=index.html#admin-dashboard">
-  <meta name="robots" content="noindex">
-  <title>Opening RedGold Admin Demo</title>
-  <script>
-    window.location.replace("index.html#admin-dashboard");
-  </script>
-</head>
-
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="RedBlood is a community blood donor directory for registering volunteers and finding donors by blood group and location." name="description"/>
+<meta content="#b5122b" name="theme-color"/>
+<title>RedBlood | Admin dashboard / അഡ്മിൻ ഡാഷ്ബോർഡ്</title>
+<link href="assets/images/redblood-mark.svg" rel="icon" type="image/svg+xml"/>
+<link href="assets/css/styles.css" rel="stylesheet"/>
+<script defer="" src="assets/js/availability.js"></script>
+<script defer="" src="assets/js/storage.js"></script>
+<script defer="" src="assets/js/features.js"></script>
+<script defer="" src="assets/js/app.js"></script>
+<script defer="" src="assets/js/admin.js"></script>
+<script defer="True" src="assets/js/language.js"></script><link href="assets/css/responsive.css" rel="stylesheet"/></head>
 <body>
-  <p>Opening the <a href="index.html#admin-dashboard">RedGold admin demo</a>…</p>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header" id="home">
+<div class="container nav-wrap">
+<a aria-label="RedBlood home" class="brand" href="index.html">
+<span aria-hidden="true" class="brand-mark"><img alt="" height="30" src="assets/images/redblood-mark.svg" width="24"/></span>
+<span>RedBlood</span>
+</a><label class="language-control"><span class="sr-only">Language</span><select aria-label="Language" data-language=""><option value="en">English</option><option value="ml">മലയാളം</option></select></label><button aria-controls="main-navigation" aria-expanded="false" class="nav-toggle" type="button">
+<span class="sr-only">Toggle navigation</span>
+<span></span>
+<span></span>
+<span></span>
+</button>
+<nav aria-label="Main navigation" class="site-nav" id="main-navigation">
+<a href="index.html#home">Home / മുഖപ്പേജ്</a><a href="index.html#about">About</a>
+<a href="index.html#find-donor">Find donors / ദാതാക്കളെ കണ്ടെത്തുക</a>
+<a href="index.html#register">Register / രജിസ്റ്റർ ചെയ്യുക</a>
+<a href="donor.html">My dashboard / എന്റെ വിവരങ്ങൾ</a>
+<a aria-current="page" href="admin.html">Administration / അഡ്മിനിസ്ട്രേഷൻ</a>
+<a class="nav-cta" href="contacts.html">Contact / ബന്ധപ്പെടുക</a>
+</nav>
+</div>
+</header>
+<main id="main-content"><div class="service-notice">Account protection and shared storage are not configured. Records are saved only in this browser. Do not enter personal donor information yet.</div><section class="dashboard-hero" id="admin-dashboard">
+<div class="container dashboard-hero-row">
+<div>
+<p class="eyebrow">Directory management</p>
+<h2>Admin dashboard / അഡ്മിൻ ഡാഷ്ബോർഡ്</h2>
+<p>Review and manage the donor records saved in this browser.</p>
+</div>
+<div class="offline-badge"><span aria-hidden="true">●</span> Browser storage</div>
+</div>
+</section><section class="dashboard-section">
+<div class="container">
+<div class="notice-card">
+<strong>Directory administration</strong>
+<p>Account protection and shared storage are not configured. Records are saved only in this browser.</p>
+</div>
+<div aria-label="Donor statistics" class="stats-grid" role="group">
+<article><span>Total donors / ആകെ ദാതാക്കൾ</span><strong data-stat="total">0</strong><small>All saved records</small></article>
+<article><span>Approved / അംഗീകരിച്ചു</span><strong data-stat="approved">0</strong><small>Visible when available</small></article>
+<article><span>Available / ലഭ്യമാണ്</span><strong data-stat="available">0</strong><small>Approved and active</small></article>
+<article><span>Pending / അനുമതി കാത്തിരിക്കുന്നു</span><strong data-stat="pending">0</strong><small>Awaiting review</small></article>
+</div>
+<section class="management-card">
+<div class="management-head">
+<div>
+<p class="eyebrow">Donor records</p>
+<h2>Manage donors / ദാതാക്കളെ നിയന്ത്രിക്കുക</h2>
+</div>
+<div class="management-actions">
+<button class="button button-secondary button-small" data-export="" type="button">Export backup / പകർപ്പ് എടുക്കുക</button>
+<label class="button button-secondary button-small file-button">Import backup / പകർപ്പ് ചേർക്കുക<input accept="application/json,.json" data-import="" type="file"/>
+</label>
+<button class="button button-danger button-small" data-clear="" type="button">Clear all / എല്ലാം നീക്കം ചെയ്യുക</button>
+</div>
+</div>
+<div class="admin-filters">
+<div class="form-field">
+<label for="admin-search">Search / തിരയുക</label>
+<input data-admin-search="" id="admin-search" placeholder="Name, phone, or location" type="search"/>
+</div>
+<div class="form-field">
+<label for="admin-blood">Blood group / രക്തഗ്രൂപ്പ്</label>
+<select data-admin-blood="" id="admin-blood">
+<option value="">All groups / എല്ലാ ഗ്രൂപ്പുകളും</option>
+<option value="A+">A+</option>
+<option value="A-">A−</option>
+<option value="B+">B+</option>
+<option value="B-">B−</option>
+<option value="AB+">AB+</option>
+<option value="AB-">AB−</option>
+<option value="O+">O+</option>
+<option value="O-">O−</option>
+</select>
+</div>
+<div class="form-field">
+<label for="admin-status">Status</label>
+<select data-admin-status="" id="admin-status">
+<option value="">All statuses / എല്ലാ നിലകളും</option>
+<option value="pending">Pending / അനുമതി കാത്തിരിക്കുന്നു</option>
+<option value="approved">Approved / അംഗീകരിച്ചു</option>
+<option value="rejected">Rejected / നിരസിച്ചു</option>
+</select>
+</div>
+</div>
+<div class="table-wrap">
+<table class="admin-table">
+<thead>
+<tr>
+<th>Donor</th>
+<th>Blood</th>
+<th>Contact / ബന്ധപ്പെടുക</th>
+<th>Status</th>
+<th>Availability</th>
+<th>Actions</th>
+</tr>
+</thead>
+<tbody data-donor-table=""></tbody>
+</table>
+</div>
+<div class="empty-state admin-empty" data-admin-empty="" hidden="">
+<span aria-hidden="true">⌕</span>
+<h3>No donor records found</h3>
+<p>No records match your filters. Register a donor to get started.</p>
+<a class="button button-primary" href="index.html#register">Register donor</a>
+</div>
+</section>
+</div>
+</section><dialog class="edit-dialog" data-edit-dialog="">
+<form class="dialog-card" data-edit-form="" method="dialog">
+<div class="dialog-head">
+<div>
+<p class="eyebrow">Edit record</p>
+<h2>Update donor / വിവരങ്ങൾ തിരുത്തുക</h2>
+</div>
+<button aria-label="Close edit form" class="dialog-close" data-dialog-cancel="" type="button">×</button>
+</div>
+<input name="id" type="hidden"/>
+<div class="form-grid">
+<div class="form-field full">
+<label for="edit-name">Full name / മുഴുവൻ പേര്</label>
+<input id="edit-name" maxlength="100" minlength="2" name="name" required="" type="text"/>
+</div>
+<div class="form-field">
+<label for="edit-age">Age / പ്രായം</label>
+<input id="edit-age" max="65" min="18" name="age" required="" type="number"/>
+</div>
+<div class="form-field">
+<label for="edit-sex">Gender / ലിംഗം</label>
+<select id="edit-sex" name="sex" required="">
+<option value="M">Male / പുരുഷൻ</option>
+<option value="F">Female / സ്ത്രീ</option>
+<option value="O">Other / മറ്റുള്ളവ</option>
+</select>
+</div>
+<div class="form-field">
+<label for="edit-blood">Blood group / രക്തഗ്രൂപ്പ്</label>
+<select id="edit-blood" name="bloodGroup" required="">
+<option value="A+">A+</option>
+<option value="A-">A−</option>
+<option value="B+">B+</option>
+<option value="B-">B−</option>
+<option value="AB+">AB+</option>
+<option value="AB-">AB−</option>
+<option value="O+">O+</option>
+<option value="O-">O−</option>
+</select>
+</div>
+<div class="form-field">
+<label for="edit-phone">Mobile number / മൊബൈൽ നമ്പർ</label>
+<input autocomplete="tel" id="edit-phone" inputmode="tel" maxlength="15" name="phone" required="" type="tel"/>
+</div>
+</div>
+<p class="form-error" data-edit-error="" role="alert"></p>
+<div class="dialog-actions">
+<button class="button button-secondary" data-dialog-cancel="" type="button">Cancel / റദ്ദാക്കുക</button>
+<button class="button button-primary" type="submit">Save changes / മാറ്റങ്ങൾ സംരക്ഷിക്കുക</button>
+</div>
+</form>
+</dialog></main>
+<footer class="site-footer">
+<div class="container footer-grid">
+<div>
+<a class="brand footer-brand" href="index.html">
+<span aria-hidden="true" class="brand-mark"><img alt="" height="30" src="assets/images/redblood-mark.svg" width="24"/></span>
+<span>RedBlood</span>
+</a>
+<p>A responsive blood donor directory with region maps and availability updates.</p>
+</div>
+<div>
+<h2>Quick links</h2>
+<a href="index.html#find-donor">Find donors / ദാതാക്കളെ കണ്ടെത്തുക</a>
+<a href="index.html#register">Register / രജിസ്റ്റർ ചെയ്യുക</a>
+<a href="donor.html">My dashboard / എന്റെ വിവരങ്ങൾ</a>
+<a href="admin.html">Administration / അഡ്മിനിസ്ട്രേഷൻ</a>
+</div>
+<div>
+<h2>Important</h2>
+<p>For urgent blood requirements, contact a hospital or licensed blood bank immediately.</p>
+</div>
+</div>
+<div class="container footer-bottom">
+<p>© <span data-current-year="">2026</span> RedBlood. Community blood donor network.</p>
+<a href="contacts.html">Contact &amp; privacy requests</a>
+</div>
+</footer>
+<div aria-live="polite" class="toast" data-toast="" role="status"></div>
 </body>
-
 </html>
