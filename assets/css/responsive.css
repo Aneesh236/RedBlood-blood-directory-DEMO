@@ -331,10 +331,4 @@ html[lang="ml"] a { font-family: "RedBlood Malayalam", system-ui, -apple-system,
   html[lang="ml"] .availability-fields .full:has([data-gps]) .button { flex-basis: 100%; }
 }
 
-/* Supabase account controls */
-.cloud-account-panel { border-bottom: 1px solid #e8dce0; padding-bottom: 1.25rem; margin-bottom: 1.25rem; }
-.cloud-account-panel h3 { margin-top: 0; }
-.cloud-account-actions { display: flex; flex-wrap: wrap; gap: .65rem; margin-top: .75rem; }
-.cloud-account-actions .button { white-space: normal; }
-#account-status { overflow-wrap: anywhere; }
-@media (max-width: 480px) { .cloud-account-actions .button { flex: 1 1 100%; } }
+#registration-status { overflow-wrap: anywhere; }

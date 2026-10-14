@@ -70,75 +70,58 @@ const searchResults = document.querySelector("#search-results");
 const bloodGroupSelect = document.querySelector("#search-blood-group");
 const locationInput = document.querySelector("#search-location");
 
-function renderSearchResults() {
-  if (!searchResults || !bloodGroupSelect || !window.RedGoldStore) {
-    return;
-  }
+let cloudSearchClient;
+let latestSearch = 0;
 
+function getCloudSearchClient() {
+  if (!cloudSearchClient) {
+    cloudSearchClient = import('https://esm.sh/@supabase/supabase-js@2.102.0')
+      .then(({ createClient }) => {
+        const config = window.RedBloodCloudConfig;
+        if (!config?.url || !config?.publishableKey) throw Error('Supabase configuration is missing.');
+        return createClient(config.url, config.publishableKey, {
+          auth: { persistSession: false, autoRefreshToken: false, detectSessionInUrl: false }
+        });
+      });
+  }
+  return cloudSearchClient;
+}
+
+async function renderSearchResults() {
+  if (!searchResults || !bloodGroupSelect) return;
+  const request = ++latestSearch;
   const bloodGroup = bloodGroupSelect.value;
   const hospital = document.querySelector('#search-hospital')?.value.trim() || '';
   const hospitalContext = hospital ? `<p class="hospital-context"><span>Hospital</span>: <span data-user-content>${escapeHtml(hospital)}</span></p>` : '';
-  const location = locationInput ? locationInput.value.trim().toLowerCase() : "";
-
+  window.RedBloodFeatures?.renderMap([]);
   if (!bloodGroup) {
-    window.RedBloodFeatures?.renderMap([]);
-    searchResults.innerHTML = `
-      <div class="empty-state compact-empty">
-        <span aria-hidden="true">⌕</span>
-        <h3>Choose a blood group / രക്തഗ്രൂപ്പ് തിരഞ്ഞെടുക്കുക</h3>
-        <p>Select a group before searching the local donor directory.</p>
-      </div>
-    `;
+    searchResults.innerHTML = '<div class="empty-state compact-empty"><h3>Choose a blood group / രക്തഗ്രൂപ്പ് തിരഞ്ഞെടുക്കുക</h3></div>';
     return;
   }
-
-  const donors = window.RedGoldStore.getDonors()
-    .filter((donor) => window.RedBloodAvailability.matches(donor, {
-      bloodGroup
-    }))
-    .sort((a, b) => a.name.localeCompare(b.name));
-
-  window.RedBloodFeatures?.renderMap(donors);
-  if (donors.length === 0) {
-    searchResults.innerHTML = `
-      <div class="empty-state compact-empty">
-        <span aria-hidden="true">♥</span>
-        <h3>No matching donors / അനുയോജ്യമായ ദാതാക്കളെ കണ്ടെത്തിയില്ല</h3>${hospitalContext}
-        <p>Check the approved donor registrations, contact-sharing consent and last donation dates in Administration.</p>
-        <a class="button button-secondary" href="admin.html">Open admin dashboard</a>
-      </div>
-    `;
-    return;
-  }
-
-  const donorCards = donors.map((donor) => `
-    <article class="donor-card">
-      <div class="donor-card-head">
-        <span class="blood-badge">${escapeHtml(donor.bloodGroup)}</span>
-        <span class="available-badge">Listed donor / രജിസ്റ്റർ ചെയ്ത ദാതാവ്</span>
-      </div>
+  searchResults.innerHTML = '<p role="status">Searching donors…</p>';
+  try {
+    const client = await getCloudSearchClient();
+    const { data, error } = await client.from('donors')
+      .select('name,blood_group,phone,panchayath')
+      .eq('blood_group', bloodGroup).order('name');
+    if (request !== latestSearch) return;
+    if (error) throw error;
+    const donors = data || [];
+    if (!donors.length) {
+      searchResults.innerHTML = `<div class="empty-state compact-empty"><h3>No matching donors / അനുയോജ്യമായ ദാതാക്കളെ കണ്ടെത്തിയില്ല</h3>${hospitalContext}<p>No approved donors currently meet the listing requirements.</p></div>`;
+      return;
+    }
+    const cards = donors.map(donor => `<article class="donor-card">
       <h3 data-user-content>${escapeHtml(donor.name)}</h3>
-      <p class="donor-location">📍 <span data-user-content>${escapeHtml(donor.homePanchayat || donor.region)}</span>${(donor.homeWard || donor.ward) ? ` · <span>Ward</span> <span data-user-content>${escapeHtml(donor.homeWard || donor.ward)}</span>` : ""}</p><p class="local-storage-note"><span>Contact the donor to confirm availability.</span> <span>Screening required.</span></p>
-      <div class="donor-meta">
-        <div><span>Age</span><strong>${escapeHtml(donor.age)}</strong></div>
-        <div><span>Gender</span><strong>${escapeHtml({ M: "Male", F: "Female", O: "Other" }[donor.sex] || "Other")}</strong></div>
-      </div>
-      <a class="phone-link" href="tel:${escapeHtml(donor.phone)}">
-        <span aria-hidden="true">☎</span> ${escapeHtml(donor.phone)}
-      </a>
-    </article>
-  `).join("");
-
-  searchResults.innerHTML = `
-    ${hospitalContext}
-    <div class="result-summary">
-      <div>
-        <h3>${donors.length} matching donor${donors.length === 1 ? "" : "s"}</h3>
-        <p>${escapeHtml(bloodGroup)}${location ? ` <span>Near</span> <span data-user-content>${escapeHtml(locationInput.value.trim())}</span>` : ""}</p>
-      </div>
-    </div>
-    <div class="donor-grid">${donorCards}</div>
-  `;
+      <a class="phone-link" href="tel:${escapeHtml(donor.phone)}"><span data-user-content>${escapeHtml(donor.phone)}</span></a>
+      <p class="donor-location" data-user-content>${escapeHtml(donor.panchayath)}</p>
+    </article>`).join('');
+    searchResults.innerHTML = `${hospitalContext}<div class="result-summary"><div><h3>Matching donors</h3><p>${escapeHtml(bloodGroup)} · ${donors.length}</p></div></div><div class="donor-grid">${cards}</div>`;
+  } catch (error) {
+    if (request !== latestSearch) return;
+    console.error('Supabase donor search failed:', error);
+    searchResults.innerHTML = '<div class="empty-state compact-empty" role="alert"><h3>Search failed</h3><p>Check your connection and try again.</p></div>';
+  }
 }
 
 if (donorSearchForm) {
@@ -155,12 +138,6 @@ document.querySelectorAll("[data-quick-blood]").forEach((button) => {
     renderSearchResults();
     searchResults.scrollIntoView({ behavior: "smooth", block: "start" });
   });
-});
-
-window.addEventListener("redgold:donors-changed", () => {
-  if (bloodGroupSelect && bloodGroupSelect.value) {
-    renderSearchResults();
-  }
 });
 
 const voiceButton = document.querySelector("[data-voice-search]");

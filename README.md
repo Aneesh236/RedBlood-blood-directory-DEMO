@@ -1,7 +1,7 @@
 # RedBlood — Setup guide
 
-**Start with SUPABASE_SETUP.md.** This release adds cloud registration and
-email/password accounts. Run the included SQL and configure Supabase Auth first.
+**Start with SUPABASE_SETUP.md.** This release saves donor registrations directly to Supabase.
+No donor account, email or password is needed. The database setup is applied.
 
 1. Extract the ZIP and open the **redblood** folder in VS Code.
 2. Open **Terminal → New Terminal**.
@@ -35,11 +35,12 @@ an internet connection and shows only an approximate area.
 
 ## Current storage and account setup
 
-New registrations are saved in Supabase after authenticated submission. Account
-creation and email confirmation do not themselves create a donor registration.
+New registrations are saved directly in Supabase when the donor submits the form.
+No donor login or account creation is required.
 Existing local records remain in this browser and are not automatically migrated.
-Search, map results and both dashboards still use those legacy local records.
-Cloud records are private until cloud search/admin access is implemented.
+Donor search now reads approved donor names, phone numbers and panchayaths from Supabase.
+Maps and both dashboards still use legacy local records.
+Other donor fields remain private. Approve cloud donors in Supabase Table Editor.
 
 Technical details and tests: **TECHNICAL_NOTES.md**.
 
@@ -80,3 +81,7 @@ HTTP does not enable it. New registrations save to Supabase; legacy dashboard/se
 Malayalam wording has been reviewed for complete meaning, with clearer donor-history answers and phone-number/location consent. Labels and explanations wrap on mobile; dropdown choices remain readable on narrow screens.
 
 Registration now includes an editable “Nearby hospital with blood bank” field, prefilled with **TD Medical College, Vandanam**. The same field is available when editing a donor profile.
+
+## Supabase donor search
+Search uses Supabase and shows approved, consenting donors who meet the configured
+interval rules. Cards show only name, phone number and panchayath. No donor sign-in or extra SQL setup is required.

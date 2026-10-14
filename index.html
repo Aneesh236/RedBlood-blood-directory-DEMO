@@ -105,7 +105,7 @@
 <p>Medical professionals confirm donor eligibility and complete the safe donation process.</p>
 </article>
 </div>
-</div></section><section class="section find-section" id="find-donor"><div class="container"><p class="truth-notice">Cloud registration is enabled. Donor search and dashboards are not connected to Supabase yet.</p></div>
+</div></section><section class="section find-section" id="find-donor"><div class="container"><p class="truth-notice">Registration and donor search use Supabase. Dashboards are not connected yet.</p></div>
 <div class="container">
 <div class="section-heading centered">
 <p class="eyebrow">Donor search</p>
@@ -175,20 +175,7 @@
 <p>Location sharing is optional. Only your approximate area is shown on the map.</p>
 </div>
 </div>
-<form class="registration-card" data-registration-form="" id="registration-form"><div class="cloud-account-panel">
-<h3>Your account</h3>
-<p>Create an account, confirm your email, then sign in to register as a donor.</p>
-<div class="form-grid">
-<div class="form-field"><label for="account-email">Email</label><input id="account-email" type="email" autocomplete="email"></div>
-<div class="form-field"><label for="account-password">Password</label><input id="account-password" type="password" minlength="8" autocomplete="current-password"><p class="field-hint">Use at least 8 characters.</p></div>
-</div>
-<div class="cloud-account-actions">
-<button class="button button-secondary" type="button" id="create-account">Create account</button>
-<button class="button button-secondary" type="button" id="account-login">Sign in</button>
-<button class="button button-secondary" type="button" id="account-logout" hidden>Sign out</button>
-</div>
-<p id="account-status" role="status" aria-live="polite">Create an account or sign in before registering.</p>
-</div><aside class="truth-notice"><strong>Correct information can save a life. Never submit false details.</strong></aside>
+<form class="registration-card" data-registration-form="" id="registration-form"><aside class="truth-notice"><strong>Correct information can save a life. Never submit false details.</strong></aside>
 <div class="form-header">
 <span aria-hidden="true" class="form-icon">♥</span>
 <div>
@@ -235,10 +222,10 @@
 <div data-registration-details=""></div><label class="consent-row full">
 <input name="share_phone" type="checkbox" value="1"/>
 <span>Allow my name, blood group, area and phone in donor search (optional). / തിരച്ചിലിൽ എന്റെ പേര്, രക്തഗ്രൂപ്പ്, സ്ഥലം, ഫോൺ എന്നിവ കാണിക്കാൻ സമ്മതിക്കുന്നു (നിർബന്ധമില്ല).</span>
-</label><label class="consent-row"><input name="truth" required="" type="checkbox"/><span>I confirm my details are accurate. / ഞാൻ നൽകിയ വിവരങ്ങൾ ശരിയാണെന്ന് സ്ഥിരീകരിക്കുന്നു.</span></label><p class="form-error" data-form-error="" role="alert"></p>
+</label><label class="consent-row"><input name="truth" required="" type="checkbox"/><span>I confirm my details are accurate. / ഞാൻ നൽകിയ വിവരങ്ങൾ ശരിയാണെന്ന് സ്ഥിരീകരിക്കുന്നു.</span></label><p class="form-error" data-form-error="" role="alert"></p><p id="registration-status" role="status" aria-live="polite"></p>
 <button class="button button-primary full-button" type="submit">Register donor / ദാതാവിനെ രജിസ്റ്റർ ചെയ്യുക</button>
 <p class="local-storage-note">
-            Registrations are saved in Supabase after you sign in. New registrations wait for approval.
+            Submit your details to register. No account is needed. Registrations are saved in Supabase and wait for approval.
           </p>
 </form>
 </div>

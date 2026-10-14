@@ -6,7 +6,8 @@ window.cloudTest = { user: null, inserts: [], insertError: null };
 export function createClient() {
   return {
     auth: {
-      getUser: async () => ({ data: { user: window.cloudTest.user }, error: window.cloudTest.user ? null : {name:'AuthSessionMissingError'} }),
+      // These methods must never be called by public registration.
+      getUser: async () => {throw Error('Registration must not require auth');},
       signUp: async args => { window.cloudTest.signup = args; return {data:{session:null},error:null}; },
       signInWithPassword: async args => { window.cloudTest.user = {id:'11111111-1111-1111-1111-111111111111',email:args.email}; return {error:null}; },
       signOut: async () => {window.cloudTest.user=null;return {error:null};},
@@ -24,14 +25,7 @@ export function createClient() {
     const errors=[];page.on('pageerror',e=>errors.push(e.message));
     await page.goto(process.env.REDBLOOD_TEST_URL || 'http://127.0.0.1:8080');
     await page.waitForFunction(()=>window.cloudTest);
-    await page.fill('#account-email','donor@example.com');
-    await page.fill('#account-password','test-password');
-    await page.click('#create-account');
-    await page.waitForFunction(()=>document.querySelector('#account-status').textContent.includes('not been saved'));
-    assert.equal(await page.evaluate(()=>window.cloudTest.inserts.length),0);
-    assert.equal(await page.evaluate(()=>window.cloudTest.signup.options.emailRedirectTo),'http://127.0.0.1:8080/index.html');
-    await page.fill('#account-password','test-password');await page.click('#account-login');
-    await page.waitForFunction(()=>!document.querySelector('#account-logout').hidden);
+    assert.equal(await page.locator('#account-email,#account-password,#create-account,#account-login').count(),0);
     async function fillDonor(type='first') {
       await page.fill('#donor-name','Test Donor');await page.fill('#donor-age','28');
       await page.check('[name=sex][value=M]');await page.selectOption('#donor-blood-group','O+');
@@ -47,10 +41,10 @@ export function createClient() {
     assert.equal(await page.evaluate(()=>localStorage.getItem('redgold_donors_v1')),null);
     await page.evaluate(()=>window.cloudTest.insertError=null);
     await page.click('#registration-form button[type=submit]');
-    await page.waitForFunction(()=>document.querySelector('#account-status').textContent.includes('saved in Supabase'));
+    await page.waitForFunction(()=>document.querySelector('#registration-status').textContent.includes('saved in Supabase'));
     const row=await page.evaluate(()=>window.cloudTest.inserts.at(-1).row);
     assert.equal(row.panchayath,'Champakkulam');assert.equal(row.ward,'4');assert.equal(row.last_donation_date,null);
-    assert.equal(row.nearby_hospital,'TD Medical College, Vandanam');assert.equal(row.user_id,'11111111-1111-1111-1111-111111111111');
+    assert.equal(row.nearby_hospital,'TD Medical College, Vandanam');assert.equal('user_id' in row,false);
     assert.equal(row.map_latitude,null);assert.equal(row.map_consent,false);assert.equal(row.share_phone,false);
     assert.equal('status' in row,false);assert.equal('password' in row,false);assert.equal('email' in row,false);
     assert.equal(await page.inputValue('#donor-name'),'');
@@ -61,11 +55,6 @@ export function createClient() {
     await page.waitForFunction(()=>document.querySelector('[data-form-error]').textContent.includes('already registered'));
     const second=await page.evaluate(()=>window.cloudTest.inserts.at(-1).row);
     assert.equal(second.last_donation_date,'2026-01-01');assert.equal(second.share_phone,true);assert.equal(second.map_latitude,9.48);
-    await page.click('#account-logout');await page.waitForFunction(()=>document.querySelector('#account-logout').hidden);
-    const count=await page.evaluate(()=>window.cloudTest.inserts.length);
-    await page.click('#registration-form button[type=submit]');
-    await page.waitForFunction(()=>document.querySelector('[data-form-error]').textContent.includes('Sign in'));
-    assert.equal(await page.evaluate(()=>window.cloudTest.inserts.length),count);
     for(const lang of ['en','ml']) {
       await page.selectOption('[data-language]',lang);
       await page.waitForFunction(l=>document.documentElement.lang===l,lang);
@@ -74,12 +63,12 @@ export function createClient() {
         assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),`${lang} overflow at ${width}`);
       }
     }
-    assert.equal(await page.locator('#create-account').textContent(),'അക്കൗണ്ട് സൃഷ്ടിക്കുക');
+    assert.equal(await page.locator('#registration-form input[type=password]').count(),0);
     assert.deepEqual(errors,[]);await context.close();
     const broken=await browser.newContext();await broken.route('https://esm.sh/**',r=>r.abort());
     const offline=await broken.newPage();await offline.goto('http://127.0.0.1:8080');
-    await offline.waitForFunction(()=>document.querySelector('#account-status').textContent.includes('Could not connect'));
+    await offline.waitForFunction(()=>document.querySelector('#registration-status').textContent.includes('Could not connect'));
     assert.equal(await offline.evaluate(()=>localStorage.getItem('redgold_donors_v1')),null);await broken.close();
-    console.log('Passed: signup confirmation, login/logout, cloud insert mapping, no local fallback, error retention, duplicate handling, date/map consent, bilingual mobile layout, CDN failure.');
+    console.log('Passed: direct registration without account fields, cloud insert mapping, no local fallback, error retention, duplicate handling, date/map consent, bilingual mobile layout, CDN failure.');
   } finally {await browser.close();}
 })().catch(error=>{console.error(error);process.exitCode=1;});

@@ -1,7 +1,9 @@
 # Supabase registration integration
 
-See SUPABASE_SETUP.md for the current setup, scope and test instructions.
-Registration now uses cloud-registration.js and supabase-config.js; the old
+See SUPABASE_SETUP.md for the current no-login registration setup, scope and tests.
+Registration uses cloud-registration.js and supabase-config.js; donor search
+uses an asynchronous Supabase query in app.js and the limited-field policy in
+database/donor-search.sql; the old
 local registration handler was removed from app.js. The following notes describe
 the legacy local directory/dashboard implementation still in this release.
 

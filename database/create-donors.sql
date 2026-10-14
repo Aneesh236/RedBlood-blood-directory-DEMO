@@ -3,7 +3,7 @@
 begin;
 create table public.donors (
   id uuid primary key default gen_random_uuid(),
-  user_id uuid not null unique references auth.users(id) on delete cascade,
+  user_id uuid unique references auth.users(id) on delete cascade,
   name text not null check (char_length(trim(name)) between 2 and 100),
   age integer not null check (age between 18 and 65),
   sex text not null check (sex in ('M', 'F', 'O')),
